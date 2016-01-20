@@ -2,11 +2,13 @@
  * NOTE: This file is generated. Do not edit! Your changes will be lost.
  */
 package tests.wishlist;
+import org.junit.Ignore;
 import com.xceptance.xlt.api.engine.scripting.AbstractScriptTestCase;
 import com.xceptance.xlt.api.engine.scripting.ScriptName;
 
 
 /**
+ * <p>Caution: This test case is deactivated because of a bug in the default SG</p>
  * <p>Test add product to cart from wishlist.</p>
  * <h1 id="1-setup-and-preparation">1. Setup and preparation</h1>
  * <ul>
@@ -27,6 +29,7 @@ import com.xceptance.xlt.api.engine.scripting.ScriptName;
  */
 @ScriptName
 ("tests.wishlist.TWishList_AddToCart")
+@Ignore
 public class TWishList_AddToCart extends AbstractScriptTestCase
 {
 }

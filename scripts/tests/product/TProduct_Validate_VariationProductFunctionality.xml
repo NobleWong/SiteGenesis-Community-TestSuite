@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="6" disabled="true">
   <tags>product,pdp,quickview,qv,functionality,variations</tags>
-  <description>Verifies the functionality of an variation product on quickview (QV) and product details pages (PDP)
+  <description>Caution: This test case is deactivated because of a bug in the default SG
+
+Verifies the functionality of an variation product on quickview (QV) and product details pages (PDP)
 
 # Setup
 Open the site and remove cookies

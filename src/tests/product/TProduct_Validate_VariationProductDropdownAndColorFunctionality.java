@@ -2,11 +2,13 @@
  * NOTE: This file is generated. Do not edit! Your changes will be lost.
  */
 package tests.product;
+import org.junit.Ignore;
 import com.xceptance.xlt.api.engine.scripting.AbstractScriptTestCase;
 import com.xceptance.xlt.api.engine.scripting.ScriptName;
 
 
 /**
+ * <p>Caution: This test case is deactivated because of a bug in the default SG</p>
  * <p>Verifies if a value of a variation dropdown can be changed after selecting a color. It retests a known issue (RAP-4413).</p>
  * <h1 id="1-setup-and-preparation">1. Setup and preparation</h1>
  * <ul>
@@ -23,6 +25,7 @@ import com.xceptance.xlt.api.engine.scripting.ScriptName;
  */
 @ScriptName
 ("tests.product.TProduct_Validate_VariationProductDropdownAndColorFunctionality")
+@Ignore
 public class TProduct_Validate_VariationProductDropdownAndColorFunctionality extends AbstractScriptTestCase
 {
 }

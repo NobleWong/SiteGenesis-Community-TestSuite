@@ -2,11 +2,13 @@
  * NOTE: This file is generated. Do not edit! Your changes will be lost.
  */
 package tests.cart;
+import org.junit.Ignore;
 import com.xceptance.xlt.api.engine.scripting.AbstractScriptTestCase;
 import com.xceptance.xlt.api.engine.scripting.ScriptName;
 
 
 /**
+ * <p>Caution: This test case is deactivated because of a bug in the default SG</p>
  * <p>Test add product bundle to cart from quickview and product detail page.</p>
  * <h1 id="setup">Setup</h1>
  * <ul>
@@ -25,6 +27,7 @@ import com.xceptance.xlt.api.engine.scripting.ScriptName;
  */
 @ScriptName
 ("tests.cart.TCart_Add_ProductBundle")
+@Ignore
 public class TCart_Add_ProductBundle extends AbstractScriptTestCase
 {
 }

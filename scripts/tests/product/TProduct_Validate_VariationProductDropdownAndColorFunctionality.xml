@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="6" disabled="true">
   <tags>product,pdp,functionality,variations,rap,RAP-4413</tags>
-  <description>Verifies if a value of a variation dropdown can be changed after selecting a color. It retests a known issue (RAP-4413).
+  <description>Caution: This test case is deactivated because of a bug in the default SG
+
+Verifies if a value of a variation dropdown can be changed after selecting a color. It retests a known issue (RAP-4413).
 
 # 1. Setup and preparation
 

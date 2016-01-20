@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="6" disabled="true">
   <tags>wishlist,addtocart</tags>
-  <description>Test add product to cart from wishlist.
+  <description>Caution: This test case is deactivated because of a bug in the default SG
+
+Test add product to cart from wishlist.
 
 # 1. Setup and preparation
 

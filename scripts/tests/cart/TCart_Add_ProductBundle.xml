@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
-  <description>Test add product bundle to cart from quickview and product detail page.
+<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="6" disabled="true">
+  <description>Caution: This test case is deactivated because of a bug in the default SG
+
+Test add product bundle to cart from quickview and product detail page.
 
 # Setup
 

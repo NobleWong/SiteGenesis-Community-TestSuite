@@ -2,11 +2,13 @@
  * NOTE: This file is generated. Do not edit! Your changes will be lost.
  */
 package tests.product;
+import org.junit.Ignore;
 import com.xceptance.xlt.api.engine.scripting.AbstractScriptTestCase;
 import com.xceptance.xlt.api.engine.scripting.ScriptName;
 
 
 /**
+ * <p>Caution: This test case is deactivated because of a bug in the default SG</p>
  * <p>Verifies the functionality of an variation product on quickview (QV) and product details pages (PDP)</p>
  * <h1 id="setup">Setup</h1>
  * <p>Open the site and remove cookies</p>
@@ -20,6 +22,7 @@ import com.xceptance.xlt.api.engine.scripting.ScriptName;
  */
 @ScriptName
 ("tests.product.TProduct_Validate_VariationProductFunctionality")
+@Ignore
 public class TProduct_Validate_VariationProductFunctionality extends AbstractScriptTestCase
 {
 }

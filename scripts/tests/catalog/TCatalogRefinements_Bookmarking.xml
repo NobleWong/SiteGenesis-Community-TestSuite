@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="6" junit-test="true">
+<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="6" junit-test="true" disabled="true">
   <tags>refinements</tags>
-  <description>Verifies that the sorting and selecting of refinements is preserved when the url is used again.
+  <description>Caution: This test case is deactivated because of a bug in the default SG
+
+Verifies that the sorting and selecting of refinements is preserved when the url is used again.
 
 # 1. Setup and preparation
 
