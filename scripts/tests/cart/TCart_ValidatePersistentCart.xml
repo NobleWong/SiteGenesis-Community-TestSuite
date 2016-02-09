@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+  <description>This Test case validate tha the shopping cart ist persistent after login logout
+</description>
+  <module name="modules.helper.MHelper_Random_createEmail">
+    <parameter name="email_varName" value="email_varDynamic"/>
+  </module>
+  <module name="modules.helper.MHelper_Random_createPassword">
+    <parameter name="password_varName" value="password_varDynamic"/>
+  </module>
+  <module name="modules.helper.MHelper_Random_addRandomness">
+    <comment>Give the account first name some extra flavor for test data variation.</comment>
+    <parameter name="inputString" value="${firstname_02}"/>
+    <parameter name="returned_varString" value="firstname_02"/>
+  </module>
+  <module name="modules.helper.MHelper_Random_addRandomness">
+    <comment>Give the account last name some extra flavor for test data variation.</comment>
+    <parameter name="inputString" value="${lastname_02}"/>
+    <parameter name="returned_varString" value="lastname_02"/>
+  </module>
+  <module name="modules.helper.FHelper_Session_flowToStartSession"/>
+  <module name="modules.pages.homepage.FHomepage_flowToCreateNewAccount">
+    <parameter name="firstname" value="${firstname_02}"/>
+    <parameter name="lastname" value="${lastname_02}"/>
+    <parameter name="email" value="${email_varDynamic}"/>
+    <parameter name="password" value="${password_varDynamic}"/>
+  </module>
+</testcase>
