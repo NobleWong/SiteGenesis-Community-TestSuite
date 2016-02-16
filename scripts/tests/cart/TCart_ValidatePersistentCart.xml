@@ -10,19 +10,69 @@
   </module>
   <module name="modules.helper.MHelper_Random_addRandomness">
     <comment>Give the account first name some extra flavor for test data variation.</comment>
-    <parameter name="inputString" value="${firstname_02}"/>
-    <parameter name="returned_varString" value="firstname_02"/>
+    <parameter name="inputString" value="${firstname}"/>
+    <parameter name="returned_varString" value="firstname"/>
   </module>
   <module name="modules.helper.MHelper_Random_addRandomness">
     <comment>Give the account last name some extra flavor for test data variation.</comment>
-    <parameter name="inputString" value="${lastname_02}"/>
-    <parameter name="returned_varString" value="lastname_02"/>
+    <parameter name="inputString" value="${lastname}"/>
+    <parameter name="returned_varString" value="lastname"/>
   </module>
   <module name="modules.helper.FHelper_Session_flowToStartSession"/>
-  <module name="modules.pages.homepage.FHomepage_flowToCreateNewAccount">
-    <parameter name="firstname" value="${firstname_02}"/>
-    <parameter name="lastname" value="${lastname_02}"/>
+  <module name="modules.pages.homepage.FHomepage_flowToCreateNewAccountWithoutLogout">
+    <parameter name="firstname" value="${firstname}"/>
+    <parameter name="lastname" value="${lastname}"/>
     <parameter name="email" value="${email_varDynamic}"/>
     <parameter name="password" value="${password_varDynamic}"/>
+  </module>
+  <module name="modules.pages.search.FSearch_flowToAddProductToCart">
+    <parameter name="cartRow" value="1"/>
+    <parameter name="productNumber" value="mitsubishi-lt-52246"/>
+    <parameter name="productQuantity" value="1"/>
+    <parameter name="productName_varName" value="productName_varDynamic"/>
+    <parameter name="productNumber_varName" value="productNumber_varDynamic"/>
+    <parameter name="productQuantity_varName" value="productQuantiy_varDynamic"/>
+    <parameter name="productPriceSales_varName" value="productPriceSales_varDynamic"/>
+    <parameter name="productPriceTotal_varName" value="productPriceTotal_varDynamic"/>
+  </module>
+  <module name="modules.pages.cart.VCart_Row_validateProductBasicDetails">
+    <parameter name="row" value="1"/>
+    <parameter name="productName" value="${productName_varDynamic}"/>
+    <parameter name="productNumber" value="${productNumber_varDynamic}"/>
+    <parameter name="productQuantity" value="${productQuantiy_varDynamic}"/>
+    <parameter name="productPriceSales" value="${productPriceSales_varDynamic}"/>
+  </module>
+  <module name="modules.global.headerfooternav.FGlobal_flowToLogoutLogin">
+    <parameter name="email" value="${email_varDynamic}"/>
+    <parameter name="password" value="${password_varDynamic}"/>
+  </module>
+  <module name="modules.global.minicart.MGlobal_MiniCart_clickGoToCartByHeaderLink"/>
+  <module name="modules.pages.cart.VCart_Row_validateProductBasicDetails">
+    <parameter name="row" value="1"/>
+    <parameter name="productName" value="${productName_varDynamic}"/>
+    <parameter name="productNumber" value="${productNumber_varDynamic}"/>
+    <parameter name="productQuantity" value="${productQuantiy_varDynamic}"/>
+    <parameter name="productPriceSales" value="${productPriceSales_varDynamic}"/>
+  </module>
+  <module name="modules.helper.FHelper_Session_flowToStartSession"/>
+  <module name="modules.pages.search.FSearch_flowToAddProductToCart">
+    <parameter name="cartRow" value="1"/>
+    <parameter name="productNumber" value="mitsubishi-lt-52246"/>
+    <parameter name="productQuantity" value="1"/>
+    <parameter name="productName_varName" value="productName_varDynamic"/>
+    <parameter name="productNumber_varName" value="productNumber_varDynamic"/>
+    <parameter name="productQuantity_varName" value="productQuantiy_varDynamic"/>
+    <parameter name="productPriceSales_varName" value="productPriceSales_varDynamic"/>
+    <parameter name="productPriceTotal_varName" value="productPriceTotal_varDynamic"/>
+  </module>
+  <command name="deleteCookie" target="sid"/>
+  <command name="open" value="${storefront_url}"/>
+  <module name="modules.global.minicart.MGlobal_MiniCart_clickGoToCartByHeaderLink"/>
+  <module name="modules.pages.cart.VCart_Row_validateProductBasicDetails">
+    <parameter name="row" value="1"/>
+    <parameter name="productName" value="${productName_varDynamic}"/>
+    <parameter name="productNumber" value="${productNumber_varDynamic}"/>
+    <parameter name="productQuantity" value="${productQuantiy_varDynamic}"/>
+    <parameter name="productPriceSales" value="${productPriceSales_varDynamic}"/>
   </module>
 </testcase>
