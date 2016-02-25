@@ -60,7 +60,7 @@
   </module>
   <module name="modules.pages.search.FSearch_flowToAddProductToCart">
     <parameter name="cartRow" value="1"/>
-    <parameter name="productNumber" value="mitsubishi-lt-52246"/>
+    <parameter name="productNumber" value="${productNumber}"/>
     <parameter name="productQuantity" value="1"/>
     <parameter name="productName_varName" value="productName_varDynamic"/>
     <parameter name="productNumber_varName" value="productNumber_varDynamic"/>
@@ -112,7 +112,7 @@
   <module name="modules.global.minicart.VGlobal_MiniCart_validateEmpty"/>
   <module name="modules.pages.search.FSearch_flowToAddProductToCart">
     <parameter name="cartRow" value="1"/>
-    <parameter name="productNumber" value="mitsubishi-lt-52246"/>
+    <parameter name="productNumber" value="${productNumber}"/>
     <parameter name="productQuantity" value="1"/>
     <parameter name="productName_varName" value="productName_varDynamic"/>
     <parameter name="productNumber_varName" value="productNumber_varDynamic"/>
