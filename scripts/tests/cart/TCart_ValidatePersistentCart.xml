@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+  <description>Test validates the persistant cart feature. It consists of two parts. One for the persistant user cart and one for the site. 
+(Caution: make sure the persistent cart feature is activated in the BM)
+
+# Setup and preparation
+
+- Start session, open homepage and delete all visible cookies.
+- Create a new Account 
+- Search and add a product to the cart
+- Store product data
+
+# Scope
+
+## Persistent user cart
+
+- validate product in cart
+- logout
+- delete viseblie cookies
+- login
+- validate that product is still in cart
+
+## Persistent site cart
+
+- open clean page
+- Search Product and add to cart (the same as before ) 
+- validate cart
+- delete cookies
+- open site again
+- validate cart</description>
+  <codecomment># Setup
+
+- Start Session
+- Create Account
+- Add product to cart</codecomment>
+  <codecomment>---</codecomment>
+  <module name="modules.helper.MHelper_Random_createEmail">
+    <parameter name="email_varName" value="email_varDynamic"/>
+  </module>
+  <module name="modules.helper.MHelper_Random_createPassword">
+    <parameter name="password_varName" value="password_varDynamic"/>
+  </module>
+  <module name="modules.helper.MHelper_Random_addRandomness">
+    <comment>Give the account first name some extra flavor for test data variation.</comment>
+    <parameter name="inputString" value="${firstname}"/>
+    <parameter name="returned_varString" value="firstname"/>
+  </module>
+  <module name="modules.helper.MHelper_Random_addRandomness">
+    <comment>Give the account last name some extra flavor for test data variation.</comment>
+    <parameter name="inputString" value="${lastname}"/>
+    <parameter name="returned_varString" value="lastname"/>
+  </module>
+  <codecomment>---</codecomment>
+  <module name="modules.helper.FHelper_Session_flowToStartSession"/>
+  <module name="modules.pages.homepage.FHomepage_flowToCreateNewAccountWithoutLogout">
+    <parameter name="firstname" value="${firstname}"/>
+    <parameter name="lastname" value="${lastname}"/>
+    <parameter name="email" value="${email_varDynamic}"/>
+    <parameter name="password" value="${password_varDynamic}"/>
+  </module>
+  <module name="modules.pages.search.FSearch_flowToAddProductToCart">
+    <parameter name="cartRow" value="1"/>
+    <parameter name="productNumber" value="${productNumber}"/>
+    <parameter name="productQuantity" value="1"/>
+    <parameter name="productName_varName" value="productName_varDynamic"/>
+    <parameter name="productNumber_varName" value="productNumber_varDynamic"/>
+    <parameter name="productQuantity_varName" value="productQuantiy_varDynamic"/>
+    <parameter name="productPriceSales_varName" value="productPriceSales_varDynamic"/>
+    <parameter name="productPriceTotal_varName" value="productPriceTotal_varDynamic"/>
+  </module>
+  <codecomment>---</codecomment>
+  <codecomment># Scope I
+- validate persistent cart for user</codecomment>
+  <codecomment>- Validate product in cart
+- Logout
+- Delete cookies 
+- Login 
+- Validate that product is still in the cart</codecomment>
+  <module name="modules.pages.cart.VCart_Row_validateProductBasicDetails">
+    <parameter name="row" value="1"/>
+    <parameter name="productName" value="${productName_varDynamic}"/>
+    <parameter name="productNumber" value="${productNumber_varDynamic}"/>
+    <parameter name="productQuantity" value="${productQuantiy_varDynamic}"/>
+    <parameter name="productPriceSales" value="${productPriceSales_varDynamic}"/>
+  </module>
+  <module name="modules.global.headerfooternav.FGlobal_flowToLogout"/>
+  <command name="deleteAllVisibleCookies"/>
+  <module name="modules.global.minicart.VGlobal_MiniCart_validateEmpty"/>
+  <codecomment>---</codecomment>
+  <module name="modules.pages.homepage.FHomepage_flowToLoginAccount">
+    <parameter name="email" value="${email_varDynamic}"/>
+    <parameter name="password" value="${password_varDynamic}"/>
+  </module>
+  <module name="modules.global.minicart.MGlobal_MiniCart_clickGoToCartByHeaderLink"/>
+  <module name="modules.pages.cart.VCart_Row_validateProductBasicDetails">
+    <parameter name="row" value="1"/>
+    <parameter name="productName" value="${productName_varDynamic}"/>
+    <parameter name="productNumber" value="${productNumber_varDynamic}"/>
+    <parameter name="productQuantity" value="${productQuantiy_varDynamic}"/>
+    <parameter name="productPriceSales" value="${productPriceSales_varDynamic}"/>
+  </module>
+  <codecomment>---</codecomment>
+  <codecomment># Scope II
+- validate persistent cart for site</codecomment>
+  <codecomment>- Open clean site , without cookies
+- add product to cart 
+- delete sid,dwsid
+- leave site
+- open site again
+- validate that product is still in cart</codecomment>
+  <module name="modules.helper.FHelper_Session_flowToStartSession"/>
+  <module name="modules.global.minicart.VGlobal_MiniCart_validateEmpty"/>
+  <module name="modules.pages.search.FSearch_flowToAddProductToCart">
+    <parameter name="cartRow" value="1"/>
+    <parameter name="productNumber" value="${productNumber}"/>
+    <parameter name="productQuantity" value="1"/>
+    <parameter name="productName_varName" value="productName_varDynamic"/>
+    <parameter name="productNumber_varName" value="productNumber_varDynamic"/>
+    <parameter name="productQuantity_varName" value="productQuantiy_varDynamic"/>
+    <parameter name="productPriceSales_varName" value="productPriceSales_varDynamic"/>
+    <parameter name="productPriceTotal_varName" value="productPriceTotal_varDynamic"/>
+  </module>
+  <codecomment>---</codecomment>
+  <command name="deleteCookie" target="dwsid"/>
+  <command name="deleteCookie" target="sid"/>
+  <codecomment>---</codecomment>
+  <command name="open" value="https://www.google.de/"/>
+  <codecomment>---</codecomment>
+  <command name="open" value="${storefront_url}"/>
+  <codecomment>---</codecomment>
+  <module name="modules.global.minicart.MGlobal_MiniCart_clickGoToCartByHeaderLink"/>
+  <module name="modules.pages.cart.VCart_Row_validateProductBasicDetails">
+    <parameter name="row" value="1"/>
+    <parameter name="productName" value="${productName_varDynamic}"/>
+    <parameter name="productNumber" value="${productNumber_varDynamic}"/>
+    <parameter name="productQuantity" value="${productQuantiy_varDynamic}"/>
+    <parameter name="productPriceSales" value="${productPriceSales_varDynamic}"/>
+  </module>
+</testcase>

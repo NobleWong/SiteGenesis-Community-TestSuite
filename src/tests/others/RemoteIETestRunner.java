@@ -20,13 +20,13 @@ public class RemoteIETestRunner extends AbstractScriptTestCase
 
 	protected RemoteIETestRunner()
 	{
-		final DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
-		caps.setCapability("version", "11.0");
+		final DesiredCapabilities caps = DesiredCapabilities.firefox();
+		caps.setCapability("version", "44");
 		caps.setCapability("platform", Platform.WIN8_1);
 		try
 		{
 			driver = new RemoteWebDriver(
-					new URL("http://rschwietzke:d3aa2033-bec3-4100-b7c4-b6caf1369aec@ondemand.saucelabs.com:80/wd/hub"), caps);
+					new URL("http://xxx:yyyy@ondemand.saucelabs.com:80/wd/hub"), caps);
 		}
 		catch (final MalformedURLException e)
 		{
