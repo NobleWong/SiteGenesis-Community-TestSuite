@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
-  <description>This Test case validate tha the shopping cart ist persistent after login logout
-</description>
+  <description>Test validate the persistent cart feature. It contains off two parts one for the persistent user cart and one for the site
+
+
+# Setup and preparation
+
+- Start session, open homepage and delete all visible cookies.
+- Create a new Account 
+- Search and add a product to the cart
+- Store product data
+
+# Scope
+
+## Persistent user cart
+
+- validate product in cart
+- logout
+- delete viseblie cookies
+- login
+- validate that product is still in cart
+
+## Persistent site cart
+
+- open clean page
+- Search Product and add to cart (the same as before ) 
+- validate cart
+- delete cookies
+- open site again
+- validate cart</description>
+  <codecomment># Setup
+
+- Start Session
+- Create Account
+- Add product to cart</codecomment>
+  <codecomment>---</codecomment>
   <module name="modules.helper.MHelper_Random_createEmail">
     <parameter name="email_varName" value="email_varDynamic"/>
   </module>
@@ -18,6 +50,7 @@
     <parameter name="inputString" value="${lastname}"/>
     <parameter name="returned_varString" value="lastname"/>
   </module>
+  <codecomment>---</codecomment>
   <module name="modules.helper.FHelper_Session_flowToStartSession"/>
   <module name="modules.pages.homepage.FHomepage_flowToCreateNewAccountWithoutLogout">
     <parameter name="firstname" value="${firstname}"/>
@@ -35,6 +68,14 @@
     <parameter name="productPriceSales_varName" value="productPriceSales_varDynamic"/>
     <parameter name="productPriceTotal_varName" value="productPriceTotal_varDynamic"/>
   </module>
+  <codecomment>---</codecomment>
+  <codecomment># Scope I
+- validate persistent cart for user</codecomment>
+  <codecomment>- Validate product in cart
+- Logout
+- Delete cookies 
+- Login 
+- Validate that product is still in the cart</codecomment>
   <module name="modules.pages.cart.VCart_Row_validateProductBasicDetails">
     <parameter name="row" value="1"/>
     <parameter name="productName" value="${productName_varDynamic}"/>
@@ -42,7 +83,10 @@
     <parameter name="productQuantity" value="${productQuantiy_varDynamic}"/>
     <parameter name="productPriceSales" value="${productPriceSales_varDynamic}"/>
   </module>
-  <module name="modules.global.headerfooternav.FGlobal_flowToLogoutLogin">
+  <module name="modules.global.headerfooternav.FGlobal_flowToLogout"/>
+  <command name="deleteAllVisibleCookies"/>
+  <codecomment>---</codecomment>
+  <module name="modules.pages.homepage.FHomepage_flowToLoginAccount">
     <parameter name="email" value="${email_varDynamic}"/>
     <parameter name="password" value="${password_varDynamic}"/>
   </module>
@@ -54,6 +98,14 @@
     <parameter name="productQuantity" value="${productQuantiy_varDynamic}"/>
     <parameter name="productPriceSales" value="${productPriceSales_varDynamic}"/>
   </module>
+  <codecomment>---</codecomment>
+  <codecomment># Scope II
+- validate persistent cart for site</codecomment>
+  <codecomment>- Open clean site , without cookies
+- add product to cart 
+- delete sid
+- open site again
+- validate that product is still in cart</codecomment>
   <module name="modules.helper.FHelper_Session_flowToStartSession"/>
   <module name="modules.pages.search.FSearch_flowToAddProductToCart">
     <parameter name="cartRow" value="1"/>
@@ -65,8 +117,10 @@
     <parameter name="productPriceSales_varName" value="productPriceSales_varDynamic"/>
     <parameter name="productPriceTotal_varName" value="productPriceTotal_varDynamic"/>
   </module>
+  <codecomment>---</codecomment>
   <command name="deleteCookie" target="sid"/>
   <command name="open" value="${storefront_url}"/>
+  <codecomment>---</codecomment>
   <module name="modules.global.minicart.MGlobal_MiniCart_clickGoToCartByHeaderLink"/>
   <module name="modules.pages.cart.VCart_Row_validateProductBasicDetails">
     <parameter name="row" value="1"/>
