@@ -7,7 +7,8 @@ import com.xceptance.xlt.api.engine.scripting.ScriptName;
 
 
 /**
- * <p>Test validate the persistent cart feature. It contains off two parts one for the persistent user cart and one for the site</p>
+ * <p>Test validates the persistant cart feature. It consists of two parts. One for the persistant user cart and one for the site. 
+ * (Caution: make sure the persistent cart feature is activated in the BM)</p>
  * <h1 id="setup-and-preparation">Setup and preparation</h1>
  * <ul>
  * <li>Start session, open homepage and delete all visible cookies.</li>
