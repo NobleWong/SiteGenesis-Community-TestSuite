@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+  <description>validates the text in the user panel
+- opens uset panel
+- validate text
+- close user panel</description>
+  <parameter name="text" desc="text in the header"/>
+  <action name="OpenUserPanel"/>
+  <codecomment>open user panel</codecomment>
+  <module name="modules.global.headerfooternav.MGlobal_Header_clickUserButton"/>
+  <module name="modules.helper.MHelper_String_toUppercase">
+    <parameter name="string" value="@{text}"/>
+    <parameter name="output_varname" value="text_up"/>
+  </module>
+  <codecomment>validate the header of the user panel</codecomment>
+  <command name="assertText" target="css=#navigation .menu-utility-user .user-info.active .user-panel h3" value="${text_up}"/>
+  <codecomment>close user panel</codecomment>
+  <command name="click" target="css=#navigation .menu-utility-user .user-info a"/>
+  <command name="waitForNotElementPresent" target="css=#navigation .menu-utility-user .user-info.active .user-panel h3"/>
+</scriptmodule>
