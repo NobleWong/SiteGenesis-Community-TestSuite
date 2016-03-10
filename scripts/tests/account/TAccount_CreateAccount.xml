@@ -5,20 +5,19 @@
 
 # 1. Setup and preparation 
 
-- Start session, open homepage and delete all visible cookies
+- Start session, open homepage and delete all visible cookies, create email and password
 
 # 2. Scope of test
 
 - Click register link in the header and goto the create account page
 - Enter profile data and submit the form
 - Logout using the link in the account area
+- Validate logout via user menu panel header
 - Login again to validate login data
+- Validate login via user menu panel header
 - Validate personal profile data
 - Logout using the global link in the header
-
-# 3. Clean up
-
-- End session and clean up created cookies</description>
+- Validate logout via user menu panel header</description>
   <codecomment># Setup
 create email, password and and randomness to fristname and lastname</codecomment>
   <module name="modules.helper.MHelper_Random_createEmail">
