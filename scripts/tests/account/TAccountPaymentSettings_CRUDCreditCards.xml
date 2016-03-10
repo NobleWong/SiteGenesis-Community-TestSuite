@@ -163,12 +163,7 @@
   </module>
   <module name="modules.pages.account.paymentsettings.VAccount_PaymentSettings_validateCreditCardListIsEmpty"/>
   <codecomment># Teardown
-
-- Go to account menu
-- Logout
-- End session</codecomment>
-  <action name="GoToAccount"/>
-  <module name="modules.global.headerfooternav.MGlobal_Header_clickGoToAccountMenuViaCustomerName"/>
+- Logout</codecomment>
   <codecomment>Logout</codecomment>
   <module name="modules.global.headerfooternav.FGlobal_flowToLogout"/>
 </testcase>
