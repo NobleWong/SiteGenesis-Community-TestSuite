@@ -64,15 +64,17 @@ create email, password and and randomness to fristname and lastname</codecomment
   </module>
   <module name="modules.pages.account.myaccount.VAccount_MyAccount_validatePage"/>
   <module name="modules.pages.account.VAccount_Navigation_validate"/>
-  <module name="modules.pages.account.myaccount.VAccount_MyAccount_validateCustomerName">
+  <module name="modules.pages.account.myaccount.VAccount_MyAccount_validatePrimaryCustomerName">
     <parameter name="firstname" value="${firstname_varDynamic}"/>
     <parameter name="lastname" value="${lastname}"/>
   </module>
   <action name="Logout"/>
   <module name="modules.pages.account.myaccount.MAccount_MyAccount_clickLogout"/>
+  <codecomment>validate logout state</codecomment>
   <module name="modules.global.headerfooternav.FGlobal_Nav_validateUserPanelText">
     <parameter name="text" value="Login / Register"/>
   </module>
+  <module name="modules.pages.account.myaccount.VAccount_MyAccount_validateLogoutState"/>
   <codecomment>Account
 
 - Login

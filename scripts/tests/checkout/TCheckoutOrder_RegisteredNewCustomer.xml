@@ -409,7 +409,7 @@
 - Validate order history
 - Logout</codecomment>
   <module name="modules.global.headerfooternav.FGlobal_flowToMyAccount"/>
-  <module name="modules.pages.account.myaccount.VAccount_MyAccount_validateCustomerName">
+  <module name="modules.pages.account.myaccount.VAccount_MyAccount_validatePrimaryCustomerName">
     <parameter name="firstname" value="${billingAddress_firstname}"/>
     <parameter name="lastname" value="${billingAddress_lastname}"/>
   </module>

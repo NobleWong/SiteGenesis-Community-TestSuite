@@ -69,7 +69,7 @@
   <action name="ViewAccount"/>
   <module name="modules.pages.account.myaccount.VAccount_MyAccount_validatePage"/>
   <module name="modules.pages.account.VAccount_Navigation_validate"/>
-  <module name="modules.pages.account.myaccount.VAccount_MyAccount_validateCustomerName">
+  <module name="modules.pages.account.myaccount.VAccount_MyAccount_validatePrimaryCustomerName">
     <parameter name="firstname" value="${firstname_01}"/>
     <parameter name="lastname" value="${lastname_01}"/>
   </module>
@@ -93,7 +93,7 @@
   </module>
   <module name="modules.pages.account.myaccount.VAccount_MyAccount_validatePage"/>
   <module name="modules.pages.account.VAccount_Navigation_validate"/>
-  <module name="modules.pages.account.myaccount.VAccount_MyAccount_validateCustomerName">
+  <module name="modules.pages.account.myaccount.VAccount_MyAccount_validatePrimaryCustomerName">
     <parameter name="firstname" value="${firstname_02}"/>
     <parameter name="lastname" value="${lastname_02}"/>
   </module>

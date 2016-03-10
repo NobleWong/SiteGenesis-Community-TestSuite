@@ -52,7 +52,7 @@ Notes:
     <parameter name="email" value="${wishlistOwner_email_varDynamic}"/>
     <parameter name="password" value="${wishlistOwner_password_varDynamic}"/>
   </module>
-  <module name="modules.pages.account.myaccount.VAccount_MyAccount_validateCustomerName">
+  <module name="modules.pages.account.myaccount.VAccount_MyAccount_validatePrimaryCustomerName">
     <parameter name="firstname" value="${wishlistOwner_fristname_varDynamic}"/>
     <parameter name="lastname" value="${wishlistOwner_lastname_varDynamic}"/>
   </module>
