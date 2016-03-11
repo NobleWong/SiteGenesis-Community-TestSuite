@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <data-sets>
   <data-set>
     <productNumber>${productNumber_typeVariationProductColorSizeListPriceOnly}</productNumber>
@@ -44,4 +44,4 @@
     <year>${amexCreditCard_year}</year>
     <cvn>${amexCreditCard_cvn}</cvn>
   </data-set>
-</data-sets>	
+</data-sets>

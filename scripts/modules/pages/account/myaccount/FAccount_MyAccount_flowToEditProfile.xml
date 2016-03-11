@@ -28,7 +28,7 @@
     <parameter name="password" value="@{password}"/>
   </module>
   <module name="modules.pages.account.personaldata.MAccount_PersonalData_clickSubmitProfile"/>
-  <module name="modules.pages.account.myaccount.VAccount_MyAccount_validateCustomerName">
+  <module name="modules.pages.account.myaccount.VAccount_MyAccount_validatePrimaryCustomerName">
     <parameter name="firstname" value="@{firstname}"/>
     <parameter name="lastname" value="@{lastname}"/>
   </module>
