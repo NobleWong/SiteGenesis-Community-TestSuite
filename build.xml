@@ -34,6 +34,7 @@
         <delete includeEmptyDirs="true" failonerror="false">
             <fileset dir="${test.classes.dir}" includes="**/*"/>
             <fileset dir="${test.results.dir}" includes="**/*"/>
+            <fileset dir="${test.lib.dir}" includes="**/*"/>
         </delete>
     </target>
 
@@ -43,6 +44,7 @@
     -->
     <target name="compile">
         <mkdir dir="${test.classes.dir}"/>
+        <mkdir dir="${test.lib.dir}"/>
         <javac srcdir="${test.src.dir}" destdir="${test.classes.dir}" debug="on" optimize="off" deprecation="on"
                includeantruntime="false">
             <classpath refid="test.suite.classpath"/>
