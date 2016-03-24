@@ -80,7 +80,7 @@ The following steps explain how you can execute the test suite using grunt or gu
 
 #### Prerequisites
 
-- XLT&reg; Framework v4.5 (or higher)
+- XLT&reg; Framework v4.6 (or higher)
 - Node
 - Grunt or Gulp
 
@@ -92,17 +92,30 @@ The following steps explain how you can execute the test suite using grunt or gu
 
 #### Usage Grunt
 - Start the test suite by calling "**grunt**". This calls the default target and will compile and execute all test cases.
-- Call all test cases with a specific WebDriver without changing the properties file: "**grunt all:[WebDriver]**"
+- Call all test cases with a specific WebDriver without changing the properties file: "**grunt all:[WebDriver]:[Width]:[Height]**"
 - Call a single test case: "**grunt single:[tests.package.TTestcaseName]**"
-- Call a single test case with a specific WebDriver: "**grunt single:[tests.package.TTestcaseName]:[WebDriver]**"
+- Call a single test case with a specific settings: "**grunt single:[tests.package.TTestcaseName]:[WebDriver]:[Width]:[Height]**"
 - e.g. "**grunt single:tests.account.TAccount_CreateAccount:chrome**"
+- n.b. If you want only to set width and height you have to keep uphold the extra "**:**" for the webdriver. e.g. "**grunt single:tests.account.TAccount_CreateAccount::800:600**"
 
 #### Usage Gulp
 - Start the test suite by calling "**gulp**". This calls the default target and will compile and execute all test cases.
 - Call all test cases with a specific WebDriver without changing the properties file: "**webdriver=[WebDriver] gulp**"
 - Call a single test case with gulp: "**name=[tests.package.TTestcaseName] gulp single**"
-- Call a single test case with a specific WebDriver gulp: "**name=[tests.package.TTestcaseName] webdriver=[WebDriver] gulp single**"
+- Call a single test case with a specific settings gulp: "**name=[tests.package.TTestcaseName] webdriver=[WebDriver] width=[Width] height=[Height] gulp single**"
 - e.g. "**name=tests.account.TAccount_CreateAccount webdriver=chrome gulp**"
+
+#### Modes and Parameters
+- Modes:
+    - single: runs a single test case 
+    - allSequential: runs all test cases in a sequential way
+    - allParallel: runs all test cases parallel with one testcase per processor core
+    - default mode: allSequential
+- Parameters:
+    - name: path to and name of the test case e.g. "**tests.package.TTestcaseName**", no default
+    - webdriver: name of an installed WebDriver e.g. "**chrome**", default standard webdriver of the project 
+    - width: numer of pixels e.g. ""**800**", default standard width of the browser
+    - height: numer of pixels e.g. ""**600**", default standard height of the browser
 
 ## Test Suite Structure
 
