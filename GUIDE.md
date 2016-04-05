@@ -172,8 +172,8 @@ Here are some links to other helpful resources for test development.
 #### XLT
 
 - XLT [Main](https://www.xceptance.de/en/xlt/)
-- XLT [Manual](https://lab.xceptance.de/releases/xlt/latest/user-manual.html)
-- XLT [Quick Start](https://lab.xceptance.de/releases/xlt/latest/quick-start-guide.html)
+- XLT [Manual](https://lab.xceptance.de/releases/xlt/latest/user-manual/index.html)
+- XLT [Quick Start](https://lab.xceptance.de/releases/xlt/latest/getting-started/index.html)
 - XLT Script Developer: [Firefox Addon EN](https://addons.mozilla.org/en-US/firefox/addon/xceptance-script-developer/), [Firefox Addon DE](https://addons.mozilla.org/de/firefox/addon/xceptance-script-developer/)
 - XLT Descriptions & Comments: [GitHub Markup](https://github.com/github/markup/tree/master#html-sanitization), [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/), [Markdown](http://daringfireball.net/projects/markdown/), [MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
 
@@ -194,11 +194,11 @@ Here are some links to other helpful resources for test development.
 
 #### W3Schools
 
-- W3Schools [References](http://www.w3schools.com/sitemap/sitemap_references.asp), [Tutorials](http://www.w3schools.com/sitemap/default.asp), [Examples](http://www.w3schools.com/sitemap/sitemap_examples.asp)
+- [W3Schools](http://www.w3schools.com) with tutorials, references and examples
 - W3Schools [HTML](http://www.w3schools.com/html/)
 - W3Schools [CSS](http://www.w3schools.com/cssref/), [CSS Selectors](http://www.w3schools.com/cssref/css_selectors.asp)
 - W3Schools [JavaScript Reference](http://www.w3schools.com/jsref/), [JavaScript Regexp](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)
-- W3Schools [XPath, XQuery and XSLT Functions](http://www.w3schools.com/xpath/)
+- W3Schools [XPath, XQuery and XSLT Functions](http://www.w3schools.com/xsl/)
 
 #### Other
 
