@@ -194,7 +194,7 @@ Here are some links to other helpful resources for test development.
 
 #### W3Schools
 
-- [W3Schools](http://www.w3schools.com) with tutorials, references and examples
+- W3Schools with [tutorials, references and examples](http://www.w3schools.com)
 - W3Schools [HTML](http://www.w3schools.com/html/)
 - W3Schools [CSS](http://www.w3schools.com/cssref/), [CSS Selectors](http://www.w3schools.com/cssref/css_selectors.asp)
 - W3Schools [JavaScript Reference](http://www.w3schools.com/jsref/), [JavaScript Regexp](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)
