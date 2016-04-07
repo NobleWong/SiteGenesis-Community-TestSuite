@@ -15,7 +15,7 @@ The following styling rules were quite consequently applied to form a solid stru
 
 ### Naming of Tests
 
-- Tests: `T{Area}[TestScope]_{Details}`
+- Tests: `T{Area}_[TestScope]_{Details}`
 
 The `Area` defines the high-level test topic, such as search or catalog. The `TestScope` is an area within the test topic, such as guest order in checkout. The `Details` give a more precise idea of the test case itself and should describe the goal or task in a few words. They might be composed of `{interaction}{what}`, but this is just a suggestion.
 
@@ -51,6 +51,11 @@ This section defines the element names which are part of the naming scheme of pa
 - `Cart`: cart page.
 - `Checkout`: checkout pages with shipping, billing, place orde and order confirmation.
 - `Account`: account page also known as my account.
+- `Wishlist`: wishlist 
+- `Giftcertificates`: giftcertificates
+- `Promotion`: stuff releated to promotion, not single pages
+
+
 
 **{interaction}**
 
