@@ -20,11 +20,9 @@ import com.xceptance.xlt.api.engine.scripting.ScriptName;
  * <li>Logout via corresponding link on account page</li>
  * <li>Login with new email</li>
  * <li>Validate new profile data</li>
+ * <li>Change password</li>
  * <li>Logout via corresponding link on account page</li>
- * </ul>
- * <h1 id="3-clean-up">3. Clean up</h1>
- * <ul>
- * <li>End session and clean up created cookies</li>
+ * <li>Login with new password</li>
  * </ul>
  */
 @ScriptName

@@ -11,5 +11,4 @@
   <command name="type" target="id=dwfrm_profile_customer_emailconfirm" value="@{email}"/>
   <codecomment>because of the randomly attached string at the end of the id for this element a selction via id is not possiple</codecomment>
   <command name="type" target="css=#RegistrationForm fieldset div.form-row div input[id*=&quot;password_&quot;]" value="@{password}"/>
-  <command name="type" target="css=#RegistrationForm fieldset div.form-row div input[id*=&quot;passwordconfirm&quot;]" value="@{password}"/>
 </scriptmodule>
