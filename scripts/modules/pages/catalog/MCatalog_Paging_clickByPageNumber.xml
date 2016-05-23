@@ -3,6 +3,7 @@
   <tags>paging</tags>
   <description>Use the page number to navigate to the next set of products.</description>
   <parameter name="pageNumber" desc="What page page to jump to"/>
-  <command name="click" target="css=#primary .pagination a.page-@{pageNumber}"/>
-  <command name="waitForText" target="css=#primary .pagination .current-page" value="@{pageNumber}"/>
+  <codecomment>The css must point to exactly one element otherwise the webdriver test may fail</codecomment>
+  <command name="click" target="css=#primary&gt;div:nth-of-type(2)  .pagination li:nth-of-type(@{pageNumber}) a"/>
+  <command name="waitForText" target="css=#primary&gt;div:nth-of-type(2) .pagination .current-page" value="@{pageNumber}"/>
 </scriptmodule>
