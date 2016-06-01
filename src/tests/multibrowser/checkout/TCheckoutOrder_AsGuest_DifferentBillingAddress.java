@@ -39,6 +39,6 @@ import xltutil.annotation.TestTargets;
  * </p>
  */
 @ScriptName("tests.checkout.TCheckoutOrder_AsGuest_DifferentBillingAddress")
-@TestTargets({ "FF_1500x1000" })
+@TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TCheckoutOrder_AsGuest_DifferentBillingAddress extends AbstractAnnotatedScriptTestCase {
 }

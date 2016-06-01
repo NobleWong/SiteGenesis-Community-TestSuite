@@ -27,6 +27,6 @@ import xltutil.annotation.TestTargets;
  * </ul>
  */
 @ScriptName("tests.product.TProduct_Validate_VariationProductDropdownAndColorFunctionality")
-@TestTargets({ "FF_1500x1000" })
+@TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TProduct_Validate_VariationProductDropdownAndColorFunctionality extends AbstractAnnotatedScriptTestCase {
 }

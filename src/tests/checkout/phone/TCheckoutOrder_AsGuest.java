@@ -2,7 +2,6 @@
  * NOTE: This file is generated. Do not edit! Your changes will be lost.
  */
 package tests.checkout.phone;
-import org.junit.Ignore;
 import com.xceptance.xlt.api.engine.scripting.AbstractScriptTestCase;
 import com.xceptance.xlt.api.engine.scripting.ScriptName;
 
@@ -29,7 +28,6 @@ import com.xceptance.xlt.api.engine.scripting.ScriptName;
  */
 @ScriptName
 ("tests.checkout.phone.TCheckoutOrder_AsGuest")
-@Ignore
 public class TCheckoutOrder_AsGuest extends AbstractScriptTestCase
 {
 }

@@ -38,6 +38,6 @@ import xltutil.annotation.TestTargets;
  * </p>
  */
 @ScriptName("tests.catalog.TCatalogProductListing_ItemsPerPage")
-@TestTargets({ "FF_1500x1000" })
+@TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TCatalogProductListing_ItemsPerPage extends AbstractAnnotatedScriptTestCase {
 }

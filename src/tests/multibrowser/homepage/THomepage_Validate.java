@@ -23,6 +23,6 @@ import xltutil.annotation.TestTargets;
  * </ul>
  */
 @ScriptName("tests.homepage.THomepage_Validate")
-@TestTargets({ "FF_1500x1000" })
+@TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class THomepage_Validate extends AbstractAnnotatedScriptTestCase {
 }

@@ -20,7 +20,7 @@ import xltutil.annotation.TestTargets;
  * </ul>
  * <h1 id="2-scope-of-test">2. Scope of test</h1>
  * <ul>
- * <li>Go to address book</li>
+ * <li>Go to address book</li>k
  * <li>Validate nav, page and empty list</li>
  * <li>Add address and cancel dialog</li>
  * <li>Create two new addresses and validate both</li>
@@ -37,6 +37,6 @@ import xltutil.annotation.TestTargets;
  * </ul>
  */
 @ScriptName("tests.account.TAccountAddressBook_CRUDAddresses")
-@TestTargets({ "FF_1500x1000" })
+@TestTargets({ "FF_1500x1000","Chrome_1280x900"})
 public class TAccountAddressBook_CRUDAddresses extends AbstractAnnotatedScriptTestCase {
 }

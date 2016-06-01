@@ -30,6 +30,6 @@ import xltutil.annotation.TestTargets;
  * </ul>
  */
 @ScriptName("tests.search.TSearchProducts_ProductsOnly")
-@TestTargets({ "FF_1500x1000" })
+@TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TSearchProducts_ProductsOnly extends AbstractAnnotatedScriptTestCase {
 }

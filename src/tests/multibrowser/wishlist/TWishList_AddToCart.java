@@ -30,6 +30,6 @@ import xltutil.annotation.TestTargets;
  * </ul>
  */
 @ScriptName("tests.wishlist.TWishList_AddToCart")
-@TestTargets({ "FF_1500x1000" })
+@TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TWishList_AddToCart extends AbstractAnnotatedScriptTestCase {
 }

@@ -27,6 +27,6 @@ import xltutil.annotation.TestTargets;
  * </ul>
  */
 @ScriptName("tests.catalog.TCatalogRefinements_Bookmarking")
-@TestTargets({ "FF_1500x1000" })
+@TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TCatalogRefinements_Bookmarking extends AbstractAnnotatedScriptTestCase {
 }

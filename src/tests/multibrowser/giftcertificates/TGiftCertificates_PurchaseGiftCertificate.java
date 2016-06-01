@@ -27,6 +27,6 @@ import xltutil.annotation.TestTargets;
  * </ul>
  */
 @ScriptName("tests.giftcertificates.TGiftCertificates_PurchaseGiftCertificate")
-@TestTargets({ "FF_1500x1000" })
+@TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TGiftCertificates_PurchaseGiftCertificate extends AbstractAnnotatedScriptTestCase {
 }

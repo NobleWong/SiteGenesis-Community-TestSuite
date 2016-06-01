@@ -33,6 +33,6 @@ import xltutil.annotation.TestTargets;
  * </ul>
  */
 @ScriptName("tests.cart.TCart_AddRemoveProduct")
-@TestTargets({ "FF_1500x1000" })
+@TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TCart_AddRemoveProduct extends AbstractAnnotatedScriptTestCase {
 }

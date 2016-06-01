@@ -23,6 +23,6 @@ import xltutil.annotation.TestTargets;
  * </ul>
  */
 @ScriptName("tests.giftcertificates.TGiftCertificates_AddToCart")
-@TestTargets({ "FF_1500x1000" })
+@TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TGiftCertificates_AddToCart extends AbstractAnnotatedScriptTestCase {
 }
