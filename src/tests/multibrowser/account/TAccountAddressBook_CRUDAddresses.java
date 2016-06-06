@@ -37,6 +37,6 @@ import xltutil.annotation.TestTargets;
  * </ul>
  */
 @ScriptName("tests.account.TAccountAddressBook_CRUDAddresses")
-@TestTargets({ "FF_1500x1000","Chrome_1280x900"})
+@TestTargets({ "FF_1500x1000","Chrome_1280x900","firefox_sl"})
 public class TAccountAddressBook_CRUDAddresses extends AbstractAnnotatedScriptTestCase {
 }

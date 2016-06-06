@@ -30,6 +30,6 @@ import xltutil.annotation.TestTargets;
  * </ul>
  */
 @ScriptName("tests.account.TAccountLogin_NoPassword")
-@TestTargets({ "FF_1500x1000","Chrome_1280x900" })
+@TestTargets({ "FF_1500x1000","Chrome_1280x900","firefox_sl" })
 public class TAccountLogin_NoPassword extends AbstractAnnotatedScriptTestCase {
 }

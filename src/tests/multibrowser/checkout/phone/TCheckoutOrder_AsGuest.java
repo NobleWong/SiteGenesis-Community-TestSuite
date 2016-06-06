@@ -33,6 +33,6 @@ import xltutil.annotation.TestTargets;
  * </ul>
  */
 @ScriptName("tests.checkout.phone.TCheckoutOrder_AsGuest")
-@TestTargets({"FF_320x460" })
+@TestTargets({"FF_320x460","galaxy_nexus" })
 public class TCheckoutOrder_AsGuest extends AbstractAnnotatedScriptTestCase {
 }

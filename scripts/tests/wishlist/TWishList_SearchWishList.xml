@@ -85,15 +85,15 @@ Notes:
     <parameter name="password" value="${wishlistSearcher_password_varDynamic}"/>
   </module>
   <codecomment>Go to wishlist via account menu</codecomment>
-  <action name="GoToWishList"/>
-  <module name="modules.pages.account.myaccount.MAccount_MyAccount_clickGoToWishList"/>
+  <action name="GoToSearchWishList"/>
+  <module name="modules.pages.account.myaccount.MAccount_MyAccount_clickSearchWishList"/>
   <action name="SearchWishList"/>
   <module name="modules.pages.account.wishlist.MAccount_WishList_searchWishList">
     <parameter name="firstname" value="${wishlistOwner_fristname_varDynamic}"/>
     <parameter name="lastname" value="${wishlistOwner_lastname_varDynamic}"/>
     <parameter name="email" value="${wishlistOwner_email_varDynamic}"/>
   </module>
-  <module name="modules.pages.account.wishlist.VAccount_WishList_validateSearchResultEmpty" disabled="true">
+  <module name="modules.pages.account.wishlist.VAccount_WishList_validateSearchResultEmpty">
     <parameter name="firstname" value="${wishlistOwner_fristname_varDynamic}"/>
     <parameter name="lastname" value="${wishlistOwner_lastname_varDynamic}"/>
     <parameter name="email" value="${wishlistOwner_email_varDynamic}"/>
@@ -178,7 +178,7 @@ Notes:
   <action name="ClickHeaderUser"/>
   <module name="modules.global.headerfooternav.MGlobal_Header_clickUserButton"/>
   <action name="GoToWishList"/>
-  <module name="modules.global.headerfooternav.MGlobal_clickWishListOnUserMenu"/>
+  <module name="modules.pages.account.myaccount.MAccount_MyAccount_clickSearchWishList"/>
   <codecomment>Search owners wishlist by email only</codecomment>
   <action name="SearchWishList"/>
   <module name="modules.pages.account.wishlist.MAccount_WishList_searchWishList">

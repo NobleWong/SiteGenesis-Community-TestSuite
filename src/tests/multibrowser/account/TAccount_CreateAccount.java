@@ -31,6 +31,6 @@ import xltutil.annotation.TestTargets;
  * </ul>
  */
 @ScriptName("tests.account.TAccount_CreateAccount")
-@TestTargets({ "FF_1500x1000", "Chrome_1280x900" })
+@TestTargets({ "FF_1500x1000", "Chrome_1280x900", "firefox_sl","chrome_sl","IE11_1280x900" })
 public class TAccount_CreateAccount extends AbstractAnnotatedScriptTestCase {
 }
