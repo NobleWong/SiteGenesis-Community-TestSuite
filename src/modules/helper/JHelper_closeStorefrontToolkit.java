@@ -14,7 +14,7 @@ public class JHelper_closeStorefrontToolkit implements WebDriverCustomModule
     {   
     	try {
     		// find the storefront toolkit and switch to the iframe
-    		final WebElement toolkit = webDriver.findElement(By.cssSelector("DW-SFToolkit"));    	
+    		final WebElement toolkit = webDriver.findElement(By.cssSelector("#DW-SFToolkit"));    	
         	webDriver.switchTo().frame(toolkit);   		
         	
         	// find the close button and click it
