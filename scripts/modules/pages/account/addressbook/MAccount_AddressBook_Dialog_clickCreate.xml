@@ -2,4 +2,6 @@
 <scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
   <description>Click create data in address details dialog.</description>
   <command name="clickAndWait" target="css=button[name=dwfrm_profile_address_create][type=submit]"/>
+  <codecomment>There is a small delay</codecomment>
+  <command name="waitForElementPresent" target="css=#addresses .address-list"/>
 </scriptmodule>

@@ -11,5 +11,5 @@
   <command name="assertText" target="${css_wish_list_row} .item-details .product-list-item .name " value="@{productName}"/>
   <command name="assertText" target="${css_wish_list_row} .item-details .product-list-item .sku .value" value="@{productNumber}"/>
   <command name="assertText" target="${css_wish_list_row} .item-details .product-list-item .price-sales" value="@{productPriceSales}"/>
-  <command name="assertText" target="${css_wish_list_row} .input-text" value="@{productQuantity}"/>
+  <command name="assertText" disabled="true" target="${css_wish_list_row} .input-text" value="@{productQuantity}"/>
 </scriptmodule>

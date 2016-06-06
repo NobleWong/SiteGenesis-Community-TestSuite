@@ -20,12 +20,12 @@
   <module name="modules.pages.account.myaccount.MAccount_MyAccount_clickGoToPersonalData"/>
   <module name="modules.pages.account.personaldata.VAccount_PersonalData_validatePage"/>
   <module name="modules.pages.account.VAccount_Navigation_validate"/>
-  <action name="EnterProfile"/>
-  <module name="modules.pages.account.personaldata.MAccount_PersonalData_enterProfile">
-    <parameter name="firstname" value="@{firstname}"/>
-    <parameter name="lastname" value="@{lastname}"/>
-    <parameter name="email" value="@{email}"/>
-    <parameter name="password" value="@{password}"/>
+  <action name="UpdateProfile"/>
+  <module name="modules.pages.account.personaldata.MAccount_PersonalData_updateProfile">
+    <parameter name="firstname" value="${firstname_02}"/>
+    <parameter name="lastname" value="${lastname_02}"/>
+    <parameter name="email" value="${email_02_varDynamic}"/>
+    <parameter name="password" value="${password_varDynamic}"/>
   </module>
   <module name="modules.pages.account.personaldata.MAccount_PersonalData_clickSubmitProfile"/>
   <module name="modules.pages.account.myaccount.VAccount_MyAccount_validatePrimaryCustomerName">
