@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
   <tags>email,external,10minutemail</tags>
   <description>Goes to 10 minute email and fetches the just arrived email to retrieve the gift certificate code.</description>
   <parameter name="giftcode_varName" desc="The gift certificate code retrieved."/>
@@ -7,7 +7,7 @@
   <command name="open" value="${emailClientURL}"/>
   <action name="WaitForMail"/>
   <codecomment>Sometimes it least a little bit longer to rececieve an email</codecomment>
-  <command name="waitForText" target="css=html body div.container-narrow table#table_dea_messages.table.table-hover.table-bordered tbody tr#msg_1 td:nth-of-type(2)" value="noreply@demandware.com"/>
+  <command name="waitForText" target="css=html body div.container-narrow table#table_dea_messages.table.table-hover.table-bordered tbody tr#msg_1 td:nth-of-type(2)" value="noreply@salesforce.com"/>
   <action name="OpenMessage"/>
   <command name="click" target="css=html body div.container-narrow table#table_dea_messages.table.table-hover.table-bordered tbody tr#msg_1"/>
   <codecomment>There is sometimes a loading screen after opening the message.</codecomment>
