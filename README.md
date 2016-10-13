@@ -1,6 +1,6 @@
 # Readme
 
-This is a functional test suite for Demandware SiteGenesis, the best practice ecommerce reference store implementation for and by Demandware.
+This is a functional test suite for Salesforce Commerce Cloud (formerly known as Demandware) SiteGenesis, the best practice ecommerce reference store implementation for and by Demandware.
 
 Because test suites sometimes tend to become complex and hard to maintain, we realized it is time to build a clearly structured test suite with a well-defined set of tests.
 
