@@ -23,7 +23,7 @@ The following prerequisites and installation steps are needed to run the test su
 
 #### Prerequisites
 
-- XLT&reg; Script Developer 4.5.0 (or higher)
+- XLT&reg; Script Developer 4.7.0 (or higher)
 - Firefox 31.0 (or higher)
 - A [Demandware](http://www.demandware.com/) SiteGenesis v15.1 or higher reference shop installation
 
@@ -40,7 +40,7 @@ The following prerequisites and installation steps are needed to run the test su
 
 #### Prerequisites
 
-- XLT&reg; Framework v4.5 (or higher)
+- XLT&reg; Framework v4.7 (or higher)
 - JDK 7 or higher
 - Java IDE (e.g. Eclipse, IDEA, NetBeans)
 
@@ -149,18 +149,25 @@ We have already build a __foundation__ of over __250 modules__ structured in ove
     |       |-- cart                       # tests for cart area
     |       |-- catalog                    # tests for catalog area
     |       |-- checkout                   # tests for checkout area
+	|		|-- giftcertificates           # tests for giftcertificates
     |       |-- homepage                   # tests for homepage area
+	|		|-- minicart				   # tests for minicart 
+	|		|-- product					   # tests for product area
+	|		|-- promotion				   # sample test for promotion
+	|		|-- product					   # tests for product area
     |       |-- minicart                   # tests for minicart area
-    |       \-- search                     # tests for search area
+    |       |-- search                     # tests for search area
+	|		\-- wishlist				   # tests for wishlist area
     |-- src
+	|	|-- xltutil						   # extension for multibrowser tests
     |   |-- tests                          # XLT java wrapper classes
-    |       \-- others                     # other sample tests
+    |       \-- multibrowser               # wrapper classes fro multibrowser tests
     |-- build.properties                   # XLT ant build properties
     |-- build.xml                          # XLT ant build configuration
     |-- xlt-scriptdeveloper.properties     # XLT Script Developer settings
     \-- global_testdata.properties         # global testdata properties
 
-Please note that there is a special folder src/tests/others to collect java based test examples e.g. testing via RemoteWebDriver against [Sauce Labs](https://saucelabs.com/).
+
 
 ### Packages
 
@@ -168,13 +175,15 @@ __Packages__ form the main structure of the test suite (project tree). Each pack
 
 ### Tests
 
-A __Test Case__ or short __Test__ (named `T...`) simulates a shop visit of a customer. A test focuses on a specific process part of the shop visit which is tested in depth. This test focus is assigned to a determined shop area. Every shop area has its own package (folder) so that each test can be filed. A test is build up on script modules. Each test consists of test setup (ensuring preconditions), test scope (focusing on relevant test steps) and test teardown (cleaning up of browser data).
+A __Test Case__ or short __Test__ (named `T...`) simulates a shop visit of a customer. A test focuses on a specific process part of the shop visit which is tested in depth. This test focus is assigned to a determined shop area. Every shop area has its own package (folder) so that each test can be filed. A test is build up on script modules. Each test consists of test setup (ensuring preconditions), test scope (focusing on relevant test steps).
 
 ### Modules
 
 A __Script Module__ or short __Module__ (named `M...`), contains actions, commands and comments. Most modules interact with elements of a specific webpage. Thus it makes sense to structure them by their according pages. Each module can be reused by different tests.
 
 __Validation Modules__ (named `V...`): Validation of webpage elements and dynamic data is a very essential part of testing. Hence these special modules evaluate that a needed fit criterion is met (mostly via assertions).
+
+__Store Modules__ (named `S...`): stores specific data's
 
 __Flow Modules__ (named `F...`): Some modules mimic more sophisticated shopping behaviors by interacting with several pages in a flow. The achieved specific goal at the end of the process is of most importance (in contrast to the taken singular steps). Flows often reuse other modules and allow a compact test structure. Examples: Add a basic product to cart; Create a new customer; Add an address to a customer; Check order status in order history.
 
@@ -186,7 +195,7 @@ __Test Data__ or short __Data__ can be placed on global, package, module or test
 
 ## Test Suite Metadata
 
-- Name: Demandware SiteGenesis Community TestSuite
+- Name: Salesforce Commerce Cloud SiteGenesis Community TestSuite
 - Version: v15.1 or higher (matching SiteGenesis)
 - Release: September 2015
 - License: MIT License
