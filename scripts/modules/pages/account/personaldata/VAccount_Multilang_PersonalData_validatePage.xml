@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Validate personal data page.</description>
+  <codecomment>Validate Edit Account</codecomment>
+  <command name="assertText" target="css=#primary h1" value="regexpi:(Edit Account|Modifier un compte)"/>
+  <codecomment>---</codecomment>
+  <command name="assertText" target="css=#primary #RegistrationForm fieldset&gt;legend" value="regexpi:(Change Name [/] Email • required|Modifier le nom[/]l'E-mail • obligatoire)"/>
+  <command name="assertElementPresent" target="css=#primary #RegistrationForm fieldset legend .dialog-required"/>
+  <codecomment>---</codecomment>
+  <command name="assertElementPresent" target="id=dwfrm_profile_customer_addtoemaillist"/>
+  <command name="assertText" target="css=#RegistrationForm fieldset div:nth-of-type(4) label span">
+    <value>regexpi:(Please add me to  Salesforce Commerce Cloud's email list.|Je souhaite être ajouté[(]e[)] à la liste de diffusion de Salesforce Commerce Cloud.)</value>
+  </command>
+  <command name="assertText" target="css=#RegistrationForm fieldset div:nth-of-type(5) span">
+    <value>regexpi:(Salesforce Commerce Cloud does not share or sell personal info.|Salesforce Commerce Cloud ne communique ni ne vend les informations personnelles.)</value>
+  </command>
+  <codecomment>---</codecomment>
+  <command name="assertText" target="css=#ChangePassowrdForm fieldset legend" value="regexpi:(Change Password • required|Modifier le mot de passe • obligatoire)"/>
+  <command name="assertElementPresent" target="css=#ChangePassowrdForm fieldset legend .dialog-required"/>
+</scriptmodule>

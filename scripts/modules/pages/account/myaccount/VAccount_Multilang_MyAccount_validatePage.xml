@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Validate MyAccount page.</description>
+  <codecomment>Account primary menu</codecomment>
+  <command name="assertElementPresent" target="css= #primary h1"/>
+  <command name="store" target="css= #primary.primary-content div.content-asset ul.account-options li:nth-of-type" value="css_account_menu"/>
+  <command name="assertText" target="${css_account_menu}(1) a h2" value="regexpi:(Personal Data|Données personnelles)">
+    <comment>check first label</comment>
+  </command>
+  <command name="assertText" target="${css_account_menu}(2) a h2" value="regexpi:(Orders|Commandes)"/>
+  <command name="assertText" target="${css_account_menu}(3) a h2" value="regexpi:(Addresses|Adresses)"/>
+  <command name="assertText" target="${css_account_menu}(4) a h2" value="regexpi:(Wish List|Liste de souhaits)"/>
+  <command name="assertText" target="${css_account_menu}(5) a h2" value="regexpi:(Payment Settings|Modes de paiement)"/>
+  <command name="assertText" target="${css_account_menu}(6) a h2" value="regexpi:(Gift Registries|Listes de cadeaux)"/>
+</scriptmodule>

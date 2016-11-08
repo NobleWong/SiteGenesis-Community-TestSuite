@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
   <description>Validate address.</description>
   <parameter name="position" desc="position"/>
   <parameter name="title" desc="title"/>
@@ -18,7 +18,7 @@
   <command name="assertText" target="${css_address} .mini-address-name" value="*@{firstname}*@{lastname}*"/>
   <command name="assertText" target="${css_address} .mini-address-location address" value="@{address1}*"/>
   <command name="assertText" target="${css_address} .mini-address-location address" value="*@{address2}*"/>
-  <command name="assertText" target="${css_address} .mini-address-location address" value="*@{city}, @{statesStateShort} @{postalCode}*"/>
+  <command name="assertText" target="${css_address} .mini-address-location address" value="@{city}, (@{statesStateShort}|) @{postalCode}"/>
   <command name="assertText" target="${css_address} .mini-address-location address" value="*@{country}*"/>
   <command name="assertText" target="${css_address} .mini-address-location address" value="*@{phone}*"/>
 </scriptmodule>

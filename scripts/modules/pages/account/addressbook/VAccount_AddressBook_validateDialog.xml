@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
   <description>Validate address details dialog.</description>
   <command name="assertText" target="css=#dialog-container h1" value="*Address*"/>
   <codecomment>Validate labels of required input fields</codecomment>
@@ -14,6 +14,6 @@
   <command name="assertElementPresent" target="css= #dialog-container label[for=&quot;dwfrm_profile_address_postal&quot;] .required-indicator"/>
   <command name="assertElementPresent" target="css= #dialog-container label[for=&quot;dwfrm_profile_address_phone&quot;] .required-indicator"/>
   <codecomment>Validate tool tips</codecomment>
-  <command name="assertElementPresent" target="css=#edit-address-form.form-horizontal fieldset div:nth-of-type(5) .form-field-tooltip a.tooltip"/>
-  <command name="assertElementPresent" target="css=#edit-address-form.form-horizontal fieldset div:nth-of-type(10) .form-field-tooltip a.tooltip"/>
+  <command name="assertElementPresent" disabled="true" target="css=#edit-address-form.form-horizontal fieldset div:nth-of-type(5) .form-field-tooltip a.tooltip"/>
+  <command name="assertElementPresent" disabled="true" target="css=#edit-address-form.form-horizontal fieldset div:nth-of-type(10) .form-field-tooltip a.tooltip"/>
 </scriptmodule>

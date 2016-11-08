@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="7" junit-test="true">
+  <tags>smoke</tags>
+  <description>Test register profile with create account via link in header.
+
+# 1. Setup and preparation 
+
+- Start session, open homepage and delete all visible cookies, create email and password
+
+# 2. Scope of test
+
+- Click register link in the header and goto the create account page
+- Enter profile data and submit the form
+- Logout using the link in the account area
+- Validate logout via user menu panel header
+- Login again to validate login data
+- Validate login via user menu panel header
+- Validate personal profile data
+- Logout using the global link in the header
+- Validate logout via user menu panel header</description>
+  <codecomment># Setup
+create email, password and add some randomness to fristname and lastname</codecomment>
+  <module name="modules.helper.MHelper_Random_createEmail">
+    <parameter name="email_varName" value="email_varDynamic"/>
+  </module>
+  <module name="modules.helper.MHelper_Random_createPassword">
+    <parameter name="password_varName" value="password_varDynamic"/>
+  </module>
+  <module name="modules.helper.MHelper_Random_addRandomness">
+    <comment>Give the account first name some extra flavor for test data variation.</comment>
+    <parameter name="inputString" value="${firstname}"/>
+    <parameter name="returned_varString" value="firstname_varDynamic"/>
+  </module>
+  <module name="modules.helper.MHelper_Random_addRandomness">
+    <comment>Give the account last name some extra flavor for test data variation.</comment>
+    <parameter name="inputString" value="${lastname}"/>
+    <parameter name="returned_varString" value="lastname_varDynamic"/>
+  </module>
+  <module name="modules.helper.multilang.FHelper_Multilanguage_flowToStartSession"/>
+  <codecomment># Scope</codecomment>
+  <codecomment>Account
+
+- Register account via header link
+- Enter profile data
+- Submit profile data
+- Validate account page and nav
+- Validate customer name
+- Logout</codecomment>
+  <module name="modules.global.headerfooternav.FGlobal_flowToRegister"/>
+  <action name="Register"/>
+  <module name="modules.pages.account.personaldata.MAccount_PersonalData_enterProfile">
+    <parameter name="firstname" value="${firstname_varDynamic}"/>
+    <parameter name="lastname" value="${lastname_varDynamic}"/>
+    <parameter name="email" value="${email_varDynamic}"/>
+    <parameter name="password" value="${password_varDynamic}"/>
+  </module>
+  <module name="modules.pages.account.personaldata.MAccount_PersonalData_clickSubmitProfile"/>
+  <codecomment>Account breadcrumb</codecomment>
+  <module name="modules.global.headerfooternav.VNavigation_validateBreadcrumbByTitle">
+    <condition>('${Site}' == 'GB') || ('${Site}' == 'US')</condition>
+    <parameter name="breadcrumbTitle" value="Go to My Account"/>
+  </module>
+  <module name="modules.global.headerfooternav.VNavigation_validateLastBreadcrumbsText">
+    <parameter name="breadcrumbText" value="regexpi:(My Account|Mon compte)"/>
+  </module>
+  <module name="modules.pages.account.myaccount.VAccount_MyAccount_validatePage" disabled="true"/>
+  <module name="modules.pages.account.myaccount.VAccount_Multilang_MyAccount_validatePage"/>
+  <module name="modules.pages.account.VAccount_Multilang_Navigation_validate"/>
+  <module name="modules.pages.account.VAccount_Navigation_validate" disabled="true"/>
+  <module name="modules.pages.account.myaccount.VAccount_MyAccount_validatePrimaryCustomerName">
+    <condition>('${Site}' == 'GB') || ('${Site}' == 'US')</condition>
+    <parameter name="firstname" value="${firstname_varDynamic}"/>
+    <parameter name="lastname" value="${lastname_varDynamic}"/>
+  </module>
+  <action name="Logout"/>
+  <module name="modules.pages.account.myaccount.MAccount_MyAccount_clickLogout"/>
+  <codecomment>validate logout state</codecomment>
+  <module name="modules.global.headerfooternav.FGlobal_Multilang_Nav_validateUserPanelText">
+    <condition>('${Site}' == 'GB') || ('${Site}' == 'US')</condition>
+    <parameter name="text" value="regexpi:(Login [/] Register)"/>
+  </module>
+  <module name="modules.global.headerfooternav.FGlobal_Multilang_Nav_validateUserPanelText">
+    <condition>('${Site}' == 'FR')</condition>
+    <parameter name="text" value="regexpi:(Connexion [/] Enregistrer)"/>
+  </module>
+  <module name="modules.global.headerfooternav.FGlobal_Nav_validateUserPanelText" disabled="true">
+    <parameter name="text" value="regexpi:(Login [/] Register|Connexion [/] Enregistrer)"/>
+  </module>
+  <module name="modules.pages.account.myaccount.VAccount_MyAccount_validateLogoutState" disabled="true"/>
+  <module name="modules.pages.account.myaccount.VAccount_Multilang_MyAccount_validateLogoutState"/>
+  <codecomment>Account
+
+- Login
+- Validate account page and nav
+- Go to personal data
+- Validate personal data page and nav
+- Validate profile data
+- Logout</codecomment>
+  <module name="modules.pages.homepage.FHomepage_flowToLoginAccount">
+    <parameter name="email" value="${email_varDynamic}"/>
+    <parameter name="password" value="${password_varDynamic}"/>
+  </module>
+  <module name="modules.global.headerfooternav.FGlobal_Multilang_Nav_validateUserPanelText">
+    <parameter name="text" value="regexpi:(${firstname_varDynamic} ${lastname_varDynamic})"/>
+  </module>
+  <module name="modules.global.headerfooternav.FGlobal_Nav_validateUserPanelText" disabled="true">
+    <parameter name="text" value="regexpi:${firstname_varDynamic} ${lastname_varDynamic}"/>
+  </module>
+  <module name="modules.pages.account.myaccount.VAccount_MyAccount_validatePage" disabled="true"/>
+  <module name="modules.pages.account.myaccount.VAccount_Multilang_MyAccount_validatePage"/>
+  <module name="modules.pages.account.VAccount_Navigation_validate" disabled="true"/>
+  <module name="modules.pages.account.VAccount_Multilang_Navigation_validate"/>
+  <action name="GoToPersonalData"/>
+  <module name="modules.pages.account.myaccount.MAccount_MyAccount_clickGoToPersonalData"/>
+  <module name="modules.global.headerfooternav.VNavigation_validateBreadcrumbByTitle">
+    <condition>('${Site}' == 'GB') || ('${Site}' == 'US')</condition>
+    <parameter name="breadcrumbTitle" value="Edit Account"/>
+  </module>
+  <module name="modules.global.headerfooternav.VNavigation_validateBreadcrumbByTitle">
+    <condition>('${Site}' == 'FR')</condition>
+    <parameter name="breadcrumbTitle" value="Modifier un compte"/>
+  </module>
+  <module name="modules.pages.account.personaldata.VAccount_Multilang_PersonalData_validatePage"/>
+  <module name="modules.pages.account.VAccount_Multilang_Navigation_validate"/>
+  <module name="modules.pages.account.personaldata.VAccount_PersonalData_validateProfile">
+    <parameter name="firstname" value="${firstname_varDynamic}"/>
+    <parameter name="lastname" value="${lastname_varDynamic}"/>
+    <parameter name="email" value="${email_varDynamic}"/>
+  </module>
+  <codecomment>Log out the user</codecomment>
+  <module name="modules.global.headerfooternav.FGlobal_flowToLogout"/>
+  <module name="modules.pages.account.myaccount.VAccount_Multilang_MyAccount_validateLogoutState"/>
+  <module name="modules.global.headerfooternav.FGlobal_Multilang_Nav_validateUserPanelText">
+    <condition>('${Site}' == 'GB') || ('${Site}' == 'US')</condition>
+    <parameter name="text" value="regexpi:(Login [/] Register)"/>
+  </module>
+  <module name="modules.global.headerfooternav.FGlobal_Multilang_Nav_validateUserPanelText">
+    <condition>('${Site}' == 'FR')</condition>
+    <parameter name="text" value="regexpi:(Connexion [/] Enregistrer)"/>
+  </module>
+</testcase>

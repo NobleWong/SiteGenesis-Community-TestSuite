@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Validate account navigation.</description>
+  <codecomment>Account secondary navigation</codecomment>
+  <command name="assertElementPresent" target="css=#secondary.nav nav .secondary-navigation"/>
+  <command name="assertVisible" target="css=#secondary.nav nav .secondary-navigation ul li">
+    <comment>This is collapse in the beginning, so we have to wai until we see it.</comment>
+  </command>
+  <command name="assertText" target="css=#secondary.nav nav .secondary-navigation span.toggle:nth-of-type(1)" value="regexpi:(My Account|Mon compte)"/>
+  <command name="assertText" target="css=#secondary.nav nav .secondary-navigation span.toggle:nth-of-type(2)" value="regexpi:(Order Information|Informations sur la commande)"/>
+  <command name="assertText" target="css=#secondary.nav nav .secondary-navigation span.toggle:nth-of-type(3)" value="regexpi:(Wish List|Liste de souhaits)"/>
+  <command name="assertText" target="css=#secondary.nav nav .secondary-navigation span.toggle:nth-of-type(4)" value="regexpi:(Gift Registries|Listes de cadeaux)"/>
+  <command name="assertText" target="css=#secondary.nav nav .secondary-navigation .content-asset .content-asset span.toggle:nth-of-type(1)" value="regexpi:(Shop Confidently|Acheter en toute confiance)"/>
+  <codecomment>Account secondary nav asset</codecomment>
+  <command name="assertElementPresent" target="css=#secondary .account-nav-asset"/>
+  <command name="assertText" target="css=#secondary .account-nav-asset h2" value="regexpi:(NEED HELP[?]|Besoin d'aide [?])"/>
+</scriptmodule>

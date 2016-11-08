@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
   <description>Flow to login as returning customer.
 
 - Start on homepage
@@ -18,9 +18,14 @@
 - Validate page
 - Login as returning customer</codecomment>
   <module name="modules.global.headerfooternav.VNavigation_validateBreadcrumbByTitle">
+    <condition>('${Site}' == 'GB') || ('${Site}' == 'US')</condition>
     <parameter name="breadcrumbTitle" value="My Account"/>
   </module>
-  <module name="modules.pages.account.login.VAccount_Login_validatePage"/>
+  <module name="modules.global.headerfooternav.VNavigation_validateBreadcrumbByTitle">
+    <condition>('${Site}' == 'FR')</condition>
+    <parameter name="breadcrumbTitle" value="Mon compte"/>
+  </module>
+  <module name="modules.pages.account.login.VAccount_Login_validatePage" disabled="true"/>
   <module name="modules.pages.account.login.MAccount_Login_enterClickReturningCustomer">
     <parameter name="email" value="@{email}"/>
     <parameter name="password" value="@{password}"/>

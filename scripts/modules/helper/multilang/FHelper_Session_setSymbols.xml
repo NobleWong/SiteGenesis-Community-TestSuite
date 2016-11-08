@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Set all number related constants for US</description>
+  <parameter name="price_pattern"/>
+  <parameter name="currency"/>
+  <parameter name="digitGroupSeparators"/>
+  <parameter name="decimalMark"/>
+  <parameter name="priceRangeSeperators"/>
+  <module name="modules.helper.multilang.MHelper_loadTestData_GB">
+    <condition>'${Site}' == 'GB'</condition>
+    <parameter name="currency" value="@{currency}"/>
+    <parameter name="decimalMark" value="@{decimalMark}"/>
+    <parameter name="digitGroupSeparators" value="@{digitGroupSeparators}"/>
+    <parameter name="priceRangeSeparators" value="@{priceRangeSeparators}"/>
+    <parameter name="price_pattern" value="@{price_pattern}"/>
+  </module>
+  <module name="modules.helper.multilang.MHelper_loadTestData_US">
+    <condition>'${Site}' == 'US'</condition>
+    <parameter name="currency" value="@{currency}"/>
+    <parameter name="decimalMark" value="@{decimalMark}"/>
+    <parameter name="digitGroupSeparators" value="@{digitGroupSeparators}"/>
+    <parameter name="priceRangeSeparators" value="@{priceRangeSeparators}"/>
+    <parameter name="price_pattern" value="@{price_pattern}"/>
+  </module>
+</scriptmodule>

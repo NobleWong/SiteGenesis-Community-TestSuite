@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Select a State for the US Checkout</description>
+  <parameter name="statesState"/>
+  <command name="select" target="css=#dwfrm_profile_address_states_state" value="@{statesState}"/>
+</scriptmodule>

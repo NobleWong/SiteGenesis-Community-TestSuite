@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
   <description>Flow to edit personal data (profile).
 
 - Start on MyAccount page
@@ -18,7 +18,7 @@
 - Submit profile data</codecomment>
   <action name="GoToPersonalData"/>
   <module name="modules.pages.account.myaccount.MAccount_MyAccount_clickGoToPersonalData"/>
-  <module name="modules.pages.account.personaldata.VAccount_PersonalData_validatePage"/>
+  <module name="modules.pages.account.personaldata.VAccount_Multilang_PersonalData_validatePage"/>
   <module name="modules.pages.account.VAccount_Navigation_validate"/>
   <action name="UpdateProfile"/>
   <module name="modules.pages.account.personaldata.MAccount_PersonalData_updateProfile">

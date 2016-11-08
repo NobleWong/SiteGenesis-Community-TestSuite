@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <parameter name="position"/>
+  <parameter name="city"/>
+  <parameter name="statesState"/>
+  <parameter name="postalCode"/>
+  <command name="assertText" target="css= #addresses .address-list li:nth-of-type(@{position}) .mini-address-location address" value="*@{city}, @{statesState} @{postalCode}*"/>
+</scriptmodule>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Sets Phone to a valid UK Phone number</description>
+  <parameter name="phone"/>
+  <command name="store" target="333 333 3333" value="@{phone}"/>
+</scriptmodule>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Sets Phone to a valid UK Phone number</description>
+  <parameter name="phone"/>
+  <command name="store" target="0${RANDOM.Number(1000,9999)} ${RANDOM.Number(100,999)} ${RANDOM.Number(100,999)}" value="@{phone}"/>
+</scriptmodule>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>sets postalCode to a valid UK postal Code</description>
+  <parameter name="postalCode"/>
+  <command name="store" target="SW42 4RG" value="@{postalCode}"/>
+</scriptmodule>

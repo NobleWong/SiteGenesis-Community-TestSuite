@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Validates the logged out state using MyAccount page.</description>
+  <codecomment>Verify that user is not logged in</codecomment>
+  <command name="assertText" target="css=#primary h1" value="regexpi:(My Account Login|Mon compte Connexion)"/>
+</scriptmodule>
