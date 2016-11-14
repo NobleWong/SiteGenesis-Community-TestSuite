@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-sets>
+  <data-set>
+    <Site>US</Site>
+    <storefront_url>${base_url}${extention_url_US}</storefront_url>
+    <storefront_priceCurrency>${storefront_priceCurrency_US}</storefront_priceCurrency>
+    <price_Pattern>\${storefront_priceCurrency_US}\d{1,3}([,]\d{3})*\.\d{2}</price_Pattern>
+    <plainProductName>V-Neck Dress</plainProductName>
+    <plainProductCategoryLevel1>Womens</plainProductCategoryLevel1>
+    <plainProductCategoryLevel2>Clothing</plainProductCategoryLevel2>
+    <plainProductCategoryLevel3>Dresses</plainProductCategoryLevel3>
+    <searchPhrase>Dresses</searchPhrase>
+    <availabilityMassage>in stock</availabilityMassage>
+  </data-set>
+  <data-set>
+    <Site>GB</Site>
+    <storefront_url>${base_url}${extention_url_GB}</storefront_url>
+    <storefront_priceCurrency>${storefront_priceCurrency_GB}</storefront_priceCurrency>
+    <price_Pattern>\${storefront_priceCurrency_GB}\d{1,3}([,]\d{3})*\.\d{2}</price_Pattern>
+    <plainProductName>V-Neck Dress</plainProductName>
+    <plainProductCategoryLevel1>Womens</plainProductCategoryLevel1>
+    <plainProductCategoryLevel2>Clothing</plainProductCategoryLevel2>
+    <plainProductCategoryLevel3>Dresses</plainProductCategoryLevel3>
+    <searchPhrase>Dresses</searchPhrase>
+    <availabilityMassage>in stock</availabilityMassage>
+  </data-set>
+  <data-set>
+    <Site>FR</Site>
+    <storefront_url>${base_url}${extention_url_FR}</storefront_url>
+    <storefront_priceCurrency>${storefront_priceCurrency_EUR}</storefront_priceCurrency>
+    <price_Pattern>\d{1,3}([,]\d{3})*\,\d{2}\ \${storefront_priceCurrency_EUR}</price_Pattern>
+    <plainProductName>Robe fleurie</plainProductName>
+    <plainProductCategoryLevel1>Femme</plainProductCategoryLevel1>
+    <plainProductCategoryLevel2>Vêtements</plainProductCategoryLevel2>
+    <plainProductCategoryLevel3>Robes</plainProductCategoryLevel3>
+    <searchPhrase>Robes</searchPhrase>
+    <availabilityMassage>En stock</availabilityMassage>
+  </data-set>
+</data-sets>

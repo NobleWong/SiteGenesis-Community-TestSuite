@@ -7,8 +7,8 @@
   <parameter name="priceRangeSeparators"/>
   <parameter name="price_pattern"/>
   <command name="store" target="${storefront_priceCurrency_US}" value="@{currency}"/>
-  <command name="store" target="${storefront_decimalMark_US}" value="@{decimalMark}"/>
-  <command name="store" target="${storefront_priceDigitGroupSeparators_US}" value="@{digitGroupSeparators}"/>
+  <command name="store" target="${storefront_priceDecimalMark}" value="@{decimalMark}"/>
+  <command name="store" target="${storefront_priceDigitGroupSeparators}" value="@{digitGroupSeparators}"/>
   <command name="store" target="- ${storefront_priceCurrency_US}" value="@{priceRangeSeparators}"/>
   <command name="store" target="\${storefront_priceCurrency_US}\d{1,3}([,]\d{3})*\.\d{2}" value="@{price_pattern}"/>
 </scriptmodule>

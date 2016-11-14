@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <tags>product,pdp,quickview,qv,layout</tags>
+  <description>Verifies the structure/layout of quickview (QV) and product details pages (PDP) for standard products
+
+# Setup
+Open the site and remove cookies
+
+#  Scope
+Validate displaying product data either via quick view or via product detail page.
+
+- validate structure of the QV
+- go from QV to PDP
+- validate stucture of PDP
+- check if product name, price, and product number are the same on both 
+- search for product name and validate PDP again</description>
+  <codecomment># Setup - Start Session</codecomment>
+  <module name="modules.helper.FHelper_Session_flowToStartSession"/>
+  <codecomment># Setup - Load Values</codecomment>
+  <action name="SearchProducts"/>
+  <module name="modules.pages.search.MSearch_enterTextAndSubmit">
+    <parameter name="searchText" value="${searchPhrase}"/>
+  </module>
+  <codecomment># Scope</codecomment>
+  <codecomment>------------------------------------------------------------</codecomment>
+  <codecomment>Step 1: Validate quickview</codecomment>
+  <codecomment>------------------------------------------------------------</codecomment>
+  <action name="ProductQuickView"/>
+  <codecomment>Hover over Product and click on quick view buttom</codecomment>
+  <module name="modules.pages.catalog.MCatalog_clickQuickViewByProductPosition" disabled="true">
+    <parameter name="position" value="2"/>
+  </module>
+  <module name="modules.pages.catalog.MCatalog_clickQuickViewByProductTitle">
+    <parameter name="title" value="${plainProductName}"/>
+  </module>
+  <codecomment>Verify quick view page</codecomment>
+  <module name="modules.pages.product.productquickview.VProductQV_validateHeader">
+    <parameter name="prevButtonState" value=""/>
+    <parameter name="nextButtonState" value=""/>
+  </module>
+  <module name="modules.pages.product.VProduct_validatePricePattern">
+    <parameter name="pricePattern" value="${price_Pattern}"/>
+  </module>
+  <module name="modules.pages.product.VProduct_validatePDPandQVShared">
+    <comment>Currently PDP and QV share a lot, hence we validate that here</comment>
+  </module>
+  <module name="modules.pages.product.MProduct_clickSizeByPosition">
+    <parameter name="productSizePosition" value="2"/>
+  </module>
+  <module name="modules.pages.product.VProduct_validateAvailability">
+    <parameter name="availabilityMassage" value="In Stock"/>
+  </module>
+  <module name="modules.pages.product.VProduct_validateAdd2CartButtonIsEnabled"/>
+  <module name="modules.pages.product.productquickview.VProductQV_validateQVOnlyElements"/>
+  <module name="modules.pages.product.VProduct_validateSozialSharing"/>
+  <module name="modules.pages.product.VProduct_validateWishlistAndGiftRegistry"/>
+  <codecomment>Store product informations to check them later</codecomment>
+  <module name="modules.pages.product.SProduct_storeBasicData">
+    <parameter name="productName_varName" value="productName_varDynamic"/>
+    <parameter name="productNumber_varName" value="productNumber_varDynamic"/>
+    <parameter name="productPriceSales_varName" value="productPrice_varDynamic"/>
+  </module>
+  <module name="modules.pages.product.SProduct_storeQuantity">
+    <parameter name="productQuantity_varName" value="productQuantity_varDynamic"/>
+  </module>
+  <codecomment>------------------------------------------------------------</codecomment>
+  <codecomment>Step 2: Validate product detail page from quickview</codecomment>
+  <codecomment>------------------------------------------------------------</codecomment>
+  <action name="DisplayProductDetailPageFromQV"/>
+  <codecomment>Goto PDP from QV</codecomment>
+  <module name="modules.pages.product.productquickview.MProductQV_clickViewFullDetails">
+    <parameter name="productName" value="${plainProductName}"/>
+  </module>
+  <codecomment>Verify product detail page</codecomment>
+  <module name="modules.global.headerfooternav.VNavigation_validateBreadcrumb">
+    <parameter name="breadcrumbPath" value="${plainProductCategoryLevel1} ${plainProductCategoryLevel2} ${plainProductCategoryLevel3} ${productName_varDynamic}"/>
+  </module>
+  <module name="modules.pages.product.VProduct_validatePricePattern">
+    <parameter name="pricePattern" value="${price_Pattern}"/>
+  </module>
+  <module name="modules.pages.product.VProduct_validatePDPandQVShared"/>
+  <module name="modules.pages.product.VProduct_validateAvailability">
+    <parameter name="availabilityMassage" value="In Stock"/>
+  </module>
+  <module name="modules.pages.product.VProduct_validateAdd2CartButtonIsEnabled"/>
+  <module name="modules.pages.product.VProduct_validateSozialSharing"/>
+  <module name="modules.pages.product.VProduct_validateWishlistAndGiftRegistry"/>
+  <module name="modules.pages.product.productdetailpage.VProductDetailPage_validatePDPOnlyElements"/>
+  <codecomment>Check are the stored values form QV the same on PDP</codecomment>
+  <module name="modules.pages.product.VProduct_validateBasicData">
+    <parameter name="productName" value="${productName_varDynamic}"/>
+    <parameter name="productNumber" value="${productNumber_varDynamic}"/>
+    <parameter name="productPrice" value="${productPrice_varDynamic}"/>
+  </module>
+  <module name="modules.pages.product.VProduct_validatesQuantity">
+    <parameter name="productQuantity" value="${productQuantity_varDynamic}"/>
+  </module>
+  <codecomment>------------------------------------------------------------</codecomment>
+  <codecomment>Step 3: Validate product detail page from search</codecomment>
+  <codecomment>------------------------------------------------------------</codecomment>
+  <action name="BackToHomepage"/>
+  <codecomment>Go back to Homepage</codecomment>
+  <module name="modules.global.headerfooternav.MGlobal_Header_clickGoToHomepageViaLogo"/>
+  <action name="SearchByName"/>
+  <codecomment>Search product by name, ensure that the PDP found by search is identical to the PDP by navigation from QV.</codecomment>
+  <module name="modules.pages.search.MSearch_enterTextAndSubmit">
+    <parameter name="searchText" value="${productNumber_varDynamic}"/>
+  </module>
+  <module name="modules.global.headerfooternav.VNavigation_validateBreadcrumb">
+    <parameter name="breadcrumbPath" value="${plainProductCategoryLevel1} ${plainProductCategoryLevel2} ${plainProductCategoryLevel3} ${productName_varDynamic}"/>
+  </module>
+  <module name="modules.pages.product.VProduct_validatePricePattern">
+    <parameter name="pricePattern" value="${price_Pattern}"/>
+  </module>
+  <module name="modules.pages.product.VProduct_validatePDPandQVShared"/>
+  <module name="modules.pages.product.MProduct_clickSizeByPosition">
+    <parameter name="productSizePosition" value="2"/>
+  </module>
+  <module name="modules.pages.product.VProduct_validateAvailability">
+    <parameter name="availabilityMassage" value="In Stock"/>
+  </module>
+  <module name="modules.pages.product.VProduct_validateAdd2CartButtonIsEnabled"/>
+  <module name="modules.pages.product.VProduct_validateSozialSharing"/>
+  <module name="modules.pages.product.VProduct_validateWishlistAndGiftRegistry"/>
+  <module name="modules.pages.product.productdetailpage.VProductDetailPage_validatePDPOnlyElements"/>
+  <codecomment>Validate the stored values form QV on the PDP</codecomment>
+  <module name="modules.pages.product.VProduct_validateBasicData">
+    <parameter name="productName" value="${productName_varDynamic}"/>
+    <parameter name="productNumber" value="${productNumber_varDynamic}"/>
+    <parameter name="productPrice" value="${productPrice_varDynamic}"/>
+  </module>
+  <module name="modules.pages.product.VProduct_validatesQuantity">
+    <parameter name="productQuantity" value="${productQuantity_varDynamic}"/>
+  </module>
+</testcase>
