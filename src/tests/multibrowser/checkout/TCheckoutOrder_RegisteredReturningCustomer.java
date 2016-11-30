@@ -36,7 +36,7 @@ import xltutil.annotation.TestTargets;
  * <li>Validate order summary via check order status</li>
  * </ul>
  */
-@ScriptName("tests.checkout.TCheckoutOrder_RegisteredReturningCustomer")
+@ScriptName("tests.us.checkout.TCheckoutOrder_RegisteredReturningCustomer")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TCheckoutOrder_RegisteredReturningCustomer extends AbstractAnnotatedScriptTestCase {
 }

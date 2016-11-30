@@ -24,7 +24,7 @@ import xltutil.annotation.TestTargets;
  * <li>Validate articles results page</li>
  * </ul>
  */
-@ScriptName("tests.search.TSearchArticles_ArticlesOnly")
+@ScriptName("tests.us.search.TSearchArticles_ArticlesOnly")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TSearchArticles_ArticlesOnly extends AbstractAnnotatedScriptTestCase {
 }

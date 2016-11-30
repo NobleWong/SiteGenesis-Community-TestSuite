@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Check shipping method via position.</description>
+  <parameter name="positon" desc="position"/>
+  <parameter name="site" desc="site"/>
+  <codecomment>Check shipping method</codecomment>
+  <command name="check" target="css=#primary #shipping-method-list ${data_@{site}}@{positon}"/>
+  <command name="waitForChecked" target="css=#primary #shipping-method-list ${data_@{site}}@{positon}"/>
+</scriptmodule>

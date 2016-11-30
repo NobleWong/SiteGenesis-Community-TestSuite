@@ -30,7 +30,7 @@ import xltutil.annotation.TestTargets;
  * <li>navigate to previous product</li>
  * </ul>
  */
-@ScriptName("tests.product.TProduct_Quickview_ProductNavigation")
+@ScriptName("tests.us.product.TProduct_Quickview_ProductNavigation")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TProduct_Quickview_ProductNavigation extends AbstractAnnotatedScriptTestCase {
 }

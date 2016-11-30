@@ -29,7 +29,7 @@ import xltutil.annotation.TestTargets;
  * <li>End session and clean up created cookies</li>
  * </ul>
  */
-@ScriptName("tests.account.TAccountLogin_InvalidPassword")
+@ScriptName("tests.account.us.TAccountLogin_InvalidPassword")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900","firefox_sl" })
 public class TAccountLogin_InvalidPassword extends AbstractAnnotatedScriptTestCase {
 }

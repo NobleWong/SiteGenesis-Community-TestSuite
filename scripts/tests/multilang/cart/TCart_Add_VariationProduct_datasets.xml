@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-sets>
+  <data-set>
+    <site>US</site>
+    <storefront_url>${base_url}${extention_url_US}</storefront_url>
+    <searchPhrase>Dresses</searchPhrase>
+    <sortByLabel>Product Name A - Z</sortByLabel>
+  </data-set>
+  <data-set>
+    <site>GB</site>
+    <storefront_url>${base_url}${extention_url_GB}</storefront_url>
+    <searchPhrase>Dresses</searchPhrase>
+    <sortByLabel>Product Name A - Z</sortByLabel>
+  </data-set>
+  <data-set>
+    <site>FR</site>
+    <storefront_url>${base_url}${extention_url_FR}</storefront_url>
+    <searchPhrase>Robes</searchPhrase>
+    <sortByLabel>Nom de produit de Z à A</sortByLabel>
+  </data-set>
+  <data-set>
+    <site>IT</site>
+    <storefront_url>${base_url}${extention_url_IT}</storefront_url>
+    <searchPhrase>Vestiti</searchPhrase>
+    <sortByLabel>Nome prodotto A - Z</sortByLabel>
+  </data-set>
+  <data-set>
+    <site>JP</site>
+    <storefront_url>${base_url}${extention_url_JP}</storefront_url>
+    <searchPhrase>ドレス</searchPhrase>
+    <sortByLabel>商品名 (昇順)</sortByLabel>
+  </data-set>
+  <data-set>
+    <site>CN</site>
+    <storefront_url>${base_url}${extention_url_CN}</storefront_url>
+    <searchPhrase>裙装</searchPhrase>
+    <sortByLabel>产品名称 A 到 Z</sortByLabel>
+  </data-set>
+</data-sets>

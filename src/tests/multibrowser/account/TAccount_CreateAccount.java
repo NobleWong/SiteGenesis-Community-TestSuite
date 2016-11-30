@@ -30,7 +30,7 @@ import xltutil.annotation.TestTargets;
  * <li>Validate logout via user menu panel header</li>
  * </ul>
  */
-@ScriptName("tests.account.TAccount_CreateAccount")
+@ScriptName("tests.multilang.account.TAccount_CreateAccount")
 @TestTargets({ "FF_1500x1000", "Chrome_1280x900", "firefox_sl","chrome_sl","IE11_1280x900" })
 public class TAccount_CreateAccount extends AbstractAnnotatedScriptTestCase {
 }

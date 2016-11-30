@@ -23,11 +23,11 @@
   <command name="type" target="${css_address}_postal" value="@{postalCode}"/>
   <command name="type" target="${css_address}_phone" value="@{phone}"/>
   <module name="modules.pages.account.addressbook.MAccount_Multilang_Addressbook_Dialog_enterCounty">
-    <condition>'${Site}' == 'GB'</condition>
+    <condition>'${site}' == 'GB'</condition>
     <parameter name="statesState" value="@{statesState}"/>
   </module>
   <module name="modules.pages.account.addressbook.MAccount_Multilang_Addressbook_Dialog_selectStatesState">
-    <condition>'${Site}' == 'US'</condition>
+    <condition>'${site}' == 'US'</condition>
     <parameter name="statesState" value="@{statesState}"/>
   </module>
 </scriptmodule>

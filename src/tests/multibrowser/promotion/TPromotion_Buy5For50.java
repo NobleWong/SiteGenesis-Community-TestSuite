@@ -33,7 +33,7 @@ import xltutil.annotation.TestTargets;
  * <li>validate that no promotion is shown</li>
  * </ul>
  */
-@ScriptName("tests.promotion.TPromotion_Buy5For50")
+@ScriptName("tests.us.promotion.TPromotion_Buy5For50")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TPromotion_Buy5For50 extends AbstractAnnotatedScriptTestCase {
 }

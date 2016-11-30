@@ -25,7 +25,7 @@ import xltutil.annotation.TestTargets;
  * <li>validate wishlist</li>
  * </ul>
  */
-@ScriptName("tests.wishlist.TWishList_UpdateQuantities")
+@ScriptName("tests.us.wishlist.TWishList_UpdateQuantities")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TWishList_UpdateQuantities extends AbstractAnnotatedScriptTestCase {
 }

@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://xlt.xceptance.com/xsd-project" version="1">
   <name>SiteGenesis-Community-TestSuite</name>
+  <description>#SiteGenesis Community Testsuite.
+
+This is the Community Testsuite for SiteGenesis.
+
+##Content
+ -Modules
+ -Tests
+###Modules
+###Tests</description>
 </project>

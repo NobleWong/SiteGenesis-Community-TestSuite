@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
   <description>Validate billing address.</description>
   <parameter name="firstname" desc="firstname"/>
   <parameter name="lastname" desc="lastname"/>
@@ -14,7 +14,7 @@
   <command name="assertText" target="css=.order-confirmation-details .order-billing .mini-address-name" value="@{firstname} @{lastname}"/>
   <command name="assertText" target="css=.order-confirmation-details .order-billing .mini-address-location address" value="*@{address1}*"/>
   <command name="assertText" target="css=.order-confirmation-details .order-billing .mini-address-location address" value="*@{address2}*"/>
-  <command name="assertText" target="css=.order-confirmation-details .order-billing .mini-address-location address" value="*@{city}*@{statesStateShort}*@{postalCode}*"/>
+  <command name="assertText" disabled="true" target="css=.order-confirmation-details .order-billing .mini-address-location address" value="*@{city}*@{statesStateShort}*@{postalCode}*"/>
   <command name="assertText" target="css=.order-confirmation-details .order-billing .mini-address-location address" value="*@{country}*"/>
   <command name="assertText" target="css=.order-confirmation-details .order-billing .mini-address-location address" value="*@{phone}*"/>
 </scriptmodule>

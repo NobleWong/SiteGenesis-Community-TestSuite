@@ -40,7 +40,7 @@ import xltutil.annotation.TestTargets;
  * <li>Logout</li>
  * </ul>
  */
-@ScriptName("tests.wishlist.TWishList_AddRemoveProduct")
+@ScriptName("tests.us.wishlist.TWishList_AddRemoveProduct")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900","firefox_sl","IE11_1280x900" })
 public class TWishList_AddRemoveProduct extends AbstractAnnotatedScriptTestCase {
 }

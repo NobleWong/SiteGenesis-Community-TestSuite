@@ -26,7 +26,7 @@ import xltutil.annotation.TestTargets;
  * <li>check balance of gift certificates</li>
  * </ul>
  */
-@ScriptName("tests.giftcertificates.TGiftCertificates_PurchaseGiftCertificate")
+@ScriptName("tests.us.giftcertificates.TGiftCertificates_PurchaseGiftCertificate")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TGiftCertificates_PurchaseGiftCertificate extends AbstractAnnotatedScriptTestCase {
 }

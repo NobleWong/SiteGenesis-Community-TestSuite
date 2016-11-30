@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
   <description>Validate cart page.</description>
   <codecomment>Validate cart structure</codecomment>
   <command name="assertElementPresent" target="css=#continue-shopping fieldset button"/>
@@ -12,6 +12,8 @@
   <command name="assertElementPresent" target="css=#update-cart"/>
   <command name="assertElementPresent" target="css=.cart-order-totals table.order-totals-table .order-subtotal"/>
   <command name="assertElementPresent" target="css=.cart-order-totals table.order-totals-table .order-shipping"/>
-  <command name="assertElementPresent" target="css=.cart-order-totals table.order-totals-table .order-sales-tax"/>
+  <module name="modules.pages.cart.VCart_validateSalesTax">
+    <condition>'${site}' == 'US'</condition>
+  </module>
   <command name="assertElementPresent" target="css=.cart-order-totals table.order-totals-table .order-total"/>
 </scriptmodule>

@@ -27,7 +27,7 @@ import xltutil.annotation.TestTargets;
  * <li>Validate empty refinement list in breadcrumbs</li>
  * </ul>
  */
-@ScriptName("tests.catalog.TCatalogRefinements_ByColor")
+@ScriptName("tests.us.catalog.TCatalogRefinements_ByColor")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TCatalogRefinements_ByColor extends AbstractAnnotatedScriptTestCase {
 }

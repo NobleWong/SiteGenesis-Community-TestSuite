@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
   <description>Validate order totals.</description>
   <parameter name="totalsSubtotal" desc="totals subtotal"/>
   <parameter name="totalsShipping" desc="totals shipping"/>
@@ -9,6 +9,6 @@
   <command name="store" target="css=#main .confirmation .order-confirmation-details .orderdetails .order-payment-summary .order-totals-table" value="css_column_order_totals"/>
   <command name="assertText" target="${css_column_order_totals} .order-subtotal td:last-of-type" value="@{totalsSubtotal}"/>
   <command name="assertText" target="${css_column_order_totals} .order-shipping td:last-of-type" value="@{totalsShipping}"/>
-  <command name="assertText" target="${css_column_order_totals} .order-sales-tax td:last-of-type" value="@{totalsSalesTax}"/>
+  <command name="assertText" disabled="true" target="${css_column_order_totals} .order-sales-tax td:last-of-type" value="@{totalsSalesTax}"/>
   <command name="assertText" target="${css_column_order_totals} .order-total td:last-of-type" value="@{totalsTotal}"/>
 </scriptmodule>

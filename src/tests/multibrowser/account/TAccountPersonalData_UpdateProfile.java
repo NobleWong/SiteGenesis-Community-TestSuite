@@ -29,7 +29,7 @@ import xltutil.annotation.TestTargets;
  * <li>Login with new password</li>
  * </ul>
  */
-@ScriptName("tests.account.TAccountPersonalData_UpdateProfile")
+@ScriptName("tests.account.multilang.TAccountPersonalData_UpdateProfile")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900","firefox_sl" })
 public class TAccountPersonalData_UpdateProfile extends AbstractAnnotatedScriptTestCase {
 }

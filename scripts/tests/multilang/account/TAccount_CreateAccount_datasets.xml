@@ -2,11 +2,14 @@
 <data-sets>
   <data-set>
     <Site>US</Site>
+    <storefront_url>${base_url}${extention_url_US}</storefront_url>
   </data-set>
   <data-set>
     <Site>GB</Site>
+    <storefront_url>${base_url}${extention_url_GB}</storefront_url>
   </data-set>
   <data-set>
     <Site>FR</Site>
+    <storefront_url>${base_url}${extention_url_FR}</storefront_url>
   </data-set>
 </data-sets>

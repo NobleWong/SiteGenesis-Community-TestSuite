@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://xlt.xceptance.com/xlt-script-data">
+  <text_US>Your Shopping Cart is Empty</text_US>
+  <text_GB>Your Shopping Cart is Empty</text_GB>
+  <text_FR>Votre panier est vide</text_FR>
+  <text_IT>Il tuo carrello è vuoto</text_IT>
+  <text_JP>買い物カゴは空です</text_JP>
+  <text_CN>您的购物车是空的</text_CN>
+</data>

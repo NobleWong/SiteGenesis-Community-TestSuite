@@ -27,7 +27,7 @@ import xltutil.annotation.TestTargets;
  * <li>verify cart</li>
  * </ul>
  */
-@ScriptName("tests.cart.TCart_Add_ProductBundle")
+@ScriptName("tests.us.cart.TCart_Add_ProductBundle")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TCart_Add_ProductBundle extends AbstractAnnotatedScriptTestCase {
 }

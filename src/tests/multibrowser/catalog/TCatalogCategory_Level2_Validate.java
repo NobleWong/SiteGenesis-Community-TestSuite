@@ -22,7 +22,7 @@ import xltutil.annotation.TestTargets;
  * <li>Validate all pages</li>
  * </ul>
  */
-@ScriptName("tests.catalog.TCatalogCategory_Level2_Validate")
+@ScriptName("tests.us.catalog.TCatalogCategory_Level2_Validate")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TCatalogCategory_Level2_Validate extends AbstractAnnotatedScriptTestCase {
 }

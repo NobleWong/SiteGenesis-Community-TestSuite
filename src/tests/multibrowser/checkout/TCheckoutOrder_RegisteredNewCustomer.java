@@ -44,7 +44,7 @@ import xltutil.annotation.TestTargets;
  * <li>Logout</li>
  * </ul>
  */
-@ScriptName("tests.checkout.TCheckoutOrder_RegisteredNewCustomer")
+@ScriptName("tests.us.checkout.TCheckoutOrder_RegisteredNewCustomer")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TCheckoutOrder_RegisteredNewCustomer extends AbstractAnnotatedScriptTestCase {
 }

@@ -50,7 +50,7 @@ import xltutil.annotation.TestTargets;
  * <li>Validate empty mini cart</li>
  * </ul>
  */
-@ScriptName("tests.minicart.TMiniCart_Validate_UpdateQuantities")
+@ScriptName("tests.us.minicart.TMiniCart_Validate_UpdateQuantities")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TMiniCart_Validate_UpdateQuantities extends AbstractAnnotatedScriptTestCase {
 }

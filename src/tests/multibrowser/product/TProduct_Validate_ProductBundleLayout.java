@@ -31,7 +31,7 @@ import xltutil.annotation.TestTargets;
  * <li>search for product name and validate PDP again</li>
  * </ul>
  */
-@ScriptName("tests.product.TProduct_Validate_ProductBundleLayout")
+@ScriptName("tests.us.product.TProduct_Validate_ProductBundleLayout")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TProduct_Validate_ProductBundleLayout extends AbstractAnnotatedScriptTestCase {
 }

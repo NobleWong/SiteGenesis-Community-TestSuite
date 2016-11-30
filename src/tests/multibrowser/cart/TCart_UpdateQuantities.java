@@ -42,7 +42,7 @@ import xltutil.annotation.TestTargets;
  * <li>Validate both products and subtotal on cart page.</li>
  * </ul>
  */
-@ScriptName("tests.cart.TCart_UpdateQuantities")
+@ScriptName("tests.us.cart.TCart_UpdateQuantities")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TCart_UpdateQuantities extends AbstractAnnotatedScriptTestCase {
 }

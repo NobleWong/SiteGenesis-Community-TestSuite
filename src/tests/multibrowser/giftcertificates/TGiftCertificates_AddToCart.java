@@ -22,7 +22,7 @@ import xltutil.annotation.TestTargets;
  * <li>validate the gift cert in the cart</li>
  * </ul>
  */
-@ScriptName("tests.giftcertificates.TGiftCertificates_AddToCart")
+@ScriptName("tests.us.giftcertificates.TGiftCertificates_AddToCart")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TGiftCertificates_AddToCart extends AbstractAnnotatedScriptTestCase {
 }

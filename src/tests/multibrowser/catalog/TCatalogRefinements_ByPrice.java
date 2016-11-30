@@ -36,7 +36,7 @@ import xltutil.annotation.TestTargets;
  * <li><em>Remove</em> price refinement via breadcrumb</li>
  * </ul>
  */
-@ScriptName("tests.catalog.TCatalogRefinements_ByPrice")
+@ScriptName("tests.us.catalog.TCatalogRefinements_ByPrice")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TCatalogRefinements_ByPrice extends AbstractAnnotatedScriptTestCase {
 }

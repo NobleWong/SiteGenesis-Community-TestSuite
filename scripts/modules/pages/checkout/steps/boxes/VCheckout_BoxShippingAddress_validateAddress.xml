@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
   <description>Validate box shipping address.</description>
   <parameter name="firstname" desc="firstname"/>
   <parameter name="lastname" desc="lastname"/>
@@ -15,7 +15,7 @@
   <codecomment>Validate shipping address</codecomment>
   <command name="assertText" target="css=#main #secondary .mini-shipment .details .address div:nth-of-type(2)" value="@{address1}"/>
   <command name="assertText" target="css=#main #secondary .mini-shipment .details .address div:nth-of-type(3)" value="@{address2}"/>
-  <command name="assertText" target="css=#main #secondary .mini-shipment .details .address div:nth-of-type(4)" value="@{city}*@{statesStateShort}*@{postal}"/>
+  <command name="assertText" disabled="true" target="css=#main #secondary .mini-shipment .details .address div:nth-of-type(4)" value="@{city}*@{statesStateShort}*@{postal}"/>
   <command name="assertText" target="css=#main #secondary .mini-shipment .details .address div:nth-of-type(5)" value="@{country}"/>
   <codecomment>Validate shipping status</codecomment>
   <command name="assertText" target="css=#main #secondary .mini-shipment .details div.minishipments-method span:nth-of-type(2)" value="@{shippingMethod_name}"/>

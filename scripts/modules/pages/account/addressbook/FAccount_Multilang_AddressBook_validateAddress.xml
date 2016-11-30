@@ -20,14 +20,14 @@
   <command name="assertText" target="${css_address} .mini-address-location address" value="@{address1}*"/>
   <command name="assertText" target="${css_address} .mini-address-location address" value="*@{address2}*"/>
   <module name="modules.pages.account.addressbook.VAccount_Multilang_AddressBook_validateCity">
-    <condition>'${Site}' == 'GB'</condition>
+    <condition>'${site}' == 'GB'</condition>
     <parameter name="position" value="@{position}"/>
     <parameter name="city" value="@{city}"/>
     <parameter name="statesState" value="@{statesState}"/>
     <parameter name="postalCode" value="@{postalCode}"/>
   </module>
   <module name="modules.pages.account.addressbook.VAccount_Multilang_AddressBook_validateCity">
-    <condition>'${Site}' == 'US'</condition>
+    <condition>'${site}' == 'US'</condition>
     <parameter name="position" value="@{position}"/>
     <parameter name="city" value="@{city}"/>
     <parameter name="statesState" value="@{statesStateShort}"/>

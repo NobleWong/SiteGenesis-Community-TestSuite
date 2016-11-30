@@ -23,7 +23,7 @@ import xltutil.annotation.TestTargets;
  * <li>Search for a more complex phrase with a suggestion and click it</li>
  * </ul>
  */
-@ScriptName("tests.search.TSearch_DidYouMean")
+@ScriptName("tests.us.search.TSearch_DidYouMean")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TSearch_DidYouMean extends AbstractAnnotatedScriptTestCase {
 }

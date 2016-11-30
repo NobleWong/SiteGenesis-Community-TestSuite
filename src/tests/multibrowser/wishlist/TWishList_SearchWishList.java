@@ -36,7 +36,7 @@ import xltutil.annotation.TestTargets;
  * expensive.</li>
  * </ul>
  */
-@ScriptName("tests.wishlist.TWishList_SearchWishList")
+@ScriptName("tests.us.wishlist.TWishList_SearchWishList")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TWishList_SearchWishList extends AbstractAnnotatedScriptTestCase {
 }

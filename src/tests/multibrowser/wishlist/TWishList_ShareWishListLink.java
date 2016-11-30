@@ -28,7 +28,7 @@ import xltutil.annotation.TestTargets;
  * <li>Validate public wishlist is shown</li>
  * </ul>
  */
-@ScriptName("tests.wishlist.TWishList_ShareWishListLink")
+@ScriptName("tests.us.wishlist.TWishList_ShareWishListLink")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TWishList_ShareWishListLink extends AbstractAnnotatedScriptTestCase {
 }

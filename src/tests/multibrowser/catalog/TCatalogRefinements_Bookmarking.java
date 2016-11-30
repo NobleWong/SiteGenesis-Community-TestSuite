@@ -26,7 +26,7 @@ import xltutil.annotation.TestTargets;
  * <li>Goto next page</li>
  * </ul>
  */
-@ScriptName("tests.catalog.TCatalogRefinements_Bookmarking")
+@ScriptName("tests.us.catalog.TCatalogRefinements_Bookmarking")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900","firefox_sl" })
 public class TCatalogRefinements_Bookmarking extends AbstractAnnotatedScriptTestCase {
 }

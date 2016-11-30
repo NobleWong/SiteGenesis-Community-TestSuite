@@ -32,7 +32,7 @@ import xltutil.annotation.TestTargets;
  * <li>Logout</li>
  * </ul>
  */
-@ScriptName("tests.checkout.phone.TCheckoutOrder_AsGuest")
+@ScriptName("tests.us.checkout.phone.TCheckoutOrder_AsGuest")
 @TestTargets({"FF_320x460","galaxy_nexus" })
 public class TCheckoutOrder_AsGuest extends AbstractAnnotatedScriptTestCase {
 }

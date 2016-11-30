@@ -5,27 +5,27 @@
   <parameter name="phone_varName"/>
   <parameter name="postalCode_varName"/>
   <module name="modules.helper.multilang.MHelper_setPostalCode_GB">
-    <condition>('${Site}' == 'GB')</condition>
+    <condition>('${site}' == 'GB')</condition>
     <parameter name="postalCode" value="@{postalCode_varName}"/>
   </module>
   <module name="modules.helper.multilang.MHelper_setPhone_GB">
-    <condition>('${Site}' == 'GB')</condition>
+    <condition>('${site}' == 'GB')</condition>
     <parameter name="phone" value="@{phone_varName}"/>
   </module>
   <module name="modules.helper.multilang.MHelper_setCounty_GB">
-    <condition>('${Site}' == 'GB')</condition>
+    <condition>('${site}' == 'GB')</condition>
     <parameter name="country" value="@{country_varName}"/>
   </module>
   <module name="modules.helper.multilang.MHelper_setCounty_US">
-    <condition>('${Site}' == 'US')</condition>
+    <condition>('${site}' == 'US')</condition>
     <parameter name="country" value="@{country_varName}"/>
   </module>
   <module name="modules.helper.multilang.MHelper_setPhone_US">
-    <condition>('${Site}' == 'US')</condition>
+    <condition>('${site}' == 'US')</condition>
     <parameter name="phone" value="@{phone_varName}"/>
   </module>
   <module name="modules.helper.multilang.MHelper_setPostalCode_US">
-    <condition>('${Site}' == 'US')</condition>
+    <condition>('${site}' == 'US')</condition>
     <parameter name="postalCode" value="@{postalCode_varName}"/>
   </module>
 </scriptmodule>

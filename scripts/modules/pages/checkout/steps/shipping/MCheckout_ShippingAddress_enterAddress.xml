@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
   <description>Enter address data on shipping page.</description>
   <parameter name="firstname" desc="firstname"/>
   <parameter name="lastname" desc="lastname"/>
@@ -18,7 +18,7 @@
   <command name="type" target="${css_shipping}_addressFields_address1" value="@{address1}"/>
   <command name="type" target="${css_shipping}_addressFields_address2" value="@{address2}"/>
   <command name="select" target="${css_shipping}_addressFields_country" value="@{country}"/>
-  <command name="select" target="${css_shipping}_addressFields_states_state" value="*@{statesState}*"/>
+  <command name="select" target="css=#dwfrm_singleshipping_shippingAddress_addressFields_states_state" value="*@{statesState}*"/>
   <command name="type" target="${css_shipping}_addressFields_city" value="@{city}"/>
   <command name="type" target="${css_shipping}_addressFields_postal" value="@{postalCode}"/>
   <command name="type" target="${css_shipping}_addressFields_phone" value="@{phone}"/>

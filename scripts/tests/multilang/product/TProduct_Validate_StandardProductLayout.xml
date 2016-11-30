@@ -27,9 +27,6 @@ Validate displaying product data either via quick view or via product detail pag
   <codecomment>------------------------------------------------------------</codecomment>
   <action name="ProductQuickView"/>
   <codecomment>Hover over Product and click on quick view buttom</codecomment>
-  <module name="modules.pages.catalog.MCatalog_clickQuickViewByProductPosition" disabled="true">
-    <parameter name="position" value="2"/>
-  </module>
   <module name="modules.pages.catalog.MCatalog_clickQuickViewByProductTitle">
     <parameter name="title" value="${plainProductName}"/>
   </module>
@@ -44,11 +41,8 @@ Validate displaying product data either via quick view or via product detail pag
   <module name="modules.pages.product.VProduct_validatePDPandQVShared">
     <comment>Currently PDP and QV share a lot, hence we validate that here</comment>
   </module>
-  <module name="modules.pages.product.MProduct_clickSizeByPosition">
-    <parameter name="productSizePosition" value="2"/>
-  </module>
   <module name="modules.pages.product.VProduct_validateAvailability">
-    <parameter name="availabilityMassage" value="In Stock"/>
+    <parameter name="availabilityMassage" value="${availabilityMessage}"/>
   </module>
   <module name="modules.pages.product.VProduct_validateAdd2CartButtonIsEnabled"/>
   <module name="modules.pages.product.productquickview.VProductQV_validateQVOnlyElements"/>
@@ -80,7 +74,7 @@ Validate displaying product data either via quick view or via product detail pag
   </module>
   <module name="modules.pages.product.VProduct_validatePDPandQVShared"/>
   <module name="modules.pages.product.VProduct_validateAvailability">
-    <parameter name="availabilityMassage" value="In Stock"/>
+    <parameter name="availabilityMassage" value="${availabilityMessage}"/>
   </module>
   <module name="modules.pages.product.VProduct_validateAdd2CartButtonIsEnabled"/>
   <module name="modules.pages.product.VProduct_validateSozialSharing"/>
@@ -113,11 +107,8 @@ Validate displaying product data either via quick view or via product detail pag
     <parameter name="pricePattern" value="${price_Pattern}"/>
   </module>
   <module name="modules.pages.product.VProduct_validatePDPandQVShared"/>
-  <module name="modules.pages.product.MProduct_clickSizeByPosition">
-    <parameter name="productSizePosition" value="2"/>
-  </module>
   <module name="modules.pages.product.VProduct_validateAvailability">
-    <parameter name="availabilityMassage" value="In Stock"/>
+    <parameter name="availabilityMassage" value="${availabilityMessage}"/>
   </module>
   <module name="modules.pages.product.VProduct_validateAdd2CartButtonIsEnabled"/>
   <module name="modules.pages.product.VProduct_validateSozialSharing"/>

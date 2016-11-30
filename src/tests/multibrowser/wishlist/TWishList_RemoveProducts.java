@@ -26,7 +26,7 @@ import xltutil.annotation.TestTargets;
  * <li>Remove the last item (3)</li>
  * </ul>
  */
-@ScriptName("tests.wishlist.TWishList_RemoveProducts")
+@ScriptName("tests.us.wishlist.TWishList_RemoveProducts")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TWishList_RemoveProducts extends AbstractAnnotatedScriptTestCase {
 }

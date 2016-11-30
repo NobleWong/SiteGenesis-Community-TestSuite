@@ -48,7 +48,7 @@
     <parameter name="inputString" value="${lastname_01}"/>
     <parameter name="returned_varString" value="lastname_01"/>
   </module>
-  <module name="modules.helper.multilang.FHelper_Multilanguage_flowToStartSession"/>
+  <module name="modules.helper.FHelper_Session_flowToStartSession"/>
   <module name="modules.pages.homepage.FHomepage_flowToCreateNewAccount">
     <parameter name="firstname" value="${firstname_01}"/>
     <parameter name="lastname" value="${lastname_01}"/>

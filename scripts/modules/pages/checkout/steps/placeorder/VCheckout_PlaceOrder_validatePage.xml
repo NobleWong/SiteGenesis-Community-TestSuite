@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
   <description>Validate place order page.</description>
   <codecomment>Validate page title</codecomment>
   <command name="waitForElementPresent" disabled="true" target="css=#main #primary h1"/>
@@ -18,7 +18,7 @@
   <command name="store" target="css=#main #primary .order-summary-footer .place-order-totals table.order-totals-table" value="css_order_totals"/>
   <command name="assertElementPresent" target="${css_order_totals} .order-subtotal"/>
   <command name="assertElementPresent" target="${css_order_totals} .order-shipping"/>
-  <command name="assertElementPresent" target="${css_order_totals} .order-sales-tax"/>
+  <command name="assertElementPresent" disabled="true" target="${css_order_totals} .order-sales-tax"/>
   <command name="assertElementPresent" target="${css_order_totals} .order-total"/>
   <codecomment>Validate order summary footer</codecomment>
   <command name="assertElementPresent" disabled="true" target="css=#main #primary .order-summary-footer .summary-help"/>

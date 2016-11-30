@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Selectes StateStates works only on US PAge</description>
+  <parameter name="statesState"/>
+  <command name="type" target="css=#dwfrm_singleshipping_shippingAddress_addressFields_states_state" value="*@{statesState}*"/>
+</scriptmodule>

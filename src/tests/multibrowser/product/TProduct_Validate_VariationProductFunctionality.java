@@ -29,7 +29,7 @@ import xltutil.annotation.TestTargets;
  * becomes enabled</li>
  * </ul>
  */
-@ScriptName("tests.product.TProduct_Validate_VariationProductFunctionality")
+@ScriptName("tests.us.product.TProduct_Validate_VariationProductFunctionality")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TProduct_Validate_VariationProductFunctionality extends AbstractAnnotatedScriptTestCase {
 }

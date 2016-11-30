@@ -31,7 +31,7 @@ import xltutil.annotation.TestTargets;
  * filled for the first time</li>
  * </ul>
  */
-@ScriptName("tests.cart.TCart_RemoveProducts")
+@ScriptName("tests.us.cart.TCart_RemoveProducts")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TCart_RemoveProducts extends AbstractAnnotatedScriptTestCase {
 }

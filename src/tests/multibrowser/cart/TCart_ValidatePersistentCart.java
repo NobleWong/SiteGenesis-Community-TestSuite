@@ -40,7 +40,7 @@ import xltutil.annotation.TestTargets;
  * <li>validate cart</li>
  * </ul>
  */
-@ScriptName("tests.cart.TCart_ValidatePersistentCart")
+@ScriptName("tests.us.cart.TCart_ValidatePersistentCart")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900","firefox_sl" })
 public class TCart_ValidatePersistentCart extends AbstractAnnotatedScriptTestCase {
 }

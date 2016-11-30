@@ -23,7 +23,7 @@ import xltutil.annotation.TestTargets;
  * <li>Validate empty search result</li>
  * </ul>
  */
-@ScriptName("tests.search.TSearch_NoResults")
+@ScriptName("tests.us.search.TSearch_NoResults")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TSearch_NoResults extends AbstractAnnotatedScriptTestCase {
 }

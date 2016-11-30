@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Validate checked shipping values.</description>
+  <parameter name="shippingAddress_useAsBillingAddress" desc="true, false"/>
+  <parameter name="shippingAddress_isGift" desc="yes, no"/>
+  <parameter name="shippingMethod_position" desc="1, 2, 3, 4"/>
+  <parameter name="site"/>
+  <codecomment>Validate (preselected default) values</codecomment>
+  <command name="assertElementPresent" target="css=#dwfrm_singleshipping_shippingAddress_useAsBillingAddress[value=&quot;@{shippingAddress_useAsBillingAddress}&quot;]">
+    <comment>Please note checkbox is true but not visibly shown as checked by default</comment>
+  </command>
+  <command name="assertChecked" target="css=#dwfrm_singleshipping_shippingAddress_isGift[value=false]"/>
+  <command name="assertElementPresent" target="css=${data_@{site}}@{shippingMethod_position}[checked=&quot;checked&quot;][name=&quot;dwfrm_singleshipping_shippingAddress_shippingMethodID&quot;]"/>
+  <codecomment>Please note checkbox is true but not visibly shown as checked by default</codecomment>
+</scriptmodule>

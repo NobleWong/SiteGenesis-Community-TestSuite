@@ -31,7 +31,7 @@ import xltutil.annotation.TestTargets;
  * _datasets.xml file.
  * </p>
  */
-@ScriptName("tests.product.TProduct_Validate_OptionProductFunctionality")
+@ScriptName("tests.us.product.TProduct_Validate_OptionProductFunctionality")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900","firefox_sl","IE11_1280x900" })
 public class TProduct_Validate_OptionProductFunctionality extends AbstractAnnotatedScriptTestCase {
 }

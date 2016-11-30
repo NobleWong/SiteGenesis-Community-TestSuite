@@ -47,7 +47,7 @@
     <parameter name="inputString" value="${lastname_02}"/>
     <parameter name="returned_varString" value="lastname_02"/>
   </module>
-  <module name="modules.helper.multilang.FHelper_Multilanguage_flowToStartSession"/>
+  <module name="modules.helper.FHelper_Session_flowToStartSession"/>
   <module name="modules.helper.multilang.FHelper_Session_setSiteAddressData">
     <parameter name="country_varName" value="country_01"/>
     <parameter name="phone_varName" value="phone_01"/>

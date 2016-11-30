@@ -40,7 +40,7 @@ import xltutil.annotation.TestTargets;
  * <li>Verify that price and product number are NOT changed</li>
  * </ul>
  */
-@ScriptName("tests.product.TProduct_Validate_VariationProductDropdownOnlyFunctionality")
+@ScriptName("tests.us.product.TProduct_Validate_VariationProductDropdownOnlyFunctionality")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TProduct_Validate_VariationProductDropdownOnlyFunctionality extends AbstractAnnotatedScriptTestCase {
 }

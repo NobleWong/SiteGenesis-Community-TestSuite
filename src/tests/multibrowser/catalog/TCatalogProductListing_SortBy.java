@@ -30,7 +30,7 @@ import xltutil.annotation.TestTargets;
  * <li>End session and clean up created cookies</li>
  * </ul>
  */
-@ScriptName("tests.catalog.TCatalogProductListing_SortBy")
+@ScriptName("tests.us.catalog.TCatalogProductListing_SortBy")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TCatalogProductListing_SortBy extends AbstractAnnotatedScriptTestCase {
 }

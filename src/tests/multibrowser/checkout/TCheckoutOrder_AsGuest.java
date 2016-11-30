@@ -37,7 +37,7 @@ import xltutil.annotation.TestTargets;
  * of credit cards.
  * </p>
  */
-@ScriptName("tests.checkout.TCheckoutOrder_AsGuest")
+@ScriptName("tests.us.checkout.TCheckoutOrder_AsGuest")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TCheckoutOrder_AsGuest extends AbstractAnnotatedScriptTestCase {
 }

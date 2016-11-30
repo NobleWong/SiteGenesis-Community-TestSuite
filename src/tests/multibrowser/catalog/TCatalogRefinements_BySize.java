@@ -33,7 +33,7 @@ import xltutil.annotation.TestTargets;
  * <li><em>Deselect</em> size refinement via breadcrumb</li>
  * </ul>
  */
-@ScriptName("tests.catalog.TCatalogRefinements_BySize")
+@ScriptName("tests.us.catalog.TCatalogRefinements_BySize")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900" })
 public class TCatalogRefinements_BySize extends AbstractAnnotatedScriptTestCase {
 }
