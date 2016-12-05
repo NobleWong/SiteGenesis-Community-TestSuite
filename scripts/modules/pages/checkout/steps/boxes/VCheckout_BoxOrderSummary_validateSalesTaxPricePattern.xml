@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>This module validates that the given pricePattern is valid for the Sales Tax field on the Orderbox</description>
+  <parameter name="pricePattern"/>
+  <command name="assertText" target="css=#main #secondary .checkout-order-totals .order-totals-table .order-sales-tax td:nth-of-type(2)" value="regexp:@{pricePattern}"/>
+</scriptmodule>

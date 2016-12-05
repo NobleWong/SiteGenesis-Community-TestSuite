@@ -104,6 +104,10 @@ Note: This test is prepared as data driven test. Running it as junit test will e
   <codecomment>Shipping
 
 - Enter data</codecomment>
+  <module name="modules.pages.checkout.steps.boxes.VCheckout_BoxOrderSummary_validateSalesTaxPricePattern">
+    <condition>'${site}'=='US'</condition>
+    <parameter name="pricePattern" value="${storefront_pricePattern}"/>
+  </module>
   <module name="modules.pages.checkout.steps.shipping.FCheckout_Multilang_ShippingAddress_enterAddress">
     <parameter name="firstname" value="${firstname}"/>
     <parameter name="lastname" value="${lastname}"/>
@@ -117,9 +121,6 @@ Note: This test is prepared as data driven test. Running it as junit test will e
   </module>
   <module name="modules.pages.checkout.steps.shipping.MCheckout_ShippingAddress_checkUseAsBillingAddress">
     <comment>This makes the difference of running it with two addresses or one.</comment>
-  </module>
-  <module name="modules.pages.checkout.steps.shipping.MCheckout_ShippingMethod_checkPosition" disabled="true">
-    <parameter name="positon" value="${shippingMethod_position}"/>
   </module>
   <module name="modules.pages.checkout.steps.shipping.MCheckout_Multilang_ShippingMethod_checkPosition">
     <parameter name="positon" value="${shippingMethod_position}"/>
@@ -137,9 +138,9 @@ Note: This test is prepared as data driven test. Running it as junit test will e
     <parameter name="totalsSalesTax_varName" value="totalsSalesTax_varDynamic"/>
     <parameter name="totalsTotal_varName" value="totalsTotal_varDynamic"/>
   </module>
-  <module name="modules.pages.checkout.steps.shipping.VCheckout_ShippingMethod_validatePrice" disabled="true">
-    <parameter name="position" value="${shippingMethod_position}"/>
-    <parameter name="price" value="${totalsShipping_varDynamic}"/>
+  <module name="modules.pages.checkout.steps.boxes.SCheckout_BoxOrderSummary_storeSalesTax">
+    <condition>'${site}'=='US'</condition>
+    <parameter name="totalsSalesTax_varName" value="totalsSalesTax_varDynamic"/>
   </module>
   <module name="modules.pages.checkout.steps.shipping.VCheckout_Multilang_ShippingMethod_validatePrice">
     <parameter name="position" value="${shippingMethod_position}"/>
@@ -175,6 +176,10 @@ Note: This test is prepared as data driven test. Running it as junit test will e
     <parameter name="totalsShipping" value="${totalsShipping_varDynamic}"/>
     <parameter name="totalsSalesTax" value="${totalsSalesTax_varDynamic}"/>
     <parameter name="totalsTotal" value="${totalsTotal_varDynamic}"/>
+  </module>
+  <module name="modules.pages.checkout.steps.boxes.VCheckout_BoxOrderSummary_validateSalesTax">
+    <condition>'${site}'=='US'</condition>
+    <parameter name="totalsSalesTax" value="${totalsSalesTax_varDynamic}"/>
   </module>
   <module name="modules.pages.checkout.steps.boxes.VCheckout_BoxShippingAddress_validateAddress">
     <parameter name="firstname" value="${firstname}"/>
@@ -228,12 +233,20 @@ Note: This test is prepared as data driven test. Running it as junit test will e
     <parameter name="totalsSalesTax" value="${totalsSalesTax_varDynamic}"/>
     <parameter name="totalsTotal" value="${totalsTotal_varDynamic}"/>
   </module>
+  <module name="modules.pages.checkout.steps.placeorder.VCheckout_PlaceOrder_validateSalesTax">
+    <condition>'${site}'=='US'</condition>
+    <parameter name="totalsSalesTax" value="${totalsSalesTax_varDynamic}"/>
+  </module>
   <module name="modules.pages.checkout.steps.boxes.VCheckout_BoxOrderSummary_validateTotals">
     <parameter name="shippingMethod_name" value="${shippingMethod_name}"/>
     <parameter name="totalsSubtotal" value="${totalSubtotal_varDynamic}"/>
     <parameter name="totalsShipping" value="${totalsShipping_varDynamic}"/>
     <parameter name="totalsSalesTax" value="${totalsSalesTax_varDynamic}"/>
     <parameter name="totalsTotal" value="${totalsTotal_varDynamic}"/>
+  </module>
+  <module name="modules.pages.checkout.steps.boxes.VCheckout_BoxOrderSummary_validateSalesTax">
+    <condition>'${site}'=='US'</condition>
+    <parameter name="totalsSalesTax" value="${totalsSalesTax_varDynamic}"/>
   </module>
   <module name="modules.pages.checkout.steps.boxes.VCheckout_BoxShippingAddress_validateAddress">
     <parameter name="firstname" value="${firstname}"/>
