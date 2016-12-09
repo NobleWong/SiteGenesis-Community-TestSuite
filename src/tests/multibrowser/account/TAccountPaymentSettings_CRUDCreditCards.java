@@ -33,7 +33,7 @@ import xltutil.annotation.TestTargets;
  * <li>End session and clean up created cookies</li>
  * </ul>
  */
-@ScriptName("tests.account.multilang.TAccountPaymentSettings_CRUDCreditCards")
+@ScriptName("tests.us.account.multilang.TAccountPaymentSettings_CRUDCreditCards")
 @TestTargets({ "FF_1500x1000","Chrome_1280x900","firefox_sl" })
 public class TAccountPaymentSettings_CRUDCreditCards extends AbstractAnnotatedScriptTestCase {
 }

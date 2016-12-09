@@ -2,7 +2,6 @@
 <data-sets>
   <data-set>
     <site>US</site>
-    <storefront_url>${base_url}${extention_url_US}</storefront_url>
     <productNumber>${productNumber_typeVariationProductColorSizeListPriceOnly}</productNumber>
     <productQuantity>1</productQuantity>
     <address1>${billingAddress_address1}</address1>
@@ -26,7 +25,6 @@
   </data-set>
   <data-set>
     <site>GB</site>
-    <storefront_url>${base_url}${extention_url_GB}</storefront_url>
     <productNumber>${productNumber_typeVariationProductColorSizeListPriceOnly}</productNumber>
     <productQuantity>1</productQuantity>
     <address1>${billingAddress_address1}</address1>

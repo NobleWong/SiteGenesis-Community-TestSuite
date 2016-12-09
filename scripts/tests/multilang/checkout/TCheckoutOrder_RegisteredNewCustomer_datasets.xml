@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-sets>
+  <data-set>
+    <site>US</site>
+    <shippingAddress_country>${shippingAddress_country_us}</shippingAddress_country>
+    <statesState>${billingAddress_statesState}</statesState>
+    <statesStateShort>${billingAddress_statesStateShort}</statesStateShort>
+    <phone>${billingAddress_phone_us}</phone>
+    <postalCode>${billingAddress_postalCode_us}</postalCode>
+  </data-set>
+  <data-set>
+    <site>GB</site>
+    <shippingAddress_country>${shippingAddress_country_gb}</shippingAddress_country>
+    <statesState>${billingAddress_statesState}</statesState>
+    <statesStateShort>${billingAddress_statesState}</statesStateShort>
+    <phone>${billingAddress_phone_gb}</phone>
+    <postalCode>${billingAddress_postalCode_gb}</postalCode>
+  </data-set>
+</data-sets>

@@ -2,10 +2,8 @@
 <data-sets>
   <data-set>
     <site>US</site>
-    <storefront_url>${base_url}${extention_url_US}</storefront_url>
   </data-set>
   <data-set>
     <site>GB</site>
-    <storefront_url>${base_url}${extention_url_GB}</storefront_url>
   </data-set>
 </data-sets>

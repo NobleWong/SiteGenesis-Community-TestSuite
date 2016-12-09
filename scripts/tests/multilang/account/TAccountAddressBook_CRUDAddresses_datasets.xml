@@ -2,10 +2,26 @@
 <data-sets>
   <data-set>
     <site>US</site>
-    <storefront_url>${base_url}${extention_url_US}</storefront_url>
+    <country_01>${shippingAddress_country}</country_01>
+    <country_02>${billingAddress_country}</country_02>
+    <country_03>United States</country_03>
+    <phone_01>${billingAddress_phone}</phone_01>
+    <phone_02>${shippingAddress_phone}</phone_02>
+    <phone_03>866-540-4474</phone_03>
+    <postalCode_01>${shippingAddress_postalCode}</postalCode_01>
+    <postalCode_02>${billingAddress_postalCode}</postalCode_02>
+    <postalCode_03>96796</postalCode_03>
   </data-set>
   <data-set>
     <site>GB</site>
-    <storefront_url>${base_url}${extention_url_GB}</storefront_url>
+    <country_01>United Kingdom</country_01>
+    <country_02>United Kingdom</country_02>
+    <country_03>United Kingdom</country_03>
+    <phone_01>01222 555 545</phone_01>
+    <phone_02>01222 555 444</phone_02>
+    <phone_03>01222 555 111</phone_03>
+    <postalCode_01>SW42 4RG</postalCode_01>
+    <postalCode_02>SW42 4RG</postalCode_02>
+    <postalCode_03>SW42 4RG</postalCode_03>
   </data-set>
 </data-sets>

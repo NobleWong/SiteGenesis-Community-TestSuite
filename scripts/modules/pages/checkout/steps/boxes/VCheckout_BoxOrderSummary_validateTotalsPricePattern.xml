@@ -4,6 +4,6 @@
   <parameter name="pricePattern"/>
   <command name="assertText" target="css=#main #secondary .checkout-order-totals .order-totals-table .order-subtotal td:nth-of-type(2)" value="regexp:@{pricePattern}"/>
   <command name="assertText" target="css=#main #secondary .checkout-order-totals .order-totals-table .order-shipping td:nth-of-type(2)" value="regexp:@{pricePattern}"/>
-  <command name="assertText" disabled="true" target="css=#main #secondary .checkout-order-totals .order-totals-table .order-sales-tax td:nth-of-type(2)" value="regexp:@{pricePattern}"/>
+  <command name="assertText" target="css=#main #secondary .checkout-order-totals .order-totals-table .order-sales-tax td:nth-of-type(2)" value="regexp:@{pricePattern}"/>
   <command name="assertText" target="css=#main #secondary .checkout-order-totals .order-totals-table .order-total td:nth-of-type(2)" value="regexp:@{pricePattern}"/>
 </scriptmodule>

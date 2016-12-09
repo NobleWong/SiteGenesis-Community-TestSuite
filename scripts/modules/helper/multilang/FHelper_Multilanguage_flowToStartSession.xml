@@ -1,31 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
-  <description>Flow to start session.
+  <description>#Flow to start session.
+#Hint, the possible sites to open are stored in the module data 
 
 - Start with open browser tab
 - Open homepage
 - Delete cookies
 - Open homepage
 - End on homepage</description>
+  <parameter name="site" desc="site to load"/>
   <codecomment>Create URL for shop</codecomment>
-  <module name="modules.helper.multilang.MHelper_createURL_GB">
-    <condition>'${Site}' == 'GB'</condition>
-    <parameter name="url" value="storefront_url"/>
-  </module>
-  <module name="modules.helper.multilang.MHelper_createURL_FR">
-    <condition>'${Site}' == 'FR'</condition>
-    <parameter name="url" value="storefront_url"/>
-  </module>
-  <module name="modules.helper.multilang.MHelper_createURL_US">
-    <condition>'${Site}' == 'US'</condition>
-    <parameter name="url" value="storefront_url"/>
-  </module>
   <action name="Homepage"/>
   <codecomment>Open homepage</codecomment>
-  <command name="open" value="${storefront_url}"/>
+  <command name="open" value="${site_url_@{site}}"/>
   <codecomment>Delete cookies in the current context</codecomment>
   <command name="deleteAllVisibleCookies"/>
   <codecomment>Open homepage again to get a fresh set of cookies</codecomment>
   <action name="HomepageAgain"/>
-  <command name="open" value="${storefront_url}"/>
+  <command name="open" value="${site_url_@{site}}"/>
 </scriptmodule>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
-  <parameter name="url"/>
-  <command name="store" target="${base_url}${extention_url_FR}" value="@{url}"/>
-</scriptmodule>

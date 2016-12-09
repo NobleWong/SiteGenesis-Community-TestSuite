@@ -21,7 +21,9 @@ Hint: this testcase has several data sets for different languages
   <codecomment># Setup
 
 - Start Session</codecomment>
-  <module name="modules.helper.FHelper_Session_flowToStartSession"/>
+  <module name="modules.helper.multilang.FHelper_Multilanguage_flowToStartSession">
+    <parameter name="site" value="${site}"/>
+  </module>
   <action name="SearchProducts"/>
   <module name="modules.pages.search.MSearch_enterTextAndSubmit">
     <parameter name="searchText" value="${searchPhrase}"/>

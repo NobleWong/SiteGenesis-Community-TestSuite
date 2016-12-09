@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://xlt.xceptance.com/xlt-script-data">
+  <site_url_US>${base_url}${extention_url_US}</site_url_US>
+  <site_url_GB>${base_url}${extention_url_GB}</site_url_GB>
+  <site_url_FR>${base_url}${extention_url_FR}</site_url_FR>
+  <site_url_IT>${base_url}${extention_url_IT}</site_url_IT>
+  <site_url_CN>${base_url}${extention_url_CN}</site_url_CN>
+  <site_url_JP>${base_url}${extention_url_JP}</site_url_JP>
+</data>

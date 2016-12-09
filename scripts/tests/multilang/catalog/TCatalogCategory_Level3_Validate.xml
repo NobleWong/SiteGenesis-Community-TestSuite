@@ -15,7 +15,9 @@
   <codecomment># Setup
 
 - Start session</codecomment>
-  <module name="modules.helper.FHelper_Session_flowToStartSession"/>
+  <module name="modules.helper.multilang.FHelper_Multilanguage_flowToStartSession">
+    <parameter name="site" value="${site}"/>
+  </module>
   <codecomment>## Category Two
 
 - Go to category pages

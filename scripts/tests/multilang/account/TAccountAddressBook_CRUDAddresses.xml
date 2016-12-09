@@ -47,21 +47,8 @@
     <parameter name="inputString" value="${lastname_02}"/>
     <parameter name="returned_varString" value="lastname_02"/>
   </module>
-  <module name="modules.helper.FHelper_Session_flowToStartSession"/>
-  <module name="modules.helper.multilang.FHelper_Session_setSiteAddressData">
-    <parameter name="country_varName" value="country_01"/>
-    <parameter name="phone_varName" value="phone_01"/>
-    <parameter name="postalCode_varName" value="postalCode_01"/>
-  </module>
-  <module name="modules.helper.multilang.FHelper_Session_setSiteAddressData">
-    <parameter name="country_varName" value="country_02"/>
-    <parameter name="phone_varName" value="phone_02"/>
-    <parameter name="postalCode_varName" value="postalCode_02"/>
-  </module>
-  <module name="modules.helper.multilang.FHelper_Session_setSiteAddressData">
-    <parameter name="country_varName" value="country_03"/>
-    <parameter name="phone_varName" value="phone_03"/>
-    <parameter name="postalCode_varName" value="postalCode_03"/>
+  <module name="modules.helper.multilang.FHelper_Multilanguage_flowToStartSession">
+    <parameter name="site" value="${site}"/>
   </module>
   <module name="modules.pages.homepage.FHomepage_flowToCreateNewAccount">
     <parameter name="firstname" value="${firstname_02}"/>

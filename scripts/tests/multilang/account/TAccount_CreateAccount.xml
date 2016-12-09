@@ -36,7 +36,9 @@ create email, password and add some randomness to fristname and lastname</codeco
     <parameter name="inputString" value="${lastname}"/>
     <parameter name="returned_varString" value="lastname_varDynamic"/>
   </module>
-  <module name="modules.helper.FHelper_Session_flowToStartSession"/>
+  <module name="modules.helper.multilang.FHelper_Multilanguage_flowToStartSession">
+    <parameter name="site" value="${Site}"/>
+  </module>
   <codecomment># Scope</codecomment>
   <codecomment>Account
 

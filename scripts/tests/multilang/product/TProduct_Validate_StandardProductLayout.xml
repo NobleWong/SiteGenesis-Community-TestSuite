@@ -15,7 +15,9 @@ Validate displaying product data either via quick view or via product detail pag
 - check if product name, price, and product number are the same on both 
 - search for product name and validate PDP again</description>
   <codecomment># Setup - Start Session</codecomment>
-  <module name="modules.helper.FHelper_Session_flowToStartSession"/>
+  <module name="modules.helper.multilang.FHelper_Multilanguage_flowToStartSession">
+    <parameter name="site" value="${site}"/>
+  </module>
   <codecomment># Setup - Load Values</codecomment>
   <action name="SearchProducts"/>
   <module name="modules.pages.search.MSearch_enterTextAndSubmit">
