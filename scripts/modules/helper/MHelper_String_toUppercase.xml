@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
-  <description>Converts String to uppercase</description>
-  <parameter name="string"/>
-  <parameter name="output_varname"/>
-  <command name="storeEval" target="&quot;@{string}&quot;.toUpperCase() " value="@{output_varname}"/>
-</scriptmodule>

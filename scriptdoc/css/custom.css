@@ -105,6 +105,8 @@ ul.sidebar ul {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #general .section-content .suite-name {
   padding: 2rem;
+  font-size: 3rem;
+  font-weight: 300;
 }
 
 #statistics {
@@ -216,8 +218,18 @@ a:hover {
   margin-bottom: 2rem;
 }
 
-.step-description {
+.step-description, .step-condition {
   margin-left: 2rem;
+  width: 90%;
+}
+
+.step-condition .label {
+  padding-left: 1rem;
+}
+
+.step-condition pre.expression {
+  margin: 0 0 1.5rem 2rem;
+  padding: 1rem;
 }
 
 .description, div[id^="pkg_"] div.section-content {
@@ -254,6 +266,15 @@ p.empty {
   text-decoration: line-through;
 }
 
+/* Disabled step-conditions. */
+.step-condition[data-disabled="true"] .expression {
+    color: #c9c9c9 !important;
+}
+
+.step-condition[data-disabled="true"] .label {
+  background-color: #c9c9c9 !important;
+}
+
 .description h1, .step-description h1 { color:inherit; font-size: 2.0rem; line-height: 1.2;  letter-spacing: 0; }
 .description h2, .step-description h2 { color:inherit; font-size: 1.6rem; line-height: 1.25; letter-spacing: 0; }
 .description h3, .step-description h3 { color:inherit; font-size: 1.4rem; line-height: 1.6;  letter-spacing: 0; }
@@ -284,19 +305,23 @@ p.empty {
 
 .tags {
   float: right;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
 }
 
 .tag-label {
-  font-size: 1.2rem;
-  margin-right: 5px;
+  display: none;
 }
 
 .tag {
-  background-color: #f9f2f4;
-  padding: 2px 4px;
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-  color: #d9534f;
+  display: inline-block;
+  height: 24px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0,0,0,.6);
+  line-height: 24px;
+  padding: 0 12px;
+  border-radius: 16px;
 }
 
 .tag:first-child {

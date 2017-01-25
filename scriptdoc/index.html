@@ -32,7 +32,15 @@
       <div class="header row">
         <nav class="navbar">
           <div class="navbar-wrapper">
-            <ul class="left">
+            <a href="#" data-activates="mobile-nav" class="button-collapse hide-on-med-and-up"><i class="mdi-navigation-menu"></i></a>
+            <ul class="left hide-on-small-only">
+              <li><a class="button active" href="index.html">Overview</a></li>
+              <li><a class="button" href="testdata.html">Test Data</a></li>
+              <li><a class="button" href="packages.html">Packages</a></li>
+              <li><a class="button" href="tests.html">Tests</a></li>
+              <li><a class="button" href="modules.html">Modules</a></li>
+            </ul>
+            <ul class="side-nav hide-on-med-and-up" id="mobile-nav">
               <li><a class="button active" href="index.html">Overview</a></li>
               <li><a class="button" href="testdata.html">Test Data</a></li>
               <li><a class="button" href="packages.html">Packages</a></li>
@@ -54,14 +62,34 @@
       <h1>General Information</h1>
     </div><!-- /.section-title -->
     <div class="section-content">
-      <div class="suite-name grey lighten-3 z-depth-1">SiteGenesis-Community-TestSuite</div>
-
+      <div id="suite-info">
+        <div class="row">
+          <div class="col s12">
+            <div class="z-depth-1">
+              <div class="suite-name grey darken-1 white-text">SiteGenesis-Community-TestSuite</div>
+              <div class="white description">
+                <p>This is a functional test suite for Salesforce Commerce Cloud (formerly known as Demandware) SiteGenesis, the best practice ecommerce reference store implementation for and by Salesforce.</p>
+<p>Because test suites sometimes tend to become complex and hard to maintain, we realized it is time to build a clearly structured test suite with a well-defined set of tests.</p>
+<p>The project idea is to collect experiences, consolidate knowledge and share ideas of testing practices. Although this test suite is based on testing the storefront of the demo shop <strong>Salesforce</strong> <strong>Commerce Cloud</strong> <strong>SiteGenesis</strong> the underlying concepts and the communicated know-how are valid for building test suites of other web applications as well. Everybody is invited to use it, learn from it, improve it and adapt it to their needs.</p>
+<p>Possible use cases are:</p>
+<ul>
+  <li>Test suite to automate new store based on Salesforce Commerce Cloud SiteGenesis</li>
+  <li>Starting point for test development with fast learning curve</li>
+  <li>Demonstration of test automation and test suite structuring</li>
+  <li>Reusable best practices in other (existing) projects</li>
+</ul>
+<p>This test suite has been built for and with <strong>XLT</strong></p>
+              </div>
+            </div><!-- /.z-depth-1 -->
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /suite-info -->
       <div id="statistics">
         <div class="row">
   <div class="col l3 m6 s12">
     <div class="card teal lighten-1">
       <div class="card-content white-text center">
-        <span class="card-title">33</span>
+        <span class="card-title">58</span>
         <p>Test Case Scripts</p>
       </div><!-- /.card-content -->
     </div><!-- /.card -->
@@ -69,7 +97,7 @@
   <div class="col l3 m6 s12">
     <div class="card teal lighten-1">
       <div class="card-content white-text center">
-        <span class="card-title">267</span>
+        <span class="card-title">342</span>
         <p>Script Modules</p>
       </div><!-- /.card-content -->
     </div><!-- /.card -->
@@ -77,7 +105,7 @@
   <div class="col l3 m6 s12">
     <div class="card teal lighten-1">
       <div class="card-content white-text center">
-        <span class="card-title">0</span>
+        <span class="card-title">3</span>
         <p>Java Modules</p>
       </div><!-- /.card-content -->
     </div><!-- /.card -->
@@ -85,7 +113,7 @@
   <div class="col l3 m6 s12">
     <div class="card teal lighten-1">
       <div class="card-content white-text center">
-        <span class="card-title">43</span>
+        <span class="card-title">48</span>
         <p>Script Packages</p>
       </div><!-- /.card-content -->
     </div><!-- /.card -->
@@ -104,7 +132,7 @@
     <div id="footer">
       <div class="container">
         <div class="row red darken-4 z-depth-1">
-          <div class="footer-copy white-text">Generated with Xceptance LoadTest<sup>&reg;</sup>&nbsp;<span class="product-version">4.5.3</span></div>
+          <div class="footer-copy white-text">Generated with Xceptance LoadTest<sup>&reg;</sup>&nbsp;<span class="product-version">4.8.1</span></div>
         </div><!-- /.row -->
       </div><!-- /.container -->
     </div><!-- /#footer -->

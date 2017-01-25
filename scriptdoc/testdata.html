@@ -32,7 +32,15 @@
       <div class="header row">
         <nav class="navbar">
           <div class="navbar-wrapper">
-            <ul class="left">
+            <a href="#" data-activates="mobile-nav" class="button-collapse hide-on-med-and-up"><i class="mdi-navigation-menu"></i></a>
+            <ul class="left hide-on-small-only">
+              <li><a class="button" href="index.html">Overview</a></li>
+              <li><a class="button active" href="testdata.html">Test Data</a></li>
+              <li><a class="button" href="packages.html">Packages</a></li>
+              <li><a class="button" href="tests.html">Tests</a></li>
+              <li><a class="button" href="modules.html">Modules</a></li>
+            </ul>
+            <ul class="side-nav hide-on-med-and-up" id="mobile-nav">
               <li><a class="button" href="index.html">Overview</a></li>
               <li><a class="button active" href="testdata.html">Test Data</a></li>
               <li><a class="button" href="packages.html">Packages</a></li>
@@ -65,6 +73,10 @@
     </thead>
     <tbody>
       <tr>
+        <td class="key">Mode</td>
+        <td class="value">Staging</td>
+      </tr>
+      <tr>
         <td class="key">productNumber_typeOptionProduct</td>
         <td class="value">canon-eos-5d-mark2-body</td>
       </tr>
@@ -86,7 +98,7 @@
       </tr>
       <tr>
         <td class="key">productNumber_typeVariationProductColorSizeListPriceOnly</td>
-        <td class="value">701643238132</td>
+        <td class="value">701644391980</td>
       </tr>
       <tr>
         <td class="key">productNumber_typeVariationProductColorSizeSalesPrice</td>
@@ -121,6 +133,10 @@
         <td class="value">\$\d{1,3}([,]\d{3})*\.\d{2}</td>
       </tr>
       <tr>
+        <td class="key">storefront_priceRangeSeparators</td>
+        <td class="value">- ${storefront_priceCurrency}</td>
+      </tr>
+      <tr>
         <td class="key">storefront_shippingAddress_isGift</td>
         <td class="value">no</td>
       </tr>
@@ -138,7 +154,7 @@
       </tr>
       <tr>
         <td class="key">storefront_url</td>
-        <td class="value">http://dev01-stage02-dw.demandware.net/s/SiteGenesis/home</td>
+        <td class="value">---</td>
       </tr>
     </tbody>
   </table>
@@ -172,6 +188,24 @@
     </div>
     <div class="divider"></div>
     <h4>modules.helper</h4>
+    <div class="data-table">
+  <table>
+    <thead class="light-blue darken-2 white-text">
+      <tr>
+        <th>Name</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="key">emailClientURL</td>
+        <td class="value">http://www.my10minutemail.com/</td>
+      </tr>
+    </tbody>
+  </table>
+    </div>
+    <div class="divider"></div>
+    <h4>modules.helper.external</h4>
     <div class="data-table">
   <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
     </div>
@@ -281,6 +315,11 @@
   <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
     </div>
     <div class="divider"></div>
+    <h4>modules.pages.giftcertificates</h4>
+    <div class="data-table">
+  <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+    </div>
+    <div class="divider"></div>
     <h4>modules.pages.homepage</h4>
     <div class="data-table">
   <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
@@ -352,7 +391,7 @@
       </tr>
       <tr>
         <td class="key">amexCreditCard_year</td>
-        <td class="value">2019</td>
+        <td class="value">2020</td>
       </tr>
       <tr>
         <td class="key">billingAddress_address1</td>
@@ -468,7 +507,7 @@
       </tr>
       <tr>
         <td class="key">visaCreditCard_year</td>
-        <td class="value">2016</td>
+        <td class="value">2018</td>
       </tr>
     </tbody>
   </table>
@@ -481,7 +520,24 @@
     <div class="divider"></div>
     <h4>tests.catalog</h4>
     <div class="data-table">
-  <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+  <table>
+    <thead class="light-blue darken-2 white-text">
+      <tr>
+        <th>Name</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="key">sortByLabel_priceHighToLow</td>
+        <td class="value">Price High to Low</td>
+      </tr>
+      <tr>
+        <td class="key">sortByLabel_priceLowToHigh</td>
+        <td class="value">Price Low To High</td>
+      </tr>
+    </tbody>
+  </table>
     </div>
     <div class="divider"></div>
     <h4>tests.checkout</h4>
@@ -508,7 +564,7 @@
       </tr>
       <tr>
         <td class="key">amexCreditCard_owner</td>
-        <td class="value">Jane Doe</td>
+        <td class="value">Jane Moneybag</td>
       </tr>
       <tr>
         <td class="key">amexCreditCard_type</td>
@@ -524,11 +580,11 @@
       </tr>
       <tr>
         <td class="key">billingAddress_address1</td>
-        <td class="value">Middlefield Rd</td>
+        <td class="value">1941 Middlefield Rd</td>
       </tr>
       <tr>
         <td class="key">billingAddress_address2</td>
-        <td class="value">1941</td>
+        <td class="value">Left Garage Door</td>
       </tr>
       <tr>
         <td class="key">billingAddress_city</td>
@@ -544,7 +600,7 @@
       </tr>
       <tr>
         <td class="key">billingAddress_lastname</td>
-        <td class="value">Buyer</td>
+        <td class="value">Shopper</td>
       </tr>
       <tr>
         <td class="key">billingAddress_phone</td>
@@ -564,15 +620,15 @@
       </tr>
       <tr>
         <td class="key">billingAddress_title</td>
-        <td class="value">Palo*Alto</td>
+        <td class="value">Palo Alto</td>
       </tr>
       <tr>
         <td class="key">shippingAddress_address1</td>
-        <td class="value">Spring St</td>
+        <td class="value">6 Spring St.</td>
       </tr>
       <tr>
         <td class="key">shippingAddress_address2</td>
-        <td class="value">6</td>
+        <td class="value">14th floor</td>
       </tr>
       <tr>
         <td class="key">shippingAddress_city</td>
@@ -588,7 +644,7 @@
       </tr>
       <tr>
         <td class="key">shippingAddress_lastname</td>
-        <td class="value">Doe</td>
+        <td class="value">Moneybag</td>
       </tr>
       <tr>
         <td class="key">shippingAddress_phone</td>
@@ -620,6 +676,109 @@
       </tr>
       <tr>
         <td class="key">visaCreditCard_cvn</td>
+        <td class="value">143</td>
+      </tr>
+      <tr>
+        <td class="key">visaCreditCard_month</td>
+        <td class="value">August</td>
+      </tr>
+      <tr>
+        <td class="key">visaCreditCard_number</td>
+        <td class="value">4111111111111111</td>
+      </tr>
+      <tr>
+        <td class="key">visaCreditCard_owner</td>
+        <td class="value">John Shopper</td>
+      </tr>
+      <tr>
+        <td class="key">visaCreditCard_type</td>
+        <td class="value">Visa</td>
+      </tr>
+      <tr>
+        <td class="key">visaCreditCard_typeShort</td>
+        <td class="value">Visa</td>
+      </tr>
+      <tr>
+        <td class="key">visaCreditCard_year</td>
+        <td class="value">2018</td>
+      </tr>
+    </tbody>
+  </table>
+    </div>
+    <div class="divider"></div>
+    <h4>tests.checkout.phone</h4>
+    <div class="data-table">
+  <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+    </div>
+    <div class="divider"></div>
+    <h4>tests.giftcertificates</h4>
+    <div class="data-table">
+  <table>
+    <thead class="light-blue darken-2 white-text">
+      <tr>
+        <th>Name</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="key">billingAddress_address1</td>
+        <td class="value">Middlefield Rd</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_address2</td>
+        <td class="value">1941</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_city</td>
+        <td class="value">Palo Alto</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_country</td>
+        <td class="value">United States</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_phone</td>
+        <td class="value">781-391-6642</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_postalCode</td>
+        <td class="value">94301</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_statesState</td>
+        <td class="value">California</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_statesStateShort</td>
+        <td class="value">CA</td>
+      </tr>
+      <tr>
+        <td class="key">firstNameBuyer</td>
+        <td class="value">Nicole</td>
+      </tr>
+      <tr>
+        <td class="key">firstNameRecipient</td>
+        <td class="value">Thomas</td>
+      </tr>
+      <tr>
+        <td class="key">giftCertificateValue</td>
+        <td class="value">50${storefront_priceDecimalMark}00</td>
+      </tr>
+      <tr>
+        <td class="key">lastNameBuyer</td>
+        <td class="value">Buyer</td>
+      </tr>
+      <tr>
+        <td class="key">lastNameRecipient</td>
+        <td class="value">Recipient</td>
+      </tr>
+      <tr>
+        <td class="key">purchaseMessage</td>
+        <td class="value">Happy Birthday!</td>
+      </tr>
+      <tr>
+        <td class="key">visaCreditCard_cvn</td>
         <td class="value">123</td>
       </tr>
       <tr>
@@ -644,15 +803,10 @@
       </tr>
       <tr>
         <td class="key">visaCreditCard_year</td>
-        <td class="value">2016</td>
+        <td class="value">2020</td>
       </tr>
     </tbody>
   </table>
-    </div>
-    <div class="divider"></div>
-    <h4>tests.checkout.phone</h4>
-    <div class="data-table">
-  <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
     </div>
     <div class="divider"></div>
     <h4>tests.homepage</h4>
@@ -692,6 +846,10 @@
         <td class="value">Playstation 3 Bundle</td>
       </tr>
       <tr>
+        <td class="key">bundleProductSearchPhrase</td>
+        <td class="value">Game Consoles</td>
+      </tr>
+      <tr>
         <td class="key">NavigationCategoryLevel1</td>
         <td class="value">Mens</td>
       </tr>
@@ -720,6 +878,10 @@
         <td class="value">Nintendo Wii™ Game Console</td>
       </tr>
       <tr>
+        <td class="key">optionProductSearchPhrase</td>
+        <td class="value">Game Consoles</td>
+      </tr>
+      <tr>
         <td class="key">plainProductCategoryLevel1</td>
         <td class="value">Electronics</td>
       </tr>
@@ -733,7 +895,11 @@
       </tr>
       <tr>
         <td class="key">plainProductName</td>
-        <td class="value">Grand Theft Auto 4 (for X-Box 360)</td>
+        <td class="value">Mario Kart (for Nintendo DS)</td>
+      </tr>
+      <tr>
+        <td class="key">plainProductSearchPhrase</td>
+        <td class="value">games for ds</td>
       </tr>
       <tr>
         <td class="key">setProductCategoryLevel1</td>
@@ -752,6 +918,10 @@
         <td class="value">Winter Look</td>
       </tr>
       <tr>
+        <td class="key">setProductSearchPhrase</td>
+        <td class="value">Outfits</td>
+      </tr>
+      <tr>
         <td class="key">variationProductCategoryLevel1</td>
         <td class="value">Mens</td>
       </tr>
@@ -767,8 +937,49 @@
         <td class="key">variationProductName</td>
         <td class="value">Cotton Stretch Pant</td>
       </tr>
+      <tr>
+        <td class="key">variationProductSearchPhrase</td>
+        <td class="value">Stretch Pants</td>
+      </tr>
+      <tr>
+        <td class="key">variationProductWithDropdownAndColorLabel1</td>
+        <td class="value">1 GB</td>
+      </tr>
+      <tr>
+        <td class="key">variationProductWithDropdownAndColorLabel2</td>
+        <td class="value">2 GB</td>
+      </tr>
+      <tr>
+        <td class="key">variationProductWithDropdownAndColorName</td>
+        <td class="value">Apple iPod Shuffle</td>
+      </tr>
+      <tr>
+        <td class="key">variationProductWithDropdownEmptyText</td>
+        <td class="value">Select Memory Size</td>
+      </tr>
+      <tr>
+        <td class="key">variationProductWithDropdownOnlyLabel1</td>
+        <td class="value">8 GB</td>
+      </tr>
+      <tr>
+        <td class="key">variationProductWithDropdownOnlyLabel2</td>
+        <td class="value">32 GB</td>
+      </tr>
+      <tr>
+        <td class="key">variationProductWithDropdownOnlyName</td>
+        <td class="value">Apple iPod Touch</td>
+      </tr>
+      <tr>
+        <td class="key">variationProductWithDropdownOnlySearchText</td>
+        <td class="value">Apple iPod</td>
+      </tr>
     </tbody>
   </table>
+    </div>
+    <div class="divider"></div>
+    <h4>tests.promotion</h4>
+    <div class="data-table">
+  <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
     </div>
     <div class="divider"></div>
     <h4>tests.search</h4>
@@ -804,6 +1015,44 @@
     </tbody>
   </table>
     </div>
+    <div class="divider"></div>
+    <h4>tests.wishlist</h4>
+    <div class="data-table">
+  <table>
+    <thead class="light-blue darken-2 white-text">
+      <tr>
+        <th>Name</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="key">searchTextProducts_01</td>
+        <td class="value">Necklaces</td>
+      </tr>
+      <tr>
+        <td class="key">searchTextProducts_02</td>
+        <td class="value">GPSMAP</td>
+      </tr>
+      <tr>
+        <td class="key">searchTextProducts_03</td>
+        <td class="value">MP3 Players -Apple -Sony</td>
+      </tr>
+      <tr>
+        <td class="key">searchTextProducts_04</td>
+        <td class="value">Digital Cameras</td>
+      </tr>
+      <tr>
+        <td class="key">wishlistOwner_fristname</td>
+        <td class="value">John</td>
+      </tr>
+      <tr>
+        <td class="key">wishlistOwner_lastname</td>
+        <td class="value">WishListOwner Doe</td>
+      </tr>
+    </tbody>
+  </table>
+    </div>
       </div>
     </div><!-- /.section-content -->
   </div><!-- /.section -->
@@ -817,7 +1066,7 @@
     <div id="footer">
       <div class="container">
         <div class="row red darken-4 z-depth-1">
-          <div class="footer-copy white-text">Generated with Xceptance LoadTest<sup>&reg;</sup>&nbsp;<span class="product-version">4.5.3</span></div>
+          <div class="footer-copy white-text">Generated with Xceptance LoadTest<sup>&reg;</sup>&nbsp;<span class="product-version">4.8.1</span></div>
         </div><!-- /.row -->
       </div><!-- /.container -->
     </div><!-- /#footer -->

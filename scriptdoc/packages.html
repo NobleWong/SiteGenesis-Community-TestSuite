@@ -36,7 +36,15 @@
       <div class="header row">
         <nav class="navbar">
           <div class="navbar-wrapper">
-            <ul class="left">
+            <a href="#" data-activates="mobile-nav" class="button-collapse hide-on-med-and-up"><i class="mdi-navigation-menu"></i></a>
+            <ul class="left hide-on-small-only">
+              <li><a class="button" href="index.html">Overview</a></li>
+              <li><a class="button" href="testdata.html">Test Data</a></li>
+              <li><a class="button active" href="packages.html">Packages</a></li>
+              <li><a class="button" href="tests.html">Tests</a></li>
+              <li><a class="button" href="modules.html">Modules</a></li>
+            </ul>
+            <ul class="side-nav hide-on-med-and-up" id="mobile-nav">
               <li><a class="button" href="index.html">Overview</a></li>
               <li><a class="button" href="testdata.html">Test Data</a></li>
               <li><a class="button active" href="packages.html">Packages</a></li>
@@ -73,6 +81,9 @@
 </li>
 <li>
 <a href="#pkg_modules.helper">modules.helper</a>
+</li>
+<li>
+<a href="#pkg_modules.helper.external">modules.helper.external</a>
 </li>
 <li>
 <a href="#pkg_modules.pages">modules.pages</a>
@@ -138,6 +149,9 @@
 <a href="#pkg_modules.pages.checkout.steps.shipping">modules.pages.checkout.steps.shipping</a>
 </li>
 <li>
+<a href="#pkg_modules.pages.giftcertificates">modules.pages.giftcertificates</a>
+</li>
+<li>
 <a href="#pkg_modules.pages.homepage">modules.pages.homepage</a>
 </li>
 <li>
@@ -174,6 +188,9 @@
 <a href="#pkg_tests.checkout.phone">tests.checkout.phone</a>
 </li>
 <li>
+<a href="#pkg_tests.giftcertificates">tests.giftcertificates</a>
+</li>
+<li>
 <a href="#pkg_tests.homepage">tests.homepage</a>
 </li>
 <li>
@@ -183,7 +200,13 @@
 <a href="#pkg_tests.product">tests.product</a>
 </li>
 <li>
+<a href="#pkg_tests.promotion">tests.promotion</a>
+</li>
+<li>
 <a href="#pkg_tests.search">tests.search</a>
+</li>
+<li>
+<a href="#pkg_tests.wishlist">tests.wishlist</a>
 </li>
 </ul>
 
@@ -283,13 +306,12 @@
   <ul>
     <li><a href="modules.html#mod_modules.global.headerfooternav.FGlobal_flowToLogin">FGlobal_flowToLogin</a></li>
     <li><a href="modules.html#mod_modules.global.headerfooternav.FGlobal_flowToLogout">FGlobal_flowToLogout</a></li>
+    <li><a href="modules.html#mod_modules.global.headerfooternav.FGlobal_flowToLogoutLogin">FGlobal_flowToLogoutLogin</a></li>
     <li><a href="modules.html#mod_modules.global.headerfooternav.FGlobal_flowToMyAccount">FGlobal_flowToMyAccount</a></li>
     <li><a href="modules.html#mod_modules.global.headerfooternav.FGlobal_flowToRegister">FGlobal_flowToRegister</a></li>
-    <li><a href="modules.html#mod_modules.global.headerfooternav.MGlobal_Header_clickGoToAccountMenuViaCustomerName">MGlobal_Header_clickGoToAccountMenuViaCustomerName</a></li>
+    <li><a href="modules.html#mod_modules.global.headerfooternav.FGlobal_Nav_validateUserPanelText">FGlobal_Nav_validateUserPanelText</a></li>
+    <li><a href="modules.html#mod_modules.global.headerfooternav.MGlobal_clickWishListOnUserMenu">MGlobal_clickWishListOnUserMenu</a></li>
     <li><a href="modules.html#mod_modules.global.headerfooternav.MGlobal_Header_clickGoToHomepageViaLogo">MGlobal_Header_clickGoToHomepageViaLogo</a></li>
-    <li><a href="modules.html#mod_modules.global.headerfooternav.MGlobal_Header_clickLogin">MGlobal_Header_clickLogin</a></li>
-    <li><a href="modules.html#mod_modules.global.headerfooternav.MGlobal_Header_clickLogoutViaNotCustomerName">MGlobal_Header_clickLogoutViaNotCustomerName</a></li>
-    <li><a href="modules.html#mod_modules.global.headerfooternav.MGlobal_Header_clickRegister">MGlobal_Header_clickRegister</a></li>
     <li><a href="modules.html#mod_modules.global.headerfooternav.MGlobal_Header_clickUserButton">MGlobal_Header_clickUserButton</a></li>
     <li><a href="modules.html#mod_modules.global.headerfooternav.MGlobal_Nav_clickCategoryLevel1ByName">MGlobal_Nav_clickCategoryLevel1ByName</a></li>
     <li><a href="modules.html#mod_modules.global.headerfooternav.MGlobal_Nav_clickCategoryLevel2ByName">MGlobal_Nav_clickCategoryLevel2ByName</a></li>
@@ -332,8 +354,9 @@
   <ul>
     <li><a href="modules.html#mod_modules.global.minicart.MGlobal_MiniCart_clickGoToCartByHeaderLink">MGlobal_MiniCart_clickGoToCartByHeaderLink</a></li>
     <li><a href="modules.html#mod_modules.global.minicart.MGlobal_MiniCart_clickGoToCartByMiniCartLink">MGlobal_MiniCart_clickGoToCartByMiniCartLink</a></li>
-    <li><a href="modules.html#mod_modules.global.minicart.MGlobal_MiniCart_clickGoToCheckoutDirectly">MGlobal_MiniCart_clickGoToCheckoutDirectly</a></li>
     <li><a href="modules.html#mod_modules.global.minicart.MGlobal_MiniCart_hoverBody">MGlobal_MiniCart_hoverBody</a></li>
+    <li><a href="modules.html#mod_modules.global.minicart.MGlobal_MiniCart_hoverOutBody">MGlobal_MiniCart_hoverOutBody</a></li>
+    <li><a href="modules.html#mod_modules.global.minicart.VGlobal_MiniCart_Invisible">VGlobal_MiniCart_Invisible</a></li>
     <li><a href="modules.html#mod_modules.global.minicart.VGlobal_MiniCart_validateBody">VGlobal_MiniCart_validateBody</a></li>
     <li><a href="modules.html#mod_modules.global.minicart.VGlobal_MiniCart_validateBodyProduct">VGlobal_MiniCart_validateBodyProduct</a></li>
     <li><a href="modules.html#mod_modules.global.minicart.VGlobal_MiniCart_validateBodySubtotal">VGlobal_MiniCart_validateBodySubtotal</a></li>
@@ -354,6 +377,70 @@
   <div class="section-content">
     <div class="data">
       <h3 class="light-blue-text darken-3">Test Data</h3>
+  <table>
+    <thead class="light-blue darken-2 white-text">
+      <tr>
+        <th>Name</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="key">emailClientURL</td>
+        <td class="value">http://www.my10minutemail.com/</td>
+      </tr>
+    </tbody>
+  </table>
+    </div>
+
+    <div class="scripts">
+      <h3 class="light-blue-text darken-3">Scripts</h3>
+
+      <h4>Tests</h4>
+  <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+
+      <h4>Script Modules</h4>
+  <ul>
+    <li><a href="modules.html#mod_modules.helper.FHelper_Session_flowToStartSession">FHelper_Session_flowToStartSession</a></li>
+    <li><a href="modules.html#mod_modules.helper.FHelper_Session_flowToStartSessionAndOpenURL">FHelper_Session_flowToStartSessionAndOpenURL</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_convertGiftCodeMessageToGiftCode">MHelper_convertGiftCodeMessageToGiftCode</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Date_convertIntoDateNumberShort">MHelper_Date_convertIntoDateNumberShort</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Date_convertIntoMonthNumberShort">MHelper_Date_convertIntoMonthNumberShort</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_fixItemNumber">MHelper_fixItemNumber</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Number_sliceLastFourDigits">MHelper_Number_sliceLastFourDigits</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Number_sliceLastTwoDigits">MHelper_Number_sliceLastTwoDigits</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Number_splitCreditCardIntoGroups">MHelper_Number_splitCreditCardIntoGroups</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Price_addPriceToPrice">MHelper_Price_addPriceToPrice</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Price_convertPriceToValue">MHelper_Price_convertPriceToValue</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Price_convertValueToPrice">MHelper_Price_convertValueToPrice</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_PriceRange_extractBoundaries">MHelper_PriceRange_extractBoundaries</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Product_calculateProductPriceTotal">MHelper_Product_calculateProductPriceTotal</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Product_calculateTotalsQuantity">MHelper_Product_calculateTotalsQuantity</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Product_calculateTotalsSubtotal">MHelper_Product_calculateTotalsSubtotal</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Random_addRandomness">MHelper_Random_addRandomness</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Random_createEmail">MHelper_Random_createEmail</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Random_createNumber">MHelper_Random_createNumber</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_Random_createPassword">MHelper_Random_createPassword</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_String_toUppercase">MHelper_String_toUppercase</a></li>
+    <li><a href="modules.html#mod_modules.helper.MHelper_WaitFor_DOMState">MHelper_WaitFor_DOMState</a></li>
+    <li><a href="modules.html#mod_modules.helper.SHelper_CurrentURL">SHelper_CurrentURL</a></li>
+  </ul>
+
+      <h4>Java Modules</h4>
+  <ul>
+    <li><a href="modules.html#mod_modules.helper.JHelper_closeStorefrontToolkit">JHelper_closeStorefrontToolkit</a></li>
+    <li><a href="modules.html#mod_modules.helper.JHelper_Mobile_addToCart">JHelper_Mobile_addToCart</a></li>
+  </ul>
+    </div>
+  </div>
+</div>
+<div class="section" id="pkg_modules.helper.external">
+  <div class="section-title">
+    <h2 class="light-blue darken-4 white-text">modules.helper.external</h2>
+  </div>
+  <div class="section-content">
+    <div class="data">
+      <h3 class="light-blue-text darken-3">Test Data</h3>
   <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
     </div>
 
@@ -365,22 +452,8 @@
 
       <h4>Script Modules</h4>
   <ul>
-    <li><a href="modules.html#mod_modules.helper.FHelper_Session_flowToEndSession">FHelper_Session_flowToEndSession</a></li>
-    <li><a href="modules.html#mod_modules.helper.FHelper_Session_flowToStartSession">FHelper_Session_flowToStartSession</a></li>
-    <li><a href="modules.html#mod_modules.helper.MHelper_Date_convertIntoDateNumberShort">MHelper_Date_convertIntoDateNumberShort</a></li>
-    <li><a href="modules.html#mod_modules.helper.MHelper_Date_convertIntoMonthNumberShort">MHelper_Date_convertIntoMonthNumberShort</a></li>
-    <li><a href="modules.html#mod_modules.helper.MHelper_Number_sliceLastFourDigits">MHelper_Number_sliceLastFourDigits</a></li>
-    <li><a href="modules.html#mod_modules.helper.MHelper_Number_sliceLastTwoDigits">MHelper_Number_sliceLastTwoDigits</a></li>
-    <li><a href="modules.html#mod_modules.helper.MHelper_Number_splitCreditCardIntoGroups">MHelper_Number_splitCreditCardIntoGroups</a></li>
-    <li><a href="modules.html#mod_modules.helper.MHelper_Price_convertPriceToValue">MHelper_Price_convertPriceToValue</a></li>
-    <li><a href="modules.html#mod_modules.helper.MHelper_Price_convertValueToPrice">MHelper_Price_convertValueToPrice</a></li>
-    <li><a href="modules.html#mod_modules.helper.MHelper_Product_calculateProductPriceTotal">MHelper_Product_calculateProductPriceTotal</a></li>
-    <li><a href="modules.html#mod_modules.helper.MHelper_Product_calculateTotalsQuantity">MHelper_Product_calculateTotalsQuantity</a></li>
-    <li><a href="modules.html#mod_modules.helper.MHelper_Product_calculateTotalsSubtotal">MHelper_Product_calculateTotalsSubtotal</a></li>
-    <li><a href="modules.html#mod_modules.helper.MHelper_Random_createEmail">MHelper_Random_createEmail</a></li>
-    <li><a href="modules.html#mod_modules.helper.MHelper_Random_createNumber">MHelper_Random_createNumber</a></li>
-    <li><a href="modules.html#mod_modules.helper.MHelper_Random_createPassword">MHelper_Random_createPassword</a></li>
-    <li><a href="modules.html#mod_modules.helper.MHelper_WaitFor_DOMState">MHelper_WaitFor_DOMState</a></li>
+    <li><a href="modules.html#mod_modules.helper.external.FHelper_getEmailAddressFromExternal">FHelper_getEmailAddressFromExternal</a></li>
+    <li><a href="modules.html#mod_modules.helper.external.FHelper_getGiftCertificateCodeFromExternal">FHelper_getGiftCertificateCodeFromExternal</a></li>
   </ul>
 
       <h4>Java Modules</h4>
@@ -541,10 +614,11 @@
     <li><a href="modules.html#mod_modules.pages.account.myaccount.MAccount_MyAccount_clickGoToPersonalData">MAccount_MyAccount_clickGoToPersonalData</a></li>
     <li><a href="modules.html#mod_modules.pages.account.myaccount.MAccount_MyAccount_clickGoToWishList">MAccount_MyAccount_clickGoToWishList</a></li>
     <li><a href="modules.html#mod_modules.pages.account.myaccount.MAccount_MyAccount_clickLogout">MAccount_MyAccount_clickLogout</a></li>
-    <li><a href="modules.html#mod_modules.pages.account.myaccount.VAccount_MyAccount_validateCustomerName">VAccount_MyAccount_validateCustomerName</a></li>
+    <li><a href="modules.html#mod_modules.pages.account.myaccount.MAccount_MyAccount_clickModifyWishList">MAccount_MyAccount_clickModifyWishList</a></li>
+    <li><a href="modules.html#mod_modules.pages.account.myaccount.MAccount_MyAccount_clickSearchWishList">MAccount_MyAccount_clickSearchWishList</a></li>
     <li><a href="modules.html#mod_modules.pages.account.myaccount.VAccount_MyAccount_validateLogoutState">VAccount_MyAccount_validateLogoutState</a></li>
     <li><a href="modules.html#mod_modules.pages.account.myaccount.VAccount_MyAccount_validatePage">VAccount_MyAccount_validatePage</a></li>
-    <li><a href="modules.html#mod_modules.pages.account.myaccount.VAccount_MyAccount_validatePrimary">VAccount_MyAccount_validatePrimary</a></li>
+    <li><a href="modules.html#mod_modules.pages.account.myaccount.VAccount_MyAccount_validatePrimaryCustomerName">VAccount_MyAccount_validatePrimaryCustomerName</a></li>
   </ul>
 
       <h4>Java Modules</h4>
@@ -640,6 +714,7 @@
   <ul>
     <li><a href="modules.html#mod_modules.pages.account.personaldata.MAccount_PersonalData_clickSubmitProfile">MAccount_PersonalData_clickSubmitProfile</a></li>
     <li><a href="modules.html#mod_modules.pages.account.personaldata.MAccount_PersonalData_enterProfile">MAccount_PersonalData_enterProfile</a></li>
+    <li><a href="modules.html#mod_modules.pages.account.personaldata.MAccount_PersonalData_updateProfile">MAccount_PersonalData_updateProfile</a></li>
     <li><a href="modules.html#mod_modules.pages.account.personaldata.VAccount_PersonalData_validatePage">VAccount_PersonalData_validatePage</a></li>
     <li><a href="modules.html#mod_modules.pages.account.personaldata.VAccount_PersonalData_validateProfile">VAccount_PersonalData_validateProfile</a></li>
   </ul>
@@ -667,10 +742,24 @@
 
       <h4>Script Modules</h4>
   <ul>
+    <li><a href="modules.html#mod_modules.pages.account.wishlist.MAccount_WishList_clickAddToCart">MAccount_WishList_clickAddToCart</a></li>
+    <li><a href="modules.html#mod_modules.pages.account.wishlist.MAccount_WishList_clickMakeListPublic">MAccount_WishList_clickMakeListPublic</a></li>
+    <li><a href="modules.html#mod_modules.pages.account.wishlist.MAccount_WishList_Row_clickItemPublicCheckbox">MAccount_WishList_Row_clickItemPublicCheckbox</a></li>
     <li><a href="modules.html#mod_modules.pages.account.wishlist.MAccount_WishList_Row_clickRemoveProduct">MAccount_WishList_Row_clickRemoveProduct</a></li>
+    <li><a href="modules.html#mod_modules.pages.account.wishlist.MAccount_WishList_Row_clickUpdateProduct">MAccount_WishList_Row_clickUpdateProduct</a></li>
+    <li><a href="modules.html#mod_modules.pages.account.wishlist.MAccount_WishList_Row_enterProductQuantity">MAccount_WishList_Row_enterProductQuantity</a></li>
+    <li><a href="modules.html#mod_modules.pages.account.wishlist.MAccount_WishList_SearchResults_clickView">MAccount_WishList_SearchResults_clickView</a></li>
+    <li><a href="modules.html#mod_modules.pages.account.wishlist.MAccount_WishList_searchWishList">MAccount_WishList_searchWishList</a></li>
+    <li><a href="modules.html#mod_modules.pages.account.wishlist.MAccount_WishList_shareWishListLink">MAccount_WishList_shareWishListLink</a></li>
+    <li><a href="modules.html#mod_modules.pages.account.wishlist.VAccount_WishList_Row_validateItemIsPrivate">VAccount_WishList_Row_validateItemIsPrivate</a></li>
+    <li><a href="modules.html#mod_modules.pages.account.wishlist.VAccount_WishList_Row_validateItemIsPublic">VAccount_WishList_Row_validateItemIsPublic</a></li>
     <li><a href="modules.html#mod_modules.pages.account.wishlist.VAccount_WishList_Row_validateProductDetails">VAccount_WishList_Row_validateProductDetails</a></li>
+    <li><a href="modules.html#mod_modules.pages.account.wishlist.VAccount_WishList_validateListIsEmpty">VAccount_WishList_validateListIsEmpty</a></li>
     <li><a href="modules.html#mod_modules.pages.account.wishlist.VAccount_WishList_validatePage">VAccount_WishList_validatePage</a></li>
-    <li><a href="modules.html#mod_modules.pages.account.wishlist.VAccount_WishList_validateProductListIsEmpty">VAccount_WishList_validateProductListIsEmpty</a></li>
+    <li><a href="modules.html#mod_modules.pages.account.wishlist.VAccount_WishList_validateProductCount">VAccount_WishList_validateProductCount</a></li>
+    <li><a href="modules.html#mod_modules.pages.account.wishlist.VAccount_WishList_validateSearchResult">VAccount_WishList_validateSearchResult</a></li>
+    <li><a href="modules.html#mod_modules.pages.account.wishlist.VAccount_WishList_validateSearchResultEmpty">VAccount_WishList_validateSearchResultEmpty</a></li>
+    <li><a href="modules.html#mod_modules.pages.account.wishlist.VAccount_WishList_validateSharedListIsEmpty">VAccount_WishList_validateSharedListIsEmpty</a></li>
   </ul>
 
       <h4>Java Modules</h4>
@@ -697,19 +786,26 @@
       <h4>Script Modules</h4>
   <ul>
     <li><a href="modules.html#mod_modules.pages.cart.MCart_clickGoToCheckoutLogin">MCart_clickGoToCheckoutLogin</a></li>
+    <li><a href="modules.html#mod_modules.pages.cart.MCart_QV_clickUpdateCart">MCart_QV_clickUpdateCart</a></li>
+    <li><a href="modules.html#mod_modules.pages.cart.MCart_Row_clickEditDetails">MCart_Row_clickEditDetails</a></li>
     <li><a href="modules.html#mod_modules.pages.cart.MCart_Row_clickRemoveProduct">MCart_Row_clickRemoveProduct</a></li>
     <li><a href="modules.html#mod_modules.pages.cart.MCart_Row_Dialog_enterUpdateProductQuantity">MCart_Row_Dialog_enterUpdateProductQuantity</a></li>
     <li><a href="modules.html#mod_modules.pages.cart.MCart_Row_enterUpdateProductQuantity">MCart_Row_enterUpdateProductQuantity</a></li>
-    <li><a href="modules.html#mod_modules.pages.cart.MCart_Row_storeProductPriceTotal">MCart_Row_storeProductPriceTotal</a></li>
-    <li><a href="modules.html#mod_modules.pages.cart.MCart_storeTotalsSubtotal">MCart_storeTotalsSubtotal</a></li>
+    <li><a href="modules.html#mod_modules.pages.cart.SCart_Row_storeProductPriceTotal">SCart_Row_storeProductPriceTotal</a></li>
+    <li><a href="modules.html#mod_modules.pages.cart.SCart_storeTotalsSubtotal">SCart_storeTotalsSubtotal</a></li>
+    <li><a href="modules.html#mod_modules.pages.cart.VCart_AnyRow_validateProductBasicDetails">VCart_AnyRow_validateProductBasicDetails</a></li>
+    <li><a href="modules.html#mod_modules.pages.cart.VCart_Row_validateGiftCertificate">VCart_Row_validateGiftCertificate</a></li>
+    <li><a href="modules.html#mod_modules.pages.cart.VCart_Row_validateOptionPrice">VCart_Row_validateOptionPrice</a></li>
     <li><a href="modules.html#mod_modules.pages.cart.VCart_Row_validateProductBasicDetails">VCart_Row_validateProductBasicDetails</a></li>
     <li><a href="modules.html#mod_modules.pages.cart.VCart_Row_validateProductColorSize">VCart_Row_validateProductColorSize</a></li>
     <li><a href="modules.html#mod_modules.pages.cart.VCart_Row_validateProductPriceTotal">VCart_Row_validateProductPriceTotal</a></li>
     <li><a href="modules.html#mod_modules.pages.cart.VCart_Row_validateRow">VCart_Row_validateRow</a></li>
     <li><a href="modules.html#mod_modules.pages.cart.VCart_validateCartIsEmpty">VCart_validateCartIsEmpty</a></li>
+    <li><a href="modules.html#mod_modules.pages.cart.VCart_validateNoPromoIsShown">VCart_validateNoPromoIsShown</a></li>
     <li><a href="modules.html#mod_modules.pages.cart.VCart_validateOrderTotalsPricePattern">VCart_validateOrderTotalsPricePattern</a></li>
     <li><a href="modules.html#mod_modules.pages.cart.VCart_validatePage">VCart_validatePage</a></li>
     <li><a href="modules.html#mod_modules.pages.cart.VCart_validatePageTotalsSubtotal">VCart_validatePageTotalsSubtotal</a></li>
+    <li><a href="modules.html#mod_modules.pages.cart.VCart_validateSalesPromotion">VCart_validateSalesPromotion</a></li>
   </ul>
 
       <h4>Java Modules</h4>
@@ -737,30 +833,46 @@
   <ul>
     <li><a href="modules.html#mod_modules.pages.catalog.MCatalog_clickQuickViewByProductPosition">MCatalog_clickQuickViewByProductPosition</a></li>
     <li><a href="modules.html#mod_modules.pages.catalog.MCatalog_clickQuickViewByProductTitle">MCatalog_clickQuickViewByProductTitle</a></li>
+    <li><a href="modules.html#mod_modules.pages.catalog.MCatalog_clickQuickViewRandomly">MCatalog_clickQuickViewRandomly</a></li>
     <li><a href="modules.html#mod_modules.pages.catalog.MCatalog_Option_selectItemsPerPageByLabel">MCatalog_Option_selectItemsPerPageByLabel</a></li>
     <li><a href="modules.html#mod_modules.pages.catalog.MCatalog_Option_selectItemsPerPageByPosition">MCatalog_Option_selectItemsPerPageByPosition</a></li>
     <li><a href="modules.html#mod_modules.pages.catalog.MCatalog_Option_selectItemsPerPageRandomly">MCatalog_Option_selectItemsPerPageRandomly</a></li>
     <li><a href="modules.html#mod_modules.pages.catalog.MCatalog_Option_selectSortByByLabel">MCatalog_Option_selectSortByByLabel</a></li>
     <li><a href="modules.html#mod_modules.pages.catalog.MCatalog_Option_selectSortByByPosition">MCatalog_Option_selectSortByByPosition</a></li>
     <li><a href="modules.html#mod_modules.pages.catalog.MCatalog_Option_selectSortByRandomly">MCatalog_Option_selectSortByRandomly</a></li>
+    <li><a href="modules.html#mod_modules.pages.catalog.MCatalog_Paging_clickByPageNumber">MCatalog_Paging_clickByPageNumber</a></li>
     <li><a href="modules.html#mod_modules.pages.catalog.MCatalog_Refinement_clickClearColorList">MCatalog_Refinement_clickClearColorList</a></li>
+    <li><a href="modules.html#mod_modules.pages.catalog.MCatalog_Refinement_clickClearPriceRefinement">MCatalog_Refinement_clickClearPriceRefinement</a></li>
+    <li><a href="modules.html#mod_modules.pages.catalog.MCatalog_Refinement_clickClearSizeRefinement">MCatalog_Refinement_clickClearSizeRefinement</a></li>
     <li><a href="modules.html#mod_modules.pages.catalog.MCatalog_Refinement_clickColorByLabel">MCatalog_Refinement_clickColorByLabel</a></li>
     <li><a href="modules.html#mod_modules.pages.catalog.MCatalog_Refinement_clickColorByPosition">MCatalog_Refinement_clickColorByPosition</a></li>
+    <li><a href="modules.html#mod_modules.pages.catalog.MCatalog_Refinement_clickPriceByPositionRandom">MCatalog_Refinement_clickPriceByPositionRandom</a></li>
     <li><a href="modules.html#mod_modules.pages.catalog.MCatalog_Refinement_clickRemoveFilterByPosition">MCatalog_Refinement_clickRemoveFilterByPosition</a></li>
+    <li><a href="modules.html#mod_modules.pages.catalog.MCatalog_Refinement_clickSizeByPositionRandom">MCatalog_Refinement_clickSizeByPositionRandom</a></li>
+    <li><a href="modules.html#mod_modules.pages.catalog.MCatalog_Refinement_removeFirstSelected">MCatalog_Refinement_removeFirstSelected</a></li>
     <li><a href="modules.html#mod_modules.pages.catalog.MCatalog_Results_clickGoToProductByPosition">MCatalog_Results_clickGoToProductByPosition</a></li>
     <li><a href="modules.html#mod_modules.pages.catalog.MCatalog_Results_clickGoToProductRandomly">MCatalog_Results_clickGoToProductRandomly</a></li>
+    <li><a href="modules.html#mod_modules.pages.catalog.SCatalog_ProductListingPage_State">SCatalog_ProductListingPage_State</a></li>
     <li><a href="modules.html#mod_modules.pages.catalog.VCatalog_Option_validateItemsPerPage">VCatalog_Option_validateItemsPerPage</a></li>
     <li><a href="modules.html#mod_modules.pages.catalog.VCatalog_Option_validateItemsPerPageViewAll">VCatalog_Option_validateItemsPerPageViewAll</a></li>
     <li><a href="modules.html#mod_modules.pages.catalog.VCatalog_Option_validateSortBy">VCatalog_Option_validateSortBy</a></li>
+    <li><a href="modules.html#mod_modules.pages.catalog.VCatalog_ProductListingPage_State">VCatalog_ProductListingPage_State</a></li>
+    <li><a href="modules.html#mod_modules.pages.catalog.VCatalog_ProductListingPage_validatePriceRange">VCatalog_ProductListingPage_validatePriceRange</a></li>
+    <li><a href="modules.html#mod_modules.pages.catalog.VCatalog_Refinement_validateBreadcrumbByPosition">VCatalog_Refinement_validateBreadcrumbByPosition</a></li>
+    <li><a href="modules.html#mod_modules.pages.catalog.VCatalog_Refinement_validateBreadcrumbByValue">VCatalog_Refinement_validateBreadcrumbByValue</a></li>
     <li><a href="modules.html#mod_modules.pages.catalog.VCatalog_Refinement_validateColorLabelIsNotSelected">VCatalog_Refinement_validateColorLabelIsNotSelected</a></li>
     <li><a href="modules.html#mod_modules.pages.catalog.VCatalog_Refinement_validateColorLabelIsSelected">VCatalog_Refinement_validateColorLabelIsSelected</a></li>
     <li><a href="modules.html#mod_modules.pages.catalog.VCatalog_Refinement_validateColorListIsEmpty">VCatalog_Refinement_validateColorListIsEmpty</a></li>
+    <li><a href="modules.html#mod_modules.pages.catalog.VCatalog_Refinement_validateNoSizeRefinementIsSelected">VCatalog_Refinement_validateNoSizeRefinementIsSelected</a></li>
     <li><a href="modules.html#mod_modules.pages.catalog.VCatalog_Refinement_validateRefinementListIsEmpty">VCatalog_Refinement_validateRefinementListIsEmpty</a></li>
+    <li><a href="modules.html#mod_modules.pages.catalog.VCatalog_validateCategoryLevel1">VCatalog_validateCategoryLevel1</a></li>
     <li><a href="modules.html#mod_modules.pages.catalog.VCatalog_validatePage">VCatalog_validatePage</a></li>
   </ul>
 
       <h4>Java Modules</h4>
-  <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+  <ul>
+    <li><a href="modules.html#mod_modules.pages.catalog.JCatalog_ProductListingPage_validateSortBy">JCatalog_ProductListingPage_validateSortBy</a></li>
+  </ul>
     </div>
   </div>
 </div>
@@ -900,13 +1012,14 @@
       <h4>Script Modules</h4>
   <ul>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.boxes.MCheckout_BoxNewCustomer_enterClickSubmit">MCheckout_BoxNewCustomer_enterClickSubmit</a></li>
-    <li><a href="modules.html#mod_modules.pages.checkout.steps.boxes.MCheckout_BoxOrderSummary_storeTotals">MCheckout_BoxOrderSummary_storeTotals</a></li>
+    <li><a href="modules.html#mod_modules.pages.checkout.steps.boxes.SCheckout_BoxOrderSummary_storeTotals">SCheckout_BoxOrderSummary_storeTotals</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.boxes.VCheckout_BoxBillingAddress_validateAddress">VCheckout_BoxBillingAddress_validateAddress</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.boxes.VCheckout_BoxNewCustomer_validateBox">VCheckout_BoxNewCustomer_validateBox</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.boxes.VCheckout_BoxNewCustomer_validateProfile">VCheckout_BoxNewCustomer_validateProfile</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.boxes.VCheckout_BoxOrderSummary_validateBox">VCheckout_BoxOrderSummary_validateBox</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.boxes.VCheckout_BoxOrderSummary_validateProductBasicDetails">VCheckout_BoxOrderSummary_validateProductBasicDetails</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.boxes.VCheckout_BoxOrderSummary_validateProductColorSize">VCheckout_BoxOrderSummary_validateProductColorSize</a></li>
+    <li><a href="modules.html#mod_modules.pages.checkout.steps.boxes.VCheckout_BoxOrderSummary_validateShippingMethod">VCheckout_BoxOrderSummary_validateShippingMethod</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.boxes.VCheckout_BoxOrderSummary_validateTotals">VCheckout_BoxOrderSummary_validateTotals</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.boxes.VCheckout_BoxOrderSummary_validateTotalsPricePattern">VCheckout_BoxOrderSummary_validateTotalsPricePattern</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.boxes.VCheckout_BoxOrderSummary_validateTotalsSubtotal">VCheckout_BoxOrderSummary_validateTotalsSubtotal</a></li>
@@ -937,7 +1050,7 @@
 
       <h4>Script Modules</h4>
   <ul>
-    <li><a href="modules.html#mod_modules.pages.checkout.steps.confirmation.MCheckout_Confirmation_storeOrderInformation">MCheckout_Confirmation_storeOrderInformation</a></li>
+    <li><a href="modules.html#mod_modules.pages.checkout.steps.confirmation.SCheckout_Confirmation_storeOrderInformation">SCheckout_Confirmation_storeOrderInformation</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validateBillingAddress">VCheckout_Confirmation_validateBillingAddress</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validateCreditCard">VCheckout_Confirmation_validateCreditCard</a></li>
     <li><a href="modules.html#mod_modules.pages.checkout.steps.confirmation.VCheckout_Confirmation_validateOrderInformation">VCheckout_Confirmation_validateOrderInformation</a></li>
@@ -1071,6 +1184,36 @@
     </div>
   </div>
 </div>
+<div class="section" id="pkg_modules.pages.giftcertificates">
+  <div class="section-title">
+    <h2 class="light-blue darken-4 white-text">modules.pages.giftcertificates</h2>
+  </div>
+  <div class="section-content">
+    <div class="data">
+      <h3 class="light-blue-text darken-3">Test Data</h3>
+  <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+    </div>
+
+    <div class="scripts">
+      <h3 class="light-blue-text darken-3">Scripts</h3>
+
+      <h4>Tests</h4>
+  <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+
+      <h4>Script Modules</h4>
+  <ul>
+    <li><a href="modules.html#mod_modules.pages.giftcertificates.MGiftCertificates_clickAddToCart">MGiftCertificates_clickAddToCart</a></li>
+    <li><a href="modules.html#mod_modules.pages.giftcertificates.MGiftCertificates_enterAndSubmitGiftCode">MGiftCertificates_enterAndSubmitGiftCode</a></li>
+    <li><a href="modules.html#mod_modules.pages.giftcertificates.MGiftCertificates_enterData">MGiftCertificates_enterData</a></li>
+    <li><a href="modules.html#mod_modules.pages.giftcertificates.VGiftCertificates_validateBalance">VGiftCertificates_validateBalance</a></li>
+    <li><a href="modules.html#mod_modules.pages.giftcertificates.VGiftCertificates_validatePage">VGiftCertificates_validatePage</a></li>
+  </ul>
+
+      <h4>Java Modules</h4>
+  <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+    </div>
+  </div>
+</div>
 <div class="section" id="pkg_modules.pages.homepage">
   <div class="section-title">
     <h2 class="light-blue darken-4 white-text">modules.pages.homepage</h2>
@@ -1091,7 +1234,10 @@
   <ul>
     <li><a href="modules.html#mod_modules.pages.homepage.FHomepage_flowToCheckOrderStatus">FHomepage_flowToCheckOrderStatus</a></li>
     <li><a href="modules.html#mod_modules.pages.homepage.FHomepage_flowToCreateNewAccount">FHomepage_flowToCreateNewAccount</a></li>
+    <li><a href="modules.html#mod_modules.pages.homepage.FHomepage_flowToCreateNewAccountAddRandomness">FHomepage_flowToCreateNewAccountAddRandomness</a></li>
+    <li><a href="modules.html#mod_modules.pages.homepage.FHomepage_flowToCreateNewAccountWithoutLogout">FHomepage_flowToCreateNewAccountWithoutLogout</a></li>
     <li><a href="modules.html#mod_modules.pages.homepage.FHomepage_flowToLoginAccount">FHomepage_flowToLoginAccount</a></li>
+    <li><a href="modules.html#mod_modules.pages.homepage.MHomepage_clickGiftCertificates">MHomepage_clickGiftCertificates</a></li>
     <li><a href="modules.html#mod_modules.pages.homepage.VHomepage_validatePage">VHomepage_validatePage</a></li>
   </ul>
 
@@ -1119,6 +1265,7 @@
       <h4>Script Modules</h4>
   <ul>
     <li><a href="modules.html#mod_modules.pages.product.MProduct_clickAddToCart">MProduct_clickAddToCart</a></li>
+    <li><a href="modules.html#mod_modules.pages.product.MProduct_clickAddToCartForSet">MProduct_clickAddToCartForSet</a></li>
     <li><a href="modules.html#mod_modules.pages.product.MProduct_clickAddToGiftRegistry">MProduct_clickAddToGiftRegistry</a></li>
     <li><a href="modules.html#mod_modules.pages.product.MProduct_clickAddToWishlist">MProduct_clickAddToWishlist</a></li>
     <li><a href="modules.html#mod_modules.pages.product.MProduct_clickColorByPosition">MProduct_clickColorByPosition</a></li>
@@ -1126,25 +1273,40 @@
     <li><a href="modules.html#mod_modules.pages.product.MProduct_clickSendToFriend">MProduct_clickSendToFriend</a></li>
     <li><a href="modules.html#mod_modules.pages.product.MProduct_clickSizeByPosition">MProduct_clickSizeByPosition</a></li>
     <li><a href="modules.html#mod_modules.pages.product.MProduct_clickSizeRandomly">MProduct_clickSizeRandomly</a></li>
+    <li><a href="modules.html#mod_modules.pages.product.MProduct_disableVariationItemByName">MProduct_disableVariationItemByName</a></li>
     <li><a href="modules.html#mod_modules.pages.product.MProduct_enterQuantity">MProduct_enterQuantity</a></li>
-    <li><a href="modules.html#mod_modules.pages.product.MProduct_storeBasicData">MProduct_storeBasicData</a></li>
-    <li><a href="modules.html#mod_modules.pages.product.MProduct_storeColorAndSize">MProduct_storeColorAndSize</a></li>
-    <li><a href="modules.html#mod_modules.pages.product.MProduct_storeQuantity">MProduct_storeQuantity</a></li>
+    <li><a href="modules.html#mod_modules.pages.product.MProduct_selectOptionByLabel">MProduct_selectOptionByLabel</a></li>
+    <li><a href="modules.html#mod_modules.pages.product.MProduct_selectVariantDropdownByLabel">MProduct_selectVariantDropdownByLabel</a></li>
+    <li><a href="modules.html#mod_modules.pages.product.MProduct_selectVariantDropdownByLabelEmptyText">MProduct_selectVariantDropdownByLabelEmptyText</a></li>
+    <li><a href="modules.html#mod_modules.pages.product.SProduct_ProductSet_storeBasicDataByRow">SProduct_ProductSet_storeBasicDataByRow</a></li>
+    <li><a href="modules.html#mod_modules.pages.product.SProduct_storeBasicData">SProduct_storeBasicData</a></li>
+    <li><a href="modules.html#mod_modules.pages.product.SProduct_storeBasicDataWithPriceRange">SProduct_storeBasicDataWithPriceRange</a></li>
+    <li><a href="modules.html#mod_modules.pages.product.SProduct_storeColorAndSize">SProduct_storeColorAndSize</a></li>
+    <li><a href="modules.html#mod_modules.pages.product.SProduct_storeQuantity">SProduct_storeQuantity</a></li>
     <li><a href="modules.html#mod_modules.pages.product.VProduct_validateAdd2CartButtonIsDisabled">VProduct_validateAdd2CartButtonIsDisabled</a></li>
     <li><a href="modules.html#mod_modules.pages.product.VProduct_validateAdd2CartButtonIsEnabled">VProduct_validateAdd2CartButtonIsEnabled</a></li>
+    <li><a href="modules.html#mod_modules.pages.product.VProduct_validateAvailability">VProduct_validateAvailability</a></li>
+    <li><a href="modules.html#mod_modules.pages.product.VProduct_validateAvailabilityVariationIsNotSelected">VProduct_validateAvailabilityVariationIsNotSelected</a></li>
     <li><a href="modules.html#mod_modules.pages.product.VProduct_validateBasicData">VProduct_validateBasicData</a></li>
     <li><a href="modules.html#mod_modules.pages.product.VProduct_validateColorIsNotSelected">VProduct_validateColorIsNotSelected</a></li>
     <li><a href="modules.html#mod_modules.pages.product.VProduct_validateColorIsSelected">VProduct_validateColorIsSelected</a></li>
+    <li><a href="modules.html#mod_modules.pages.product.VProduct_validateDropdownLabel">VProduct_validateDropdownLabel</a></li>
     <li><a href="modules.html#mod_modules.pages.product.VProduct_validatePDPandQVShared">VProduct_validatePDPandQVShared</a></li>
+    <li><a href="modules.html#mod_modules.pages.product.VProduct_validatePriceIsChanged">VProduct_validatePriceIsChanged</a></li>
+    <li><a href="modules.html#mod_modules.pages.product.VProduct_validatePriceIsNotChanged">VProduct_validatePriceIsNotChanged</a></li>
     <li><a href="modules.html#mod_modules.pages.product.VProduct_validatePricePattern">VProduct_validatePricePattern</a></li>
     <li><a href="modules.html#mod_modules.pages.product.VProduct_validateProductBundle">VProduct_validateProductBundle</a></li>
+    <li><a href="modules.html#mod_modules.pages.product.VProduct_validateProductNumberIsChanged">VProduct_validateProductNumberIsChanged</a></li>
+    <li><a href="modules.html#mod_modules.pages.product.VProduct_validateProductNumberIsNotChanged">VProduct_validateProductNumberIsNotChanged</a></li>
     <li><a href="modules.html#mod_modules.pages.product.VProduct_validateProductSet">VProduct_validateProductSet</a></li>
     <li><a href="modules.html#mod_modules.pages.product.VProduct_validateProductVariations">VProduct_validateProductVariations</a></li>
     <li><a href="modules.html#mod_modules.pages.product.VProduct_validateSizeIsNotSelected">VProduct_validateSizeIsNotSelected</a></li>
+    <li><a href="modules.html#mod_modules.pages.product.VProduct_validateSizeIsSelectable">VProduct_validateSizeIsSelectable</a></li>
     <li><a href="modules.html#mod_modules.pages.product.VProduct_validatesOptionProductOnly">VProduct_validatesOptionProductOnly</a></li>
     <li><a href="modules.html#mod_modules.pages.product.VProduct_validateSozialSharing">VProduct_validateSozialSharing</a></li>
     <li><a href="modules.html#mod_modules.pages.product.VProduct_validatesQuantity">VProduct_validatesQuantity</a></li>
     <li><a href="modules.html#mod_modules.pages.product.VProduct_validateThumbnails">VProduct_validateThumbnails</a></li>
+    <li><a href="modules.html#mod_modules.pages.product.VProduct_validateVariantDropdown">VProduct_validateVariantDropdown</a></li>
     <li><a href="modules.html#mod_modules.pages.product.VProduct_validateWishlistAndGiftRegistry">VProduct_validateWishlistAndGiftRegistry</a></li>
     <li><a href="modules.html#mod_modules.pages.product.VProduct_waitForProductNumber">VProduct_waitForProductNumber</a></li>
   </ul>
@@ -1203,6 +1365,7 @@
     <li><a href="modules.html#mod_modules.pages.product.productquickview.MProductQV_clickPrev">MProductQV_clickPrev</a></li>
     <li><a href="modules.html#mod_modules.pages.product.productquickview.MProductQV_clickViewFullDetails">MProductQV_clickViewFullDetails</a></li>
     <li><a href="modules.html#mod_modules.pages.product.productquickview.MProductQV_closeQuickview">MProductQV_closeQuickview</a></li>
+    <li><a href="modules.html#mod_modules.pages.product.productquickview.VProductQV_Invisible">VProductQV_Invisible</a></li>
     <li><a href="modules.html#mod_modules.pages.product.productquickview.VProductQV_validateHeader">VProductQV_validateHeader</a></li>
     <li><a href="modules.html#mod_modules.pages.product.productquickview.VProductQV_validateQVOnlyElements">VProductQV_validateQVOnlyElements</a></li>
   </ul>
@@ -1231,14 +1394,17 @@
       <h4>Script Modules</h4>
   <ul>
     <li><a href="modules.html#mod_modules.pages.search.FSearch_flowToAddProductToCart">FSearch_flowToAddProductToCart</a></li>
+    <li><a href="modules.html#mod_modules.pages.search.FSearch_flowToAddProductToWishList">FSearch_flowToAddProductToWishList</a></li>
     <li><a href="modules.html#mod_modules.pages.search.FSearch_flowToAddProductWithColorSizeToCart">FSearch_flowToAddProductWithColorSizeToCart</a></li>
     <li><a href="modules.html#mod_modules.pages.search.MSearch_enterTextAndSubmit">MSearch_enterTextAndSubmit</a></li>
     <li><a href="modules.html#mod_modules.pages.search.MSearch_Results_clickArticleResults">MSearch_Results_clickArticleResults</a></li>
+    <li><a href="modules.html#mod_modules.pages.search.MSearch_Results_clickDidYouMean">MSearch_Results_clickDidYouMean</a></li>
     <li><a href="modules.html#mod_modules.pages.search.MSearch_Results_clickGoToProductByPosition">MSearch_Results_clickGoToProductByPosition</a></li>
     <li><a href="modules.html#mod_modules.pages.search.VSearch_Results_validateArticleCatalog">VSearch_Results_validateArticleCatalog</a></li>
     <li><a href="modules.html#mod_modules.pages.search.VSearch_Results_validateArticlesFound">VSearch_Results_validateArticlesFound</a></li>
     <li><a href="modules.html#mod_modules.pages.search.VSearch_Results_validateBreadcrumb">VSearch_Results_validateBreadcrumb</a></li>
     <li><a href="modules.html#mod_modules.pages.search.VSearch_Results_validateDidYouMean">VSearch_Results_validateDidYouMean</a></li>
+    <li><a href="modules.html#mod_modules.pages.search.VSearch_Results_validateNoDidYouMean">VSearch_Results_validateNoDidYouMean</a></li>
     <li><a href="modules.html#mod_modules.pages.search.VSearch_Results_validateNoProductsFound">VSearch_Results_validateNoProductsFound</a></li>
     <li><a href="modules.html#mod_modules.pages.search.VSearch_Results_validateProductListing">VSearch_Results_validateProductListing</a></li>
     <li><a href="modules.html#mod_modules.pages.search.VSearch_Results_validateRefine">VSearch_Results_validateRefine</a></li>
@@ -1342,7 +1508,7 @@
       </tr>
       <tr>
         <td class="key">amexCreditCard_year</td>
-        <td class="value">2019</td>
+        <td class="value">2020</td>
       </tr>
       <tr>
         <td class="key">billingAddress_address1</td>
@@ -1458,7 +1624,7 @@
       </tr>
       <tr>
         <td class="key">visaCreditCard_year</td>
-        <td class="value">2016</td>
+        <td class="value">2018</td>
       </tr>
     </tbody>
   </table>
@@ -1475,7 +1641,6 @@
     <li><a href="tests.html#test_tests.account.TAccountLogin_NoPassword">TAccountLogin_NoPassword</a></li>
     <li><a href="tests.html#test_tests.account.TAccountPaymentSettings_CRUDCreditCards">TAccountPaymentSettings_CRUDCreditCards</a></li>
     <li><a href="tests.html#test_tests.account.TAccountPersonalData_UpdateProfile">TAccountPersonalData_UpdateProfile</a></li>
-    <li><a href="tests.html#test_tests.account.TAccountWishList_AddRemoveProduct">TAccountWishList_AddRemoveProduct</a></li>
   </ul>
 
       <h4>Script Modules</h4>
@@ -1501,9 +1666,16 @@
 
       <h4>Tests</h4>
   <ul>
+    <li><a href="tests.html#test_tests.cart.TCart_Add_OptionProduct">TCart_Add_OptionProduct</a></li>
+    <li><a href="tests.html#test_tests.cart.TCart_Add_ProductBundle">TCart_Add_ProductBundle</a></li>
+    <li><a href="tests.html#test_tests.cart.TCart_Add_ProductSet">TCart_Add_ProductSet</a></li>
+    <li><a href="tests.html#test_tests.cart.TCart_Add_StandardProduct">TCart_Add_StandardProduct</a></li>
+    <li><a href="tests.html#test_tests.cart.TCart_Add_VariationProduct">TCart_Add_VariationProduct</a></li>
     <li><a href="tests.html#test_tests.cart.TCart_AddRemoveProduct">TCart_AddRemoveProduct</a></li>
+    <li><a href="tests.html#test_tests.cart.TCart_AddRemoveProductOption">TCart_AddRemoveProductOption</a></li>
     <li><a href="tests.html#test_tests.cart.TCart_RemoveProducts">TCart_RemoveProducts</a></li>
     <li><a href="tests.html#test_tests.cart.TCart_UpdateQuantities">TCart_UpdateQuantities</a></li>
+    <li><a href="tests.html#test_tests.cart.TCart_ValidatePersistentCart">TCart_ValidatePersistentCart</a></li>
   </ul>
 
       <h4>Script Modules</h4>
@@ -1521,7 +1693,24 @@
   <div class="section-content">
     <div class="data">
       <h3 class="light-blue-text darken-3">Test Data</h3>
-  <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+  <table>
+    <thead class="light-blue darken-2 white-text">
+      <tr>
+        <th>Name</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="key">sortByLabel_priceHighToLow</td>
+        <td class="value">Price High to Low</td>
+      </tr>
+      <tr>
+        <td class="key">sortByLabel_priceLowToHigh</td>
+        <td class="value">Price Low To High</td>
+      </tr>
+    </tbody>
+  </table>
     </div>
 
     <div class="scripts">
@@ -1534,7 +1723,11 @@
     <li><a href="tests.html#test_tests.catalog.TCatalogCategory_Level3_Validate">TCatalogCategory_Level3_Validate</a></li>
     <li><a href="tests.html#test_tests.catalog.TCatalogProductListing_ItemsPerPage">TCatalogProductListing_ItemsPerPage</a></li>
     <li><a href="tests.html#test_tests.catalog.TCatalogProductListing_SortBy">TCatalogProductListing_SortBy</a></li>
+    <li><a href="tests.html#test_tests.catalog.TCatalogProductListing_SortByPrice">TCatalogProductListing_SortByPrice</a></li>
+    <li><a href="tests.html#test_tests.catalog.TCatalogRefinements_Bookmarking">TCatalogRefinements_Bookmarking</a></li>
     <li><a href="tests.html#test_tests.catalog.TCatalogRefinements_ByColor">TCatalogRefinements_ByColor</a></li>
+    <li><a href="tests.html#test_tests.catalog.TCatalogRefinements_ByPrice">TCatalogRefinements_ByPrice</a></li>
+    <li><a href="tests.html#test_tests.catalog.TCatalogRefinements_BySize">TCatalogRefinements_BySize</a></li>
   </ul>
 
       <h4>Script Modules</h4>
@@ -1574,7 +1767,7 @@
       </tr>
       <tr>
         <td class="key">amexCreditCard_owner</td>
-        <td class="value">Jane Doe</td>
+        <td class="value">Jane Moneybag</td>
       </tr>
       <tr>
         <td class="key">amexCreditCard_type</td>
@@ -1590,11 +1783,11 @@
       </tr>
       <tr>
         <td class="key">billingAddress_address1</td>
-        <td class="value">Middlefield Rd</td>
+        <td class="value">1941 Middlefield Rd</td>
       </tr>
       <tr>
         <td class="key">billingAddress_address2</td>
-        <td class="value">1941</td>
+        <td class="value">Left Garage Door</td>
       </tr>
       <tr>
         <td class="key">billingAddress_city</td>
@@ -1610,7 +1803,7 @@
       </tr>
       <tr>
         <td class="key">billingAddress_lastname</td>
-        <td class="value">Buyer</td>
+        <td class="value">Shopper</td>
       </tr>
       <tr>
         <td class="key">billingAddress_phone</td>
@@ -1630,15 +1823,15 @@
       </tr>
       <tr>
         <td class="key">billingAddress_title</td>
-        <td class="value">Palo*Alto</td>
+        <td class="value">Palo Alto</td>
       </tr>
       <tr>
         <td class="key">shippingAddress_address1</td>
-        <td class="value">Spring St</td>
+        <td class="value">6 Spring St.</td>
       </tr>
       <tr>
         <td class="key">shippingAddress_address2</td>
-        <td class="value">6</td>
+        <td class="value">14th floor</td>
       </tr>
       <tr>
         <td class="key">shippingAddress_city</td>
@@ -1654,7 +1847,7 @@
       </tr>
       <tr>
         <td class="key">shippingAddress_lastname</td>
-        <td class="value">Doe</td>
+        <td class="value">Moneybag</td>
       </tr>
       <tr>
         <td class="key">shippingAddress_phone</td>
@@ -1686,7 +1879,7 @@
       </tr>
       <tr>
         <td class="key">visaCreditCard_cvn</td>
-        <td class="value">123</td>
+        <td class="value">143</td>
       </tr>
       <tr>
         <td class="key">visaCreditCard_month</td>
@@ -1698,7 +1891,7 @@
       </tr>
       <tr>
         <td class="key">visaCreditCard_owner</td>
-        <td class="value">John Buyer</td>
+        <td class="value">John Shopper</td>
       </tr>
       <tr>
         <td class="key">visaCreditCard_type</td>
@@ -1710,7 +1903,7 @@
       </tr>
       <tr>
         <td class="key">visaCreditCard_year</td>
-        <td class="value">2016</td>
+        <td class="value">2018</td>
       </tr>
     </tbody>
   </table>
@@ -1722,6 +1915,7 @@
       <h4>Tests</h4>
   <ul>
     <li><a href="tests.html#test_tests.checkout.TCheckoutOrder_AsGuest">TCheckoutOrder_AsGuest</a></li>
+    <li><a href="tests.html#test_tests.checkout.TCheckoutOrder_AsGuest_DifferentBillingAddress">TCheckoutOrder_AsGuest_DifferentBillingAddress</a></li>
     <li><a href="tests.html#test_tests.checkout.TCheckoutOrder_RegisteredNewCustomer">TCheckoutOrder_RegisteredNewCustomer</a></li>
     <li><a href="tests.html#test_tests.checkout.TCheckoutOrder_RegisteredReturningCustomer">TCheckoutOrder_RegisteredReturningCustomer</a></li>
   </ul>
@@ -1750,6 +1944,126 @@
       <h4>Tests</h4>
   <ul>
     <li><a href="tests.html#test_tests.checkout.phone.TCheckoutOrder_AsGuest">TCheckoutOrder_AsGuest</a></li>
+  </ul>
+
+      <h4>Script Modules</h4>
+  <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+
+      <h4>Java Modules</h4>
+  <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+    </div>
+  </div>
+</div>
+<div class="section" id="pkg_tests.giftcertificates">
+  <div class="section-title">
+    <h2 class="light-blue darken-4 white-text">tests.giftcertificates</h2>
+  </div>
+  <div class="section-content">
+    <div class="data">
+      <h3 class="light-blue-text darken-3">Test Data</h3>
+  <table>
+    <thead class="light-blue darken-2 white-text">
+      <tr>
+        <th>Name</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="key">billingAddress_address1</td>
+        <td class="value">Middlefield Rd</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_address2</td>
+        <td class="value">1941</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_city</td>
+        <td class="value">Palo Alto</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_country</td>
+        <td class="value">United States</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_phone</td>
+        <td class="value">781-391-6642</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_postalCode</td>
+        <td class="value">94301</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_statesState</td>
+        <td class="value">California</td>
+      </tr>
+      <tr>
+        <td class="key">billingAddress_statesStateShort</td>
+        <td class="value">CA</td>
+      </tr>
+      <tr>
+        <td class="key">firstNameBuyer</td>
+        <td class="value">Nicole</td>
+      </tr>
+      <tr>
+        <td class="key">firstNameRecipient</td>
+        <td class="value">Thomas</td>
+      </tr>
+      <tr>
+        <td class="key">giftCertificateValue</td>
+        <td class="value">50${storefront_priceDecimalMark}00</td>
+      </tr>
+      <tr>
+        <td class="key">lastNameBuyer</td>
+        <td class="value">Buyer</td>
+      </tr>
+      <tr>
+        <td class="key">lastNameRecipient</td>
+        <td class="value">Recipient</td>
+      </tr>
+      <tr>
+        <td class="key">purchaseMessage</td>
+        <td class="value">Happy Birthday!</td>
+      </tr>
+      <tr>
+        <td class="key">visaCreditCard_cvn</td>
+        <td class="value">123</td>
+      </tr>
+      <tr>
+        <td class="key">visaCreditCard_month</td>
+        <td class="value">August</td>
+      </tr>
+      <tr>
+        <td class="key">visaCreditCard_number</td>
+        <td class="value">4111111111111111</td>
+      </tr>
+      <tr>
+        <td class="key">visaCreditCard_owner</td>
+        <td class="value">John Buyer</td>
+      </tr>
+      <tr>
+        <td class="key">visaCreditCard_type</td>
+        <td class="value">Visa</td>
+      </tr>
+      <tr>
+        <td class="key">visaCreditCard_typeShort</td>
+        <td class="value">Visa</td>
+      </tr>
+      <tr>
+        <td class="key">visaCreditCard_year</td>
+        <td class="value">2020</td>
+      </tr>
+    </tbody>
+  </table>
+    </div>
+
+    <div class="scripts">
+      <h3 class="light-blue-text darken-3">Scripts</h3>
+
+      <h4>Tests</h4>
+  <ul>
+    <li><a href="tests.html#test_tests.giftcertificates.TGiftCertificates_AddToCart">TGiftCertificates_AddToCart</a></li>
+    <li><a href="tests.html#test_tests.giftcertificates.TGiftCertificates_PurchaseGiftCertificate">TGiftCertificates_PurchaseGiftCertificate</a></li>
   </ul>
 
       <h4>Script Modules</h4>
@@ -1845,6 +2159,10 @@
         <td class="value">Playstation 3 Bundle</td>
       </tr>
       <tr>
+        <td class="key">bundleProductSearchPhrase</td>
+        <td class="value">Game Consoles</td>
+      </tr>
+      <tr>
         <td class="key">NavigationCategoryLevel1</td>
         <td class="value">Mens</td>
       </tr>
@@ -1873,6 +2191,10 @@
         <td class="value">Nintendo Wii™ Game Console</td>
       </tr>
       <tr>
+        <td class="key">optionProductSearchPhrase</td>
+        <td class="value">Game Consoles</td>
+      </tr>
+      <tr>
         <td class="key">plainProductCategoryLevel1</td>
         <td class="value">Electronics</td>
       </tr>
@@ -1886,7 +2208,11 @@
       </tr>
       <tr>
         <td class="key">plainProductName</td>
-        <td class="value">Grand Theft Auto 4 (for X-Box 360)</td>
+        <td class="value">Mario Kart (for Nintendo DS)</td>
+      </tr>
+      <tr>
+        <td class="key">plainProductSearchPhrase</td>
+        <td class="value">games for ds</td>
       </tr>
       <tr>
         <td class="key">setProductCategoryLevel1</td>
@@ -1905,6 +2231,10 @@
         <td class="value">Winter Look</td>
       </tr>
       <tr>
+        <td class="key">setProductSearchPhrase</td>
+        <td class="value">Outfits</td>
+      </tr>
+      <tr>
         <td class="key">variationProductCategoryLevel1</td>
         <td class="value">Mens</td>
       </tr>
@@ -1920,6 +2250,42 @@
         <td class="key">variationProductName</td>
         <td class="value">Cotton Stretch Pant</td>
       </tr>
+      <tr>
+        <td class="key">variationProductSearchPhrase</td>
+        <td class="value">Stretch Pants</td>
+      </tr>
+      <tr>
+        <td class="key">variationProductWithDropdownAndColorLabel1</td>
+        <td class="value">1 GB</td>
+      </tr>
+      <tr>
+        <td class="key">variationProductWithDropdownAndColorLabel2</td>
+        <td class="value">2 GB</td>
+      </tr>
+      <tr>
+        <td class="key">variationProductWithDropdownAndColorName</td>
+        <td class="value">Apple iPod Shuffle</td>
+      </tr>
+      <tr>
+        <td class="key">variationProductWithDropdownEmptyText</td>
+        <td class="value">Select Memory Size</td>
+      </tr>
+      <tr>
+        <td class="key">variationProductWithDropdownOnlyLabel1</td>
+        <td class="value">8 GB</td>
+      </tr>
+      <tr>
+        <td class="key">variationProductWithDropdownOnlyLabel2</td>
+        <td class="value">32 GB</td>
+      </tr>
+      <tr>
+        <td class="key">variationProductWithDropdownOnlyName</td>
+        <td class="value">Apple iPod Touch</td>
+      </tr>
+      <tr>
+        <td class="key">variationProductWithDropdownOnlySearchText</td>
+        <td class="value">Apple iPod</td>
+      </tr>
     </tbody>
   </table>
     </div>
@@ -1930,11 +2296,41 @@
       <h4>Tests</h4>
   <ul>
     <li><a href="tests.html#test_tests.product.TProduct_Quickview_ProductNavigation">TProduct_Quickview_ProductNavigation</a></li>
-    <li><a href="tests.html#test_tests.product.TProduct_Validate_OptionProduct">TProduct_Validate_OptionProduct</a></li>
-    <li><a href="tests.html#test_tests.product.TProduct_Validate_ProductBundle">TProduct_Validate_ProductBundle</a></li>
-    <li><a href="tests.html#test_tests.product.TProduct_Validate_ProductSet">TProduct_Validate_ProductSet</a></li>
-    <li><a href="tests.html#test_tests.product.TProduct_Validate_StandardProduct">TProduct_Validate_StandardProduct</a></li>
-    <li><a href="tests.html#test_tests.product.TProduct_Validate_VariationProduct">TProduct_Validate_VariationProduct</a></li>
+    <li><a href="tests.html#test_tests.product.TProduct_Validate_OptionProductFunctionality">TProduct_Validate_OptionProductFunctionality</a></li>
+    <li><a href="tests.html#test_tests.product.TProduct_Validate_OptionProductLayout">TProduct_Validate_OptionProductLayout</a></li>
+    <li><a href="tests.html#test_tests.product.TProduct_Validate_ProductBundleLayout">TProduct_Validate_ProductBundleLayout</a></li>
+    <li><a href="tests.html#test_tests.product.TProduct_Validate_ProductSetLayout">TProduct_Validate_ProductSetLayout</a></li>
+    <li><a href="tests.html#test_tests.product.TProduct_Validate_StandardProductLayout">TProduct_Validate_StandardProductLayout</a></li>
+    <li><a href="tests.html#test_tests.product.TProduct_Validate_VariationProductDropdownAndColorFunctionality">TProduct_Validate_VariationProductDropdownAndColorFunctionality</a></li>
+    <li><a href="tests.html#test_tests.product.TProduct_Validate_VariationProductDropdownOnlyFunctionality">TProduct_Validate_VariationProductDropdownOnlyFunctionality</a></li>
+    <li><a href="tests.html#test_tests.product.TProduct_Validate_VariationProductFunctionality">TProduct_Validate_VariationProductFunctionality</a></li>
+    <li><a href="tests.html#test_tests.product.TProduct_Validate_VariationProductLayout">TProduct_Validate_VariationProductLayout</a></li>
+  </ul>
+
+      <h4>Script Modules</h4>
+  <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+
+      <h4>Java Modules</h4>
+  <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+    </div>
+  </div>
+</div>
+<div class="section" id="pkg_tests.promotion">
+  <div class="section-title">
+    <h2 class="light-blue darken-4 white-text">tests.promotion</h2>
+  </div>
+  <div class="section-content">
+    <div class="data">
+      <h3 class="light-blue-text darken-3">Test Data</h3>
+  <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+    </div>
+
+    <div class="scripts">
+      <h3 class="light-blue-text darken-3">Scripts</h3>
+
+      <h4>Tests</h4>
+  <ul>
+    <li><a href="tests.html#test_tests.promotion.TPromotion_Buy5For50">TPromotion_Buy5For50</a></li>
   </ul>
 
       <h4>Script Modules</h4>
@@ -1989,10 +2385,75 @@
 
       <h4>Tests</h4>
   <ul>
+    <li><a href="tests.html#test_tests.search.TSearch_DidYouMean">TSearch_DidYouMean</a></li>
     <li><a href="tests.html#test_tests.search.TSearch_NoResults">TSearch_NoResults</a></li>
     <li><a href="tests.html#test_tests.search.TSearchArticles_ArticlesOnly">TSearchArticles_ArticlesOnly</a></li>
     <li><a href="tests.html#test_tests.search.TSearchProducts_DirectHit">TSearchProducts_DirectHit</a></li>
     <li><a href="tests.html#test_tests.search.TSearchProducts_ProductsOnly">TSearchProducts_ProductsOnly</a></li>
+  </ul>
+
+      <h4>Script Modules</h4>
+  <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+
+      <h4>Java Modules</h4>
+  <p class="empty">&mdash;&nbsp;none&nbsp;&mdash;</p>
+    </div>
+  </div>
+</div>
+<div class="section" id="pkg_tests.wishlist">
+  <div class="section-title">
+    <h2 class="light-blue darken-4 white-text">tests.wishlist</h2>
+  </div>
+  <div class="section-content">
+    <div class="data">
+      <h3 class="light-blue-text darken-3">Test Data</h3>
+  <table>
+    <thead class="light-blue darken-2 white-text">
+      <tr>
+        <th>Name</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="key">searchTextProducts_01</td>
+        <td class="value">Necklaces</td>
+      </tr>
+      <tr>
+        <td class="key">searchTextProducts_02</td>
+        <td class="value">GPSMAP</td>
+      </tr>
+      <tr>
+        <td class="key">searchTextProducts_03</td>
+        <td class="value">MP3 Players -Apple -Sony</td>
+      </tr>
+      <tr>
+        <td class="key">searchTextProducts_04</td>
+        <td class="value">Digital Cameras</td>
+      </tr>
+      <tr>
+        <td class="key">wishlistOwner_fristname</td>
+        <td class="value">John</td>
+      </tr>
+      <tr>
+        <td class="key">wishlistOwner_lastname</td>
+        <td class="value">WishListOwner Doe</td>
+      </tr>
+    </tbody>
+  </table>
+    </div>
+
+    <div class="scripts">
+      <h3 class="light-blue-text darken-3">Scripts</h3>
+
+      <h4>Tests</h4>
+  <ul>
+    <li><a href="tests.html#test_tests.wishlist.TWishList_AddRemoveProduct">TWishList_AddRemoveProduct</a></li>
+    <li><a href="tests.html#test_tests.wishlist.TWishList_AddToCart">TWishList_AddToCart</a></li>
+    <li><a href="tests.html#test_tests.wishlist.TWishList_RemoveProducts">TWishList_RemoveProducts</a></li>
+    <li><a href="tests.html#test_tests.wishlist.TWishList_SearchWishList">TWishList_SearchWishList</a></li>
+    <li><a href="tests.html#test_tests.wishlist.TWishList_ShareWishListLink">TWishList_ShareWishListLink</a></li>
+    <li><a href="tests.html#test_tests.wishlist.TWishList_UpdateQuantities">TWishList_UpdateQuantities</a></li>
   </ul>
 
       <h4>Script Modules</h4>
@@ -2013,7 +2474,7 @@
     <div id="footer">
       <div class="container">
         <div class="row red darken-4 z-depth-1">
-          <div class="footer-copy white-text">Generated with Xceptance LoadTest<sup>&reg;</sup>&nbsp;<span class="product-version">4.5.3</span></div>
+          <div class="footer-copy white-text">Generated with Xceptance LoadTest<sup>&reg;</sup>&nbsp;<span class="product-version">4.8.1</span></div>
         </div><!-- /.row -->
       </div><!-- /.container -->
     </div><!-- /#footer -->

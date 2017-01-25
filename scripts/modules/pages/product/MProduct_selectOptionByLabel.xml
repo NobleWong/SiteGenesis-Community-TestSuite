@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
-  <description>Select an option by label in parameters
-
-Caution: This module works only correct if you select a different option than the start option</description>
-  <parameter name="selectedLabel" desc="The label of the selected option"/>
-  <command name="select" target="css=.product-options ul li.attribute.option-dropdown div.value select" value="label=@{selectedLabel}"/>
-  <command name="waitForSelectedLabel" target="css=.product-options ul .option-dropdown .value select.product-option" value="@{selectedLabel}"/>
-</scriptmodule>
