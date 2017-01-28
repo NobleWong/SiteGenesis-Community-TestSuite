@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
   <description>Validate personal data page.</description>
   <codecomment>Validate Edit Account</codecomment>
   <command name="assertText" target="css=#primary h1" value="Edit Account"/>
@@ -8,8 +8,8 @@
   <command name="assertElementPresent" target="css=#primary #RegistrationForm fieldset legend .dialog-required"/>
   <codecomment>---</codecomment>
   <command name="assertElementPresent" target="id=dwfrm_profile_customer_addtoemaillist"/>
-  <command name="assertText" target="css=#RegistrationForm fieldset div:nth-of-type(4) label span" value="Please add me to Demandware's email list."/>
-  <command name="assertText" target="css=#RegistrationForm fieldset div:nth-of-type(5) span" value="Demandware does not share or sell personal info."/>
+  <command name="assertText" target="css=#RegistrationForm fieldset div:nth-of-type(4) label span" value="Please add me to  Salesforce Commerce Cloud's email list."/>
+  <command name="assertText" target="css=#RegistrationForm fieldset div:nth-of-type(5) span" value=" Salesforce Commerce Cloud does not share or sell personal info."/>
   <codecomment>---</codecomment>
   <command name="assertText" target="css=#ChangePassowrdForm fieldset legend" value="CHANGE PASSWORD*"/>
   <command name="assertElementPresent" target="css=#ChangePassowrdForm fieldset legend .dialog-required"/>
