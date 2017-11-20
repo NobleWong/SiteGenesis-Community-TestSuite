@@ -87,7 +87,7 @@
 - Login with new email
 - Validate account page and nav
 - Validate updated customer name
-- chamge password
+- change password
 - Logout</codecomment>
   <module name="modules.pages.homepage.FHomepage_flowToLoginAccount">
     <parameter name="email" value="${email_02_varDynamic}"/>

@@ -30,12 +30,12 @@ public class PropertiesToBrowserConfigurationMapper implements IMapper<Map<Strin
 
     private static final String TEST_ENVIRONMENT = "testEnvironment";
 
-    // appium specific propertys
+    // appium specific properties
     private static final String APPIUM_VERSION = "appiumVersion";
 
     private static final String BROWSER_NAME = "browserName";
 
-    private static final String PLATTFORM_VERSION = "platformVersion";
+    private static final String PLATFORM_VERSION = "platformVersion";
 
     private static final String APP = "app";
 
@@ -99,9 +99,9 @@ public class PropertiesToBrowserConfigurationMapper implements IMapper<Map<Strin
         if (!StringUtils.isEmpty(emulatedDeviceName))
             capabilities.setCapability("deviceName", emulatedDeviceName);
 
-        String emulatedDeviceOrienation = o.get(DEVICE_ORIENTATION);
-        if (!StringUtils.isEmpty(emulatedDeviceOrienation))
-            capabilities.setCapability("deviceOrientation", emulatedDeviceOrienation);
+        String emulatedDeviceOrientation = o.get(DEVICE_ORIENTATION);
+        if (!StringUtils.isEmpty(emulatedDeviceOrientation))
+            capabilities.setCapability("deviceOrientation", emulatedDeviceOrientation);
 
         String emulatedDeviceScreenResolution = o.get(SCREEN_RESOLUTION);
         if (!StringUtils.isEmpty(emulatedDeviceScreenResolution))
@@ -117,9 +117,9 @@ public class PropertiesToBrowserConfigurationMapper implements IMapper<Map<Strin
         if (!StringUtils.isEmpty(browserName))
             capabilities.setCapability("browserName", browserName);
 
-        String plattformVersion = o.get(PLATTFORM_VERSION);
-        if (!StringUtils.isEmpty(plattformVersion))
-            capabilities.setCapability("platformVersion", plattformVersion);
+        String platformVersion = o.get(PLATFORM_VERSION);
+        if (!StringUtils.isEmpty(platformVersion))
+            capabilities.setCapability("platformVersion", platformVersion);
 
         String app = o.get(APP);
         if (!StringUtils.isEmpty(app))

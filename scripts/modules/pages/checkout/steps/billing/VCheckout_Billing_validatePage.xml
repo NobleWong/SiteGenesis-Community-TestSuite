@@ -12,7 +12,7 @@
   <command name="assertElementPresent" target="${css_billing_address} legend"/>
   <command name="assertElementPresent" target="${css_billing_address} #dwfrm_billing_billingAddress_addToEmailList"/>
   <command name="assertElementPresent" target="${css_billing_address} .privacy-policy"/>
-  <codecomment>Valdiate primary fieldset gift coupon</codecomment>
+  <codecomment>Validate primary fieldset gift coupon</codecomment>
   <command name="store" target="css=#dwfrm_billing fieldset:nth-of-type(2) " value="css_gift_coupon"/>
   <command name="assertElementPresent" target="${css_gift_coupon} legend"/>
   <command name="assertElementPresent" target="${css_gift_coupon} #dwfrm_billing_couponCode"/>

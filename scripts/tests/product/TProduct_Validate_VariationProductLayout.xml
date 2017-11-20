@@ -11,7 +11,7 @@ Validate the displaying of product data either via quickview or via product deta
 
 - validate structure of the QV
 - go from QV to PDP
-- validate stucture of PDP
+- validate structure of PDP
 - check if product name, price, and product number are the same on both 
 - search for product name and validate PDP again</description>
   <codecomment># Setup - Start Session</codecomment>
@@ -25,12 +25,12 @@ Validate the displaying of product data either via quickview or via product deta
   <codecomment>Step 1: Validate quickview</codecomment>
   <codecomment>------------------------------------------------------------</codecomment>
   <action name="VariationProductQuickview"/>
-  <codecomment>Hover over Product and click on quick view buttom</codecomment>
+  <codecomment>Hover over Product and click on quick view button</codecomment>
   <module name="modules.pages.catalog.MCatalog_clickQuickViewByProductTitle">
     <parameter name="title" value="${variationProductName}"/>
   </module>
   <codecomment>Verify quick view page</codecomment>
-  <codecomment>Caution: if you click on an product via QV usully a color is selected</codecomment>
+  <codecomment>Caution: if you click on an product via QV usually a color is selected</codecomment>
   <module name="modules.pages.product.productquickview.VProductQV_validateHeader">
     <parameter name="prevButtonState" value=""/>
     <parameter name="nextButtonState" value=""/>
@@ -48,7 +48,7 @@ Validate the displaying of product data either via quickview or via product deta
   <module name="modules.pages.product.productquickview.VProductQV_validateQVOnlyElements"/>
   <module name="modules.pages.product.VProduct_validateThumbnails"/>
   <module name="modules.pages.product.VProduct_validateSozialSharing"/>
-  <codecomment>Store product informations to check them later</codecomment>
+  <codecomment>Store product information to check it later</codecomment>
   <module name="modules.pages.product.SProduct_storeBasicData">
     <parameter name="productName_varName" value="productName_varDynamic"/>
     <parameter name="productNumber_varName" value="productNumber_varDynamic"/>
@@ -66,7 +66,7 @@ Validate the displaying of product data either via quickview or via product deta
     <parameter name="productName" value="${variationProductName}"/>
   </module>
   <codecomment>Verify product detail page</codecomment>
-  <codecomment>Caution: on the pdp ususlly no color is selected if there are more than one color</codecomment>
+  <codecomment>Caution: on the pdp usually no color is selected if there are more than one color</codecomment>
   <module name="modules.global.headerfooternav.VNavigation_validateBreadcrumb">
     <parameter name="breadcrumbPath" value="*${variationProductCategoryLevel1} ${variationProductCategoryLevel2} ${variationProductCategoryLevel3} ${productName_varDynamic}"/>
   </module>

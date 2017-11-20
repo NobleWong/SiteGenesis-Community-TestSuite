@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
   <description>Click color by position.</description>
-  <parameter name="colorPosition" desc="color positon"/>
+  <parameter name="colorPosition" desc="color position"/>
   <parameter name="colorLabel_varName" desc="color label as var name"/>
   <parameter name="breadcrumbRefinementValueCount" desc="How many refinement values should we have in the breadcrumb after this action"/>
   <command name="storeText" target="css=#secondary .refinementColor .refinementColor li:nth-of-type(@{colorPosition}) a" value="@{colorLabel_varName}"/>

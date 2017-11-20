@@ -114,8 +114,8 @@ The following steps explain how you can execute the test suite using grunt or gu
 - Parameters:
     - name: path to and name of the test case e.g. "**tests.package.TTestcaseName**", no default
     - webdriver: name of an installed WebDriver e.g. "**chrome**", default standard webdriver of the project 
-    - width: numer of pixels e.g. ""**800**", default standard width of the browser
-    - height: numer of pixels e.g. ""**600**", default standard height of the browser
+    - width: number of pixels e.g. ""**800**", default standard width of the browser
+    - height: number of pixels e.g. ""**600**", default standard height of the browser
 
 ## Test Suite Structure
 
@@ -127,7 +127,7 @@ This test suite features several SiteGenesis version branches. The __master__ is
 
 ### General
 
-We have already build a __foundation__ of over __250 modules__ structured in over __40 packages__. Our __test set__ consists of over __30 tests__ based on empirical knowledge from our daily business projects. The aim is to cover standard functions of the shop system. This means all tests have to cover a wide variety of different test pathes. The modules can be used as building bricks to enlarge the current test set quickly.
+We have already build a __foundation__ of over __250 modules__ structured in over __40 packages__. Our __test set__ consists of over __30 tests__ based on empirical knowledge from our daily business projects. The aim is to cover standard functions of the shop system. This means all tests have to cover a wide variety of different test paths. The modules can be used as building bricks to enlarge the current test set quickly.
 
     .
     |-- config                             # XLT framework configuration

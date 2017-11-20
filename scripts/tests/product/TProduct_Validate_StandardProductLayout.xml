@@ -11,7 +11,7 @@ Validate displaying product data either via quick view or via product detail pag
 
 - validate structure of the QV
 - go from QV to PDP
-- validate stucture of PDP
+- validate structure of PDP
 - check if product name, price, and product number are the same on both 
 - search for product name and validate PDP again</description>
   <codecomment># Setup - Start Session</codecomment>
@@ -25,7 +25,7 @@ Validate displaying product data either via quick view or via product detail pag
   <codecomment>Step 1: Validate quickview</codecomment>
   <codecomment>------------------------------------------------------------</codecomment>
   <action name="ProductQuickView"/>
-  <codecomment>Hover over Product and click on quick view buttom</codecomment>
+  <codecomment>Hover over Product and click on quick view button</codecomment>
   <module name="modules.pages.catalog.MCatalog_clickQuickViewByProductTitle">
     <parameter name="title" value="${plainProductName}"/>
   </module>
@@ -41,13 +41,13 @@ Validate displaying product data either via quick view or via product detail pag
     <comment>Currently PDP and QV share a lot, hence we validate that here</comment>
   </module>
   <module name="modules.pages.product.VProduct_validateAvailability">
-    <parameter name="availabilityMassage" value="In Stock"/>
+    <parameter name="availabilityMessage" value="In Stock"/>
   </module>
   <module name="modules.pages.product.VProduct_validateAdd2CartButtonIsEnabled"/>
   <module name="modules.pages.product.productquickview.VProductQV_validateQVOnlyElements"/>
   <module name="modules.pages.product.VProduct_validateSozialSharing"/>
   <module name="modules.pages.product.VProduct_validateWishlistAndGiftRegistry"/>
-  <codecomment>Store product informations to check them later</codecomment>
+  <codecomment>Store product information to check it later</codecomment>
   <module name="modules.pages.product.SProduct_storeBasicData">
     <parameter name="productName_varName" value="productName_varDynamic"/>
     <parameter name="productNumber_varName" value="productNumber_varDynamic"/>
@@ -73,7 +73,7 @@ Validate displaying product data either via quick view or via product detail pag
   </module>
   <module name="modules.pages.product.VProduct_validatePDPandQVShared"/>
   <module name="modules.pages.product.VProduct_validateAvailability">
-    <parameter name="availabilityMassage" value="In Stock"/>
+    <parameter name="availabilityMessage" value="In Stock"/>
   </module>
   <module name="modules.pages.product.VProduct_validateAdd2CartButtonIsEnabled"/>
   <module name="modules.pages.product.VProduct_validateSozialSharing"/>
@@ -107,7 +107,7 @@ Validate displaying product data either via quick view or via product detail pag
   </module>
   <module name="modules.pages.product.VProduct_validatePDPandQVShared"/>
   <module name="modules.pages.product.VProduct_validateAvailability">
-    <parameter name="availabilityMassage" value="In Stock"/>
+    <parameter name="availabilityMessage" value="In Stock"/>
   </module>
   <module name="modules.pages.product.VProduct_validateAdd2CartButtonIsEnabled"/>
   <module name="modules.pages.product.VProduct_validateSozialSharing"/>

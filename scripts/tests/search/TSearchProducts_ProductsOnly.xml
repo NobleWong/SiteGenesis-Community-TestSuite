@@ -26,11 +26,11 @@
   <codecomment>## Many Results
 
 - Search product color
-- Valdiate results page (similar to catalog page)
+- Validate results page (similar to catalog page)
 - Validate search string
 - Go to random product
-- Valdiate PDP
-- Valdiate PDP product number</codecomment>
+- Validate PDP
+- Validate PDP product number</codecomment>
   <action name="SearchProducts"/>
   <module name="modules.pages.search.MSearch_enterTextAndSubmit">
     <parameter name="searchText" value="${searchText}"/>

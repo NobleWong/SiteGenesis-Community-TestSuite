@@ -8,7 +8,7 @@
   <parameter name="totalsSubtotal_varName" desc="totals subtotal as var name"/>
   <parameter name="priceCurrency" desc="price currency"/>
   <parameter name="priceDecimalMark" desc="price decimal mark"/>
-  <parameter name="priceDigitGroupSeparators" desc="price digit group seperators"/>
+  <parameter name="priceDigitGroupSeparators" desc="price digit group separators"/>
   <module name="modules.helper.MHelper_Price_convertPriceToValue">
     <parameter name="price" value="@{productPriceSales_01}"/>
     <parameter name="priceValue_varName" value="priceValue_01"/>
@@ -25,7 +25,7 @@
   </module>
   <command name="storeEval" target=" ${priceValue_01} * @{productQuantity_01} + ${priceValue_02} * @{productQuantity_02}" value="totalsSubtotalValue"/>
   <command name="pause" value="100">
-    <comment>it seems that the the module need this pause, because otherwise sometimes the result is mixed up. This only occures on high test speed</comment>
+    <comment>it seems that the the module need this pause, because otherwise sometimes the result is mixed up. This only occurs on high test speed</comment>
   </command>
   <module name="modules.helper.MHelper_Price_convertValueToPrice">
     <parameter name="priceValue" value="${totalsSubtotalValue}"/>

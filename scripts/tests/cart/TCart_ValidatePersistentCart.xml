@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
-  <description>Test validates the persistant cart feature. It consists of two parts. One for the persistant user cart and one for the site. 
+  <description>Test validates the persistent cart feature. It consists of two parts. One for the persistent user cart and one for the site. 
 (Caution: make sure the persistent cart feature is activated in the BM)
 
 # Setup and preparation
@@ -16,7 +16,7 @@
 
 - validate product in cart
 - logout
-- delete viseblie cookies
+- delete visible cookies
 - login
 - validate that product is still in cart
 
@@ -64,7 +64,7 @@
     <parameter name="productQuantity" value="1"/>
     <parameter name="productName_varName" value="productName_varDynamic"/>
     <parameter name="productNumber_varName" value="productNumber_varDynamic"/>
-    <parameter name="productQuantity_varName" value="productQuantiy_varDynamic"/>
+    <parameter name="productQuantity_varName" value="productQuantity_varDynamic"/>
     <parameter name="productPriceSales_varName" value="productPriceSales_varDynamic"/>
     <parameter name="productPriceTotal_varName" value="productPriceTotal_varDynamic"/>
   </module>
@@ -80,7 +80,7 @@
     <parameter name="row" value="1"/>
     <parameter name="productName" value="${productName_varDynamic}"/>
     <parameter name="productNumber" value="${productNumber_varDynamic}"/>
-    <parameter name="productQuantity" value="${productQuantiy_varDynamic}"/>
+    <parameter name="productQuantity" value="${productQuantity_varDynamic}"/>
     <parameter name="productPriceSales" value="${productPriceSales_varDynamic}"/>
   </module>
   <module name="modules.global.headerfooternav.FGlobal_flowToLogout"/>
@@ -96,7 +96,7 @@
     <parameter name="row" value="1"/>
     <parameter name="productName" value="${productName_varDynamic}"/>
     <parameter name="productNumber" value="${productNumber_varDynamic}"/>
-    <parameter name="productQuantity" value="${productQuantiy_varDynamic}"/>
+    <parameter name="productQuantity" value="${productQuantity_varDynamic}"/>
     <parameter name="productPriceSales" value="${productPriceSales_varDynamic}"/>
   </module>
   <codecomment>---</codecomment>
@@ -116,7 +116,7 @@
     <parameter name="productQuantity" value="1"/>
     <parameter name="productName_varName" value="productName_varDynamic"/>
     <parameter name="productNumber_varName" value="productNumber_varDynamic"/>
-    <parameter name="productQuantity_varName" value="productQuantiy_varDynamic"/>
+    <parameter name="productQuantity_varName" value="productQuantity_varDynamic"/>
     <parameter name="productPriceSales_varName" value="productPriceSales_varDynamic"/>
     <parameter name="productPriceTotal_varName" value="productPriceTotal_varDynamic"/>
   </module>
@@ -133,7 +133,7 @@
     <parameter name="row" value="1"/>
     <parameter name="productName" value="${productName_varDynamic}"/>
     <parameter name="productNumber" value="${productNumber_varDynamic}"/>
-    <parameter name="productQuantity" value="${productQuantiy_varDynamic}"/>
+    <parameter name="productQuantity" value="${productQuantity_varDynamic}"/>
     <parameter name="productPriceSales" value="${productPriceSales_varDynamic}"/>
   </module>
 </testcase>

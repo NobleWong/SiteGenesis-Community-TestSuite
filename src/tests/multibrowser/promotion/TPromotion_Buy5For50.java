@@ -20,7 +20,7 @@ import xltutil.annotation.TestTargets;
  * </ul>
  * <h1 id="scope">Scope</h1>
  * <p>
- * Validate correct funtionality of the promotion
+ * Validate correct functionality of the promotion
  * </p>
  * <ul>
  * <li>change quantity to five</li>

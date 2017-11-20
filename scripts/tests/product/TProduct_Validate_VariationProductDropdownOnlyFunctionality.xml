@@ -151,7 +151,7 @@
   <module name="modules.pages.product.VProduct_validateProductNumberIsChanged">
     <parameter name="productNumberBefore" value="${productNumber_varDynamic}"/>
   </module>
-  <action name="DeelectVariantDropdown"/>
+  <action name="DeselectVariantDropdown"/>
   <codecomment>Store product data, deselect variation via dropdown</codecomment>
   <module name="modules.pages.product.SProduct_storeBasicDataWithPriceRange">
     <parameter name="productName_varName" value="productName_varDynamic"/>

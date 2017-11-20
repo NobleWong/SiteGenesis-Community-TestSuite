@@ -9,6 +9,6 @@
   <command name="type" target="id=dwfrm_profile_customer_lastname" value="@{lastname}"/>
   <command name="type" target="id=dwfrm_profile_customer_email" value="@{email}"/>
   <command name="type" target="id=dwfrm_profile_customer_emailconfirm" value="@{email}"/>
-  <codecomment>because of the randomly attached string at the end of the id for this element a selction via id is not possiple</codecomment>
+  <codecomment>because of the randomly attached string at the end of the id for this element a selection via id is not possible</codecomment>
   <command name="type" target="css=#RegistrationForm fieldset div.form-row div input[id*=&quot;password_&quot;]" value="@{password}"/>
 </scriptmodule>

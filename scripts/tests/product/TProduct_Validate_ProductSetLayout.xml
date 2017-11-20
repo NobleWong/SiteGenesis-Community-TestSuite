@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
-  <tags>product,pdp,qv,quickview,layoout</tags>
+  <tags>product,pdp,qv,quickview,layout</tags>
   <description>Verifies the structure/layout of quickview (QV) and product details pages (PDP) for  product sets
 
 # Setup
@@ -11,7 +11,7 @@ Validate displaying product data either via quick view or via product detail pag
 
 - validate structure of the QV
 - go from QV to PDP
-- validate stucture of PDP
+- validate structure of PDP
 - check if product name, price, and product number are the same on both 
 - search for product name and validate PDP again</description>
   <codecomment># Setup - Start Session</codecomment>
@@ -25,7 +25,7 @@ Validate displaying product data either via quick view or via product detail pag
   <codecomment>Step 1: Validate quickview</codecomment>
   <codecomment>------------------------------------------------------------</codecomment>
   <action name="ProductSetQuickview"/>
-  <codecomment>Hover over Product and click on quick view buttom</codecomment>
+  <codecomment>Hover over Product and click on quick view button</codecomment>
   <module name="modules.pages.catalog.MCatalog_clickQuickViewByProductTitle">
     <parameter name="title" value="${setProductName}"/>
   </module>
@@ -40,7 +40,7 @@ Validate displaying product data either via quick view or via product detail pag
   <module name="modules.pages.product.VProduct_validateProductSet"/>
   <module name="modules.pages.product.productquickview.VProductQV_validateQVOnlyElements"/>
   <module name="modules.pages.product.VProduct_validateSozialSharing"/>
-  <codecomment>Store product informations to check them later</codecomment>
+  <codecomment>Store product information to check it later</codecomment>
   <module name="modules.pages.product.SProduct_storeBasicData">
     <parameter name="productName_varName" value="productName_varDynamic"/>
     <parameter name="productNumber_varName" value="productNumber_varDynamic"/>

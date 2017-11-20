@@ -7,7 +7,7 @@ import com.xceptance.xlt.api.engine.scripting.ScriptName;
 
 
 /**
- * <p>Test returning customer order with two saved addresses, saved credit card and two basic products including valdiation of order summary via check order status in account.</p>
+ * <p>Test returning customer order with two saved addresses, saved credit card and two basic products including validation of order summary via check order status in account.</p>
  * <h1 id="1-setup-and-preparation">1. Setup and preparation</h1>
  * <ul>
  * <li>Start session, open homepage and delete all visible cookies</li>

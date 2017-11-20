@@ -21,8 +21,8 @@
   <codecomment>## Article Result
 
 - Search article content
-- Validiate PDP
-- Validiate PDP product number</codecomment>
+- Validate PDP
+- Validate PDP product number</codecomment>
   <action name="SearchArticlesOnly"/>
   <module name="modules.pages.search.MSearch_enterTextAndSubmit">
     <parameter name="searchText" value="${searchText}"/>

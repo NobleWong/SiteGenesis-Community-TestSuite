@@ -6,7 +6,7 @@
   <command name="assertText" target="css=#main .breadcrumb a.breadcrumb-element:last-of-type" value="@{orderNumber}"/>
   <command name="assertElementPresent" target="css=#main .breadcrumb a.breadcrumb-element[title*=&quot;My Account&quot;]"/>
   <command name="assertElementPresent" target="css=#main .breadcrumb a.breadcrumb-element[title*=&quot;Order History&quot;]"/>
-  <codecomment>Valdiate primary table order summary</codecomment>
+  <codecomment>Validate primary table order summary</codecomment>
   <command name="assertText" disabled="true" target="css=#main #primary h2" value="regexpi:Order Summary"/>
   <command name="assertText" target="css=#primary .orderdetails div.order-payment-instruments div.label" value="regexpi:Payment Method  "/>
   <command name="assertText" target="css=#primary .orderdetails .order-billing .label" value="regexpi:Billing Address"/>

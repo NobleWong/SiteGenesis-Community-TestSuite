@@ -3,7 +3,7 @@
   <tags>giftcerts,cart,checkout,external</tags>
   <description># Setup
 
-- create an email for the receipient using an external service
+- create an email for the recipient using an external service
 - open the homepage and start the session
 - create an account for the buyer
 
@@ -17,7 +17,7 @@
 - check balance of gift certificates</description>
   <codecomment># Setup
 
-- generate short time email to recieve a gift code
+- generate short time email to receive a gift code
 - generate mail and password for buyer
 - create account for purchase</codecomment>
   <module name="modules.helper.external.FHelper_getEmailAddressFromExternal">

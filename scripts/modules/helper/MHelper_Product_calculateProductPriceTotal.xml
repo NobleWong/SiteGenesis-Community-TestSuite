@@ -6,7 +6,7 @@
   <parameter name="productPriceTotal_varName" desc="product total price as var name"/>
   <parameter name="priceCurrency" desc="price currency"/>
   <parameter name="priceDecimalMark" desc="price decimal mark"/>
-  <parameter name="priceDigitGroupSeparators" desc="price digit group seperators"/>
+  <parameter name="priceDigitGroupSeparators" desc="price digit group separators"/>
   <module name="modules.helper.MHelper_Price_convertPriceToValue">
     <parameter name="price" value="@{productPriceSales}"/>
     <parameter name="priceValue_varName" value="priceValue_varDynamic"/>

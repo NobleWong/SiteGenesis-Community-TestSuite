@@ -4,7 +4,7 @@
   <description>Click on the QV button of a product via product title. It selects a product CONTAINING the input parameter word 'title'.
 
 Note: The title often matches the product name.</description>
-  <parameter name="title" desc="tilte of the product in catalog"/>
+  <parameter name="title" desc="title of the product in catalog"/>
   <command name="mouseOver" target="css=#search-result-items a[title*='@{title}']">
     <comment>Please note, that the target selects an element with a title attribute CONTAINING the word 'title'. </comment>
   </command>

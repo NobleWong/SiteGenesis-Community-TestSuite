@@ -140,7 +140,7 @@ public class AnnotationRunner extends XltTestRunner
             }
             catch (MalformedURLException e)
             {
-                throw new RuntimeException("An error occured during URL creation. See nested exception.", e);
+                throw new RuntimeException("An error occurred during URL creation. See nested exception.", e);
             }
             if (driver != null)
             {

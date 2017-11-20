@@ -10,8 +10,8 @@ import xltutil.annotation.TestTargets;
 
 /**
  * <p>
- * Test validates the persistant cart feature. It consists of two parts. One for
- * the persistant user cart and one for the site. (Caution: make sure the
+ * Test validates the persistent cart feature. It consists of two parts. One for
+ * the persistent user cart and one for the site. (Caution: make sure the
  * persistent cart feature is activated in the BM)
  * </p>
  * <h1 id="setup-and-preparation">Setup and preparation</h1>
@@ -26,7 +26,7 @@ import xltutil.annotation.TestTargets;
  * <ul>
  * <li>validate product in cart</li>
  * <li>logout</li>
- * <li>delete viseblie cookies</li>
+ * <li>delete visible cookies</li>
  * <li>login</li>
  * <li>validate that product is still in cart</li>
  * </ul>

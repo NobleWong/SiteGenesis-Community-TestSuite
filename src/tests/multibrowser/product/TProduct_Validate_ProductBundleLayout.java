@@ -25,7 +25,7 @@ import xltutil.annotation.TestTargets;
  * <ul>
  * <li>validate structure of the QV</li>
  * <li>go from QV to PDP</li>
- * <li>validate stucture of PDP</li>
+ * <li>validate structure of PDP</li>
  * <li>check if product name, price, and product number are the same on both
  * </li>
  * <li>search for product name and validate PDP again</li>

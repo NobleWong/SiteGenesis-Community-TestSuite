@@ -4,7 +4,7 @@
 
 - Start on homepage
 - Enter and submit check order on account login page
-- Validate order data in order summmary
+- Validate order data in order summary
 - End on homepage</description>
   <parameter name="orderNumber" desc="order number"/>
   <parameter name="orderDate" desc="order date"/>
