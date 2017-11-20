@@ -23,7 +23,7 @@ import xltutil.annotation.TestTargets;
  * <ul>
  * <li>Start guest checkout</li>
  * <li>Enter new address and use preselected default shipping method</li>
- * <li>Use different addresss for billing and use payment method credit card
+ * <li>Use different addresses for billing and use payment method credit card
  * (visa)</li>
  * <li>Validate place order page</li>
  * <li>Validate order confirmation page</li>

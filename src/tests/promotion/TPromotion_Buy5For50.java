@@ -15,7 +15,7 @@ import com.xceptance.xlt.api.engine.scripting.ScriptName;
  * <li>Validate that no promotion is shown</li>
  * </ul>
  * <h1 id="scope">Scope</h1>
- * <p>Validate correct funtionality of the promotion</p>
+ * <p>Validate correct functionality of the promotion</p>
  * <ul>
  * <li>change quantity to five</li>
  * <li>validate that promotion is shown correctly</li>

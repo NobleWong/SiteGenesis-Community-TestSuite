@@ -34,7 +34,7 @@
   <codecomment>## Catalog
 
 - Select color by clicking
-- Valdiate color selected
+- Validate color selected
 - Unselect color by clicking again
 - Validate color unselected</codecomment>
   <action name="RefineColorByLabel"/>

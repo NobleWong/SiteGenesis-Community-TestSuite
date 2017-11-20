@@ -2,7 +2,7 @@
 <testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
   <tags>giftcerts,cart</tags>
   <description># Setup
-- create an email for the receipient
+- create an email for the recipient
 - open the homepage and start the session
 
 # Scope

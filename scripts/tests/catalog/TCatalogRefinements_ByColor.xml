@@ -36,7 +36,7 @@
   <codecomment>## Catalog
 
 - Select color by clicking
-- Valdiate color selected
+- Validate color selected
 - Unselect color by clicking again
 - Validate color unselected</codecomment>
   <action name="RefineColorByLabel"/>
@@ -58,8 +58,8 @@
   <codecomment>## Catalog
 
 - Select three random colors
-- Valdiate colors</codecomment>
-  <action name="RefineColorByPostion"/>
+- Validate colors</codecomment>
+  <action name="RefineColorByPosition"/>
   <module name="modules.pages.catalog.MCatalog_Refinement_clickColorByPosition">
     <parameter name="colorPosition" value="${colorPosition_01}"/>
     <parameter name="colorLabel_varName" value="colorLabel_01"/>
@@ -68,7 +68,7 @@
   <module name="modules.pages.catalog.VCatalog_Refinement_validateColorLabelIsSelected">
     <parameter name="colorLabel" value="${colorLabel_01}"/>
   </module>
-  <action name="RefineColorByPostion"/>
+  <action name="RefineColorByPosition"/>
   <module name="modules.pages.catalog.MCatalog_Refinement_clickColorByPosition">
     <parameter name="colorPosition" value="${colorPosition_02}"/>
     <parameter name="colorLabel_varName" value="colorLabel_02"/>
@@ -77,7 +77,7 @@
   <module name="modules.pages.catalog.VCatalog_Refinement_validateColorLabelIsSelected">
     <parameter name="colorLabel" value="${colorLabel_02}"/>
   </module>
-  <action name="RefineColorByPostion"/>
+  <action name="RefineColorByPosition"/>
   <module name="modules.pages.catalog.MCatalog_Refinement_clickColorByPosition">
     <parameter name="colorPosition" value="${colorPosition_03}"/>
     <parameter name="colorLabel_varName" value="colorLabel_03"/>

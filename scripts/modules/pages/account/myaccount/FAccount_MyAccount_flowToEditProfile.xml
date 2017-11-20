@@ -5,7 +5,7 @@
 - Start on MyAccount page
 - Go to personal data
 - Enter and submit profile
-- Valdiate customer name
+- Validate customer name
 - End on MyAccount page</description>
   <parameter name="firstname" desc="firstname"/>
   <parameter name="lastname" desc="lastname"/>

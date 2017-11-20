@@ -234,7 +234,7 @@ public final class AnnotationRunnerHelper
 
     public static Map<String, BrowserConfigurationDto> parseBrowserProperties(XltProperties properties)
     {
-        // Structur browserprofile.<nametag>.*
+        // Structure browserprofile.<nametag>.*
 
         // property prefix for browser configurations
         String propertyKeyBrowsers = "browserprofile";

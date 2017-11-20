@@ -118,7 +118,7 @@ Note: This test is prepared as data driven test. Running it as junit test will e
     <comment>This makes the difference of running it with two addresses or one.</comment>
   </module>
   <module name="modules.pages.checkout.steps.shipping.MCheckout_ShippingMethod_checkPosition">
-    <parameter name="positon" value="${shippingMethod_position}"/>
+    <parameter name="position" value="${shippingMethod_position}"/>
   </module>
   <module name="modules.pages.checkout.steps.boxes.VCheckout_BoxOrderSummary_validateShippingMethod">
     <parameter name="shippingMethod_name" value="${shippingMethod_name}"/>

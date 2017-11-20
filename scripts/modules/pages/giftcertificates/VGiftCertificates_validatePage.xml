@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
-  <description>validates the elments on the gift certificate page</description>
+  <description>validates the elements on the gift certificate page</description>
   <command name="assertText" target="css=#primary.primary-content h1" value="Gift Certificates"/>
   <codecomment>---</codecomment>
   <command name="assertText" target="css=#primary.primary-content .gift-certificate-purchase div.content-asset h2" value="PURCHASE AN ONLINE GIFT CERTIFICATE"/>

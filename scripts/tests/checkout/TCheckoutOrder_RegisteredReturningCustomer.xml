@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="6" junit-test="true">
-  <description>Test returning customer order with two saved addresses, saved credit card and two basic products including valdiation of order summary via check order status in account.
+  <description>Test returning customer order with two saved addresses, saved credit card and two basic products including validation of order summary via check order status in account.
 
 # 1. Setup and preparation
 
@@ -173,7 +173,7 @@
     <parameter name="phone" value="${shippingAddress_phone}"/>
   </module>
   <module name="modules.pages.checkout.steps.shipping.MCheckout_ShippingMethod_checkPosition">
-    <parameter name="positon" value="${shippingMethod_position}"/>
+    <parameter name="position" value="${shippingMethod_position}"/>
   </module>
   <module name="modules.pages.checkout.steps.boxes.VCheckout_BoxOrderSummary_validateShippingMethod">
     <parameter name="shippingMethod_name" value="${shippingMethod_name}"/>

@@ -49,11 +49,11 @@ This section defines the element names which are part of the naming scheme of pa
 - `ProductDetailPage`: product detail page (PDP).
 - `MiniCart`: minicart pop up in global header.
 - `Cart`: cart page.
-- `Checkout`: checkout pages with shipping, billing, place orde and order confirmation.
+- `Checkout`: checkout pages with shipping, billing, place order and order confirmation.
 - `Account`: account page also known as my account.
 - `Wishlist`: wishlist 
-- `Giftcertificates`: giftcertificates
-- `Promotion`: stuff releated to promotion, not single pages
+- `Giftcertificates`: gift certificates
+- `Promotion`: stuff related to promotion, not single pages
 
 
 
@@ -143,7 +143,7 @@ _ex. Substring inclusive until last character_
 | `storeEval`   | `"${creditCardNumber}".substring(12,16)`            | `creditCardLastFourDigits`                |
 
 
-_ex. Substring exclusive until first occurence (three different ways)_
+_ex. Substring exclusive until first occurrence (three different ways)_
 
 | Command       | Target                                              | Value                                     |
 | :------------ | :-------------------------------------------------- | :---------------------------------------- |
@@ -153,7 +153,7 @@ _ex. Substring exclusive until first occurence (three different ways)_
 
 #### Text Conversion
 
-_ex. Convert full english month name to number with two digits_  
+_ex. Convert full English month name to number with two digits_  
 
 | Command       | Target                                              | Value                                    |
 | :------------ | :-------------------------------------------------- | :--------------------------------------- |
@@ -193,7 +193,7 @@ Here are some links to other helpful resources for test development.
 - W3C [DOM TR](http://www.w3.org/TR/dom/)
 - W3C [HTML & CSS Portal](http://www.w3.org/standards/webdesign/htmlcss.html), [HTML TR](http://www.w3.org/TR/html/)
 - W3C [CSS Portal](http://www.w3.org/Style/CSS/), [CSS TR](http://www.w3.org/TR/CSS/), [CSS Selectors TR](http://www.w3.org/TR/selectors/#selectors)
-- W3C [Javascript Portal](http://www.w3.org/standards/webdesign/script.html), [JS All](http://www.w3.org/standards/techs/js#w3c_all)
+- W3C [JavaScript Portal](http://www.w3.org/standards/webdesign/script.html), [JS All](http://www.w3.org/standards/techs/js#w3c_all)
 - W3C [XPath All](http://www.w3.org/standards/techs/xpath#w3c_all), [XPath TR](http://www.w3.org/TR/xpath-30/), [XPath Functions TR](http://www.w3.org/TR/xpath-functions-30/)
 - W3C [XML Portal](http://www.w3.org/standards/xml/)
 

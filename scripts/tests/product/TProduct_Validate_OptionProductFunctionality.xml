@@ -22,7 +22,7 @@ Note: This test is prepared as data driven test. Running it as junit test will e
     <parameter name="searchText" value="${searchPhrase}"/>
   </module>
   <codecomment># Scope</codecomment>
-  <codecomment>Hover over product and click on quick view buttom</codecomment>
+  <codecomment>Hover over product and click on quick view button</codecomment>
   <action name="ProductQuickView"/>
   <module name="modules.pages.catalog.MCatalog_clickQuickViewByProductTitle">
     <parameter name="title" value="${optionProductName}"/>

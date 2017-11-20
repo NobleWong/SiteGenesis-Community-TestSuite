@@ -11,7 +11,7 @@ import xltutil.annotation.TestTargets;
 /**
  * <h1 id="setup">Setup</h1>
  * <ul>
- * <li>create an email for the receipient</li>
+ * <li>create an email for the recipient</li>
  * <li>open the homepage and start the session</li>
  * </ul>
  * <h1 id="scope">Scope</h1>

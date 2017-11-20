@@ -4,9 +4,9 @@
   <parameter name="positionLevel1" desc="category position level 1"/>
   <parameter name="positionLevel2" desc="category position level 2"/>
   <parameter name="positionLevel3" desc="category position level 3"/>
-  <codecomment>**Caution:** Mouse over is not needed due to scripts not beeing able to opeen this kind of implememntation of flyouts. Click still works on non-visible element.</codecomment>
+  <codecomment>**Caution:** Mouse over is not needed due to scripts not being able to open this kind of implementation of flyouts. Click still works on non-visible element.</codecomment>
   <command name="mouseOver" disabled="true" target="css=div#navigation nav ul.menu-category.level-1 li:nth-of-type(@{positionLevel1}) a.level-1">
-    <comment>**Caution:** Mouse over is not needed due to scripts not beeing able to opeen this kind of implememntation of flyouts. Click still works on non-visible element.</comment>
+    <comment>**Caution:** Mouse over is not needed due to scripts not being able to open this kind of implementation of flyouts. Click still works on non-visible element.</comment>
   </command>
   <command name="clickAndWait" target="css=#navigation ul.menu-category.level-1 li:nth-of-type(@{positionLevel1}) .level-2 ul li:nth-of-type(@{positionLevel2}) .level-3 li:nth-of-type(@{positionLevel3}) a"/>
 </scriptmodule>

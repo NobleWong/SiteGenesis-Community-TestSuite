@@ -11,7 +11,7 @@ import xltutil.annotation.TestTargets;
 /**
  * <p>
  * Test returning customer order with two saved addresses, saved credit card and
- * two basic products including valdiation of order summary via check order
+ * two basic products including validation of order summary via check order
  * status in account.
  * </p>
  * <h1 id="1-setup-and-preparation">1. Setup and preparation</h1>

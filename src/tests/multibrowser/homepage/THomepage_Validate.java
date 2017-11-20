@@ -10,7 +10,7 @@ import xltutil.annotation.TestTargets;
 
 /**
  * <p>
- * Test browse hompage with basic functions.
+ * Test browse homepage with basic functions.
  * </p>
  * <h1 id="1-setup-and-preparation">1. Setup and preparation</h1>
  * <ul>
@@ -19,7 +19,7 @@ import xltutil.annotation.TestTargets;
  * <h1 id="2-scope-of-test">2. Scope of test</h1>
  * <ul>
  * <li>Validate global header, navigation and footer</li>
- * <li>Validate hompage content</li>
+ * <li>Validate homepage content</li>
  * </ul>
  */
 @ScriptName("tests.homepage.THomepage_Validate")

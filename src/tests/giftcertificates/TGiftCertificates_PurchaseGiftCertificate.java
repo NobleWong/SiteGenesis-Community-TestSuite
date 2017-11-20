@@ -9,7 +9,7 @@ import com.xceptance.xlt.api.engine.scripting.ScriptName;
 /**
  * <h1 id="setup">Setup</h1>
  * <ul>
- * <li>create an email for the receipient using an external service</li>
+ * <li>create an email for the recipient using an external service</li>
  * <li>open the homepage and start the session</li>
  * <li>create an account for the buyer</li>
  * </ul>

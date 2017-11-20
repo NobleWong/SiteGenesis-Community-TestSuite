@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
-  <description>Valdiate product color and size attribute details.</description>
+  <description>Validate product color and size attribute details.</description>
   <parameter name="row" desc="row"/>
   <parameter name="productColor" desc="product color"/>
   <parameter name="productSize" desc="product size"/>

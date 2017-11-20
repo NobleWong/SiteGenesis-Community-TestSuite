@@ -7,7 +7,7 @@ import com.xceptance.xlt.api.engine.scripting.ScriptName;
 
 
 /**
- * <p>Test browse hompage with basic functions.</p>
+ * <p>Test browse homepage with basic functions.</p>
  * <h1 id="1-setup-and-preparation">1. Setup and preparation</h1>
  * <ul>
  * <li>Start session, open homepage and delete all visible cookies</li>
@@ -15,7 +15,7 @@ import com.xceptance.xlt.api.engine.scripting.ScriptName;
  * <h1 id="2-scope-of-test">2. Scope of test</h1>
  * <ul>
  * <li>Validate global header, navigation and footer</li>
- * <li>Validate hompage content</li>
+ * <li>Validate homepage content</li>
  * </ul>
  */
 @ScriptName

@@ -3,6 +3,6 @@
   <description>Validate price of shipping method.</description>
   <parameter name="position" desc="position"/>
   <parameter name="price" desc="price"/>
-  <codecomment>Validate shipping method price at selected positon</codecomment>
+  <codecomment>Validate shipping method price at selected position</codecomment>
   <command name="assertText" target="css=#main #primary #shipping-method-list fieldset [for=&quot;shipping-method-00@{position}&quot;] span" value="@{price}"/>
 </scriptmodule>

@@ -2,7 +2,7 @@
 <scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
   <tags>QV,Quickview</tags>
   <description>Click on the QV button of a product via product position</description>
-  <parameter name="position" desc="positon of the product in catalog"/>
+  <parameter name="position" desc="position of the product in catalog"/>
   <command name="mouseOver" target="css=#search-result-items li:nth-of-type(@{position}) a"/>
   <command name="click" target="id=quickviewbutton"/>
   <command name="waitForVisible" target="css=#pdpMain"/>
