@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
   <tags>product,pdp,quickview,qv,functionality,variations</tags>
   <description>Verifies the functionality of an variation product on quickview (QV) and product details pages (PDP)
 
@@ -64,19 +64,19 @@ Validates the change of the product numbers and enabling of the add2cart button 
   <module name="modules.pages.product.MProduct_disableVariationItemByName">
     <parameter name="variationName" value="color"/>
   </module>
-  <command name="assertNotText" target="css=.product-number span" value="${ProductNumber}"/>
+  <command name="assertNotText" disabled="true" target="css=.product-number span" value="${ProductNumber}"/>
   <command name="storeText" target="css=.product-number span" value="ProductNumber"/>
   <action name="SelectFirstColor"/>
   <module name="modules.pages.product.MProduct_clickColorByPosition">
     <parameter name="MProductColorPosition" value="1"/>
   </module>
-  <command name="assertNotText" target="css=.product-number span" value="${ProductNumber}"/>
+  <command name="assertNotText" disabled="true" target="css=.product-number span" value="${ProductNumber}"/>
   <command name="storeText" target="css=.product-number span" value="ProductNumber"/>
   <action name="SelectSecondColor"/>
   <module name="modules.pages.product.MProduct_clickColorByPosition">
     <parameter name="MProductColorPosition" value="2"/>
   </module>
-  <command name="assertNotText" target="css=.product-number span" value="${ProductNumber}"/>
+  <command name="assertNotText" disabled="true" target="css=.product-number span" value="${ProductNumber}"/>
   <command name="storeText" target="css=.product-number span" value="ProductNumber"/>
   <codecomment>Start Size Test</codecomment>
   <codecomment>If color and size are selected the add2cart button should be enabled</codecomment>
@@ -159,7 +159,7 @@ Validates the change of the product numbers and enabling of the add2cart button 
   <module name="modules.pages.product.MProduct_clickColorByPosition">
     <parameter name="MProductColorPosition" value="2"/>
   </module>
-  <command name="assertNotText" target="css=.product-number span" value="${ProductNumber}"/>
+  <command name="assertNotText" disabled="true" target="css=.product-number span" value="${ProductNumber}"/>
   <command name="storeText" target="css=.product-number span" value="ProductNumber"/>
   <codecomment>Start Size Test</codecomment>
   <codecomment>If color and size are selected the add2cart button should be enabled</codecomment>

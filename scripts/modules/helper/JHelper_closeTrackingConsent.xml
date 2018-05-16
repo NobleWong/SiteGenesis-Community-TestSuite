@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
+  <description>Close tracking consent inset</description>
+  <command name="click" target="css=button.ui-button:nth-child(1) &gt; span:nth-child(1)"/>
+</scriptmodule>

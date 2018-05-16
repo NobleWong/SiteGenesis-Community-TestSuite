@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="6">
+<scriptmodule xmlns="http://xlt.xceptance.com/xlt-script/2" version="7">
   <tags>email,external,10minutemail</tags>
   <description>Goes to 10 minute Mail and fetches a fresh temporary email address for testing.</description>
   <parameter name="email_varName" desc="The email address fetched."/>
   <action name="OpenExternalMailer"/>
   <command name="open" value="${emailClientURL}"/>
+  <command name="click" target="driver.switchTo().alert().accept();"/>
   <codecomment>Delete cookies to get a new email</codecomment>
   <command name="deleteAllVisibleCookies"/>
   <action name="OpenExternalMailerAgain"/>
